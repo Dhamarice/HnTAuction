@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <group android:checkableBehavior="single"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <item
+            android:id="@+id/myaccount"
+            android:icon="@drawable/account"
+            android:title="My Account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <item
+            android:id="@+id/cart"
+            android:icon="@drawable/cart"
+            android:title="Cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <item
+            android:id="@+id/mytransactions"
+            android:icon="@drawable/wishlist"
+            android:title="Transaction History"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <item
+            android:id="@+id/myfavourites"
+            android:icon="@drawable/wishlist"
+            android:title="Favourites"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </group>
+
+
+    <item android:title="About Us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <menu android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <item
+                android:id="@+id/about_us"
+                android:icon="@drawable/ic_menu_share"
+                android:title="About Us"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <item
+                android:id="@+id/contact_us"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Contact Us"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <item
+                android:id="@+id/terms"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Terms and Conditions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <item
+                android:id="@+id/faqs"
+                android:icon="@drawable/ic_menu_send"
+                android:title="(F.A.Qs) Frequently Asked Questions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruvimbo\.android\build-cache\c0d3885dd7e9728e27cd677054781f46ea80bc82\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fcca411028f175f034d209ca24a694c46a88eb03">
+        <dex dex="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTonline\app\build\intermediates\pre-dexed\debug\classes_4c3ae362d5fa9269a792e29f3890e8aea0f54947.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruvimbo\.android\build-cache\95ea9172b5d1c7b73bb46861d6209248a67ca1fe\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="536f64f93222b3d004c884c73ddd8e416108da11">
+        <dex dex="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTonline\app\build\intermediates\pre-dexed\debug\classes_8bc0288b641b078ee05fca6ba6e644b873f5b24f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruvimbo\.android\build-cache\c10473749396a820a339943f54c38de123c0c78d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f7a9468c473a9a6f046eb735abe06a08d8edac5f">
+        <dex dex="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTonline\app\build\intermediates\pre-dexed\debug\classes_1a78ef51865c14d47b46704fd77bbb759b871bb2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruvimbo\.android\build-cache\52547ebc0998ca684ef6929ae7fb1caff01707b7\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="673d77a5bbddd766037f088e775df525c46407f0">
+        <dex dex="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTonline\app\build\intermediates\pre-dexed\debug\classes_609431271ad4b6fd50c22348f5e8eb6931deb55c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruvimbo\.android\build-cache\8c9175e2dc7cecf1f098f5f7276085ee756b2dcb\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTonline\app\build\intermediates\pre-dexed\debug\classes_2ed5361e563ce87bb04ce90f135b111ebd4fbfef.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTonline\app\libs\picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTonline\app\build\intermediates\transforms\dex\debug\folders\1000\2\picasso-2.5.2_3b34cfab6e69eddc3e558bb372f979e5f82e346e\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruvimbo\.android\build-cache\d07e723f1087aab4bd46f002e9066fcdceac1753\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="03881e5c9573abec8007769ffb348356233854c7">
+        <dex dex="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTonline\app\build\intermediates\pre-dexed\debug\classes_3f35b8a2de0c83438b1b6a266d10f9ce1eacadc5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruvimbo\.android\build-cache\4003293077151fbc5302579fda18aeb4ef3ca079\output\jars\libs\internal_impl-23.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="607a3d0b8013b4ccbfeb0b7cb293351994e021fb">
+        <dex dex="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTonline\app\build\intermediates\pre-dexed\debug\internal_impl-23.2.1_9430a921ffde61e5e9cb67490dcf81d0a947a968.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTonline\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2f62df9ba4c3cac4451cbb3b54fdfe5c11e64e5d">
+        <dex dex="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTonline\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_563509a792cfda4d39d2557b427ba372fd44ecbf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTonline\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTonline\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_5c0c63b280a0131dc4dea7021ab8825cf867a3f1\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruvimbo\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTonline\app\build\intermediates\pre-dexed\debug\library-2.4.0_611c30e9f4efd92b09a6a8c297e22120c0b6010d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruvimbo\.android\build-cache\4003293077151fbc5302579fda18aeb4ef3ca079\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be474b1b21b31cf2fa93fe6bd641ae108d96452">
+        <dex dex="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTonline\app\build\intermediates\pre-dexed\debug\classes_96401dcb4c58e445798f1cc82b4ee88e639206ec.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruvimbo\.android\build-cache\1720dffacc51299f36e61bf26181a80fd81299c5\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="08962e03b6a954c65d4944e092879b7f5ee1208d">
+        <dex dex="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTonline\app\build\intermediates\pre-dexed\debug\classes_984b8be9d23dce0c073f9c3ef908ca18e5363210.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruvimbo\.android\build-cache\a61c9e2d7d85707856c7fdfb5974c0ac71141b61\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="72961d8b453b46e277702f18de9d210bc019e36e">
+        <dex dex="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTonline\app\build\intermediates\pre-dexed\debug\classes_c7777a4b349f162732df2416dc856b1cdb2f204a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruvimbo\.android\build-cache\b0d5e7b4eb0842c1291893552a03e67b488ecea6\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
+        <dex dex="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTonline\app\build\intermediates\pre-dexed\debug\classes_19bb801e7455e21d154863f309ecee65dc7c7838.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTonline\app\libs\universal-image-loader-1.9.5.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="442dbfb517b9ab5cb5c6da7ebf8cc28ec5bd0375">
+        <dex dex="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTonline\app\build\intermediates\transforms\dex\debug\folders\1000\2\universal-image-loader-1.9.5_0465bec19b302e4256d84ad092506812d7a0e18c\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruvimbo\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTonline\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_5e6020fd32433fe9ddd51c98946b46443f2ddb4b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTonline\app\libs\picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTonline\app\build\intermediates\pre-dexed\debug\picasso-2.5.2_3b34cfab6e69eddc3e558bb372f979e5f82e346e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruvimbo\.android\build-cache\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e4d0cbb0b999604b349062f0214a0a228a7fd151">
+        <dex dex="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTonline\app\build\intermediates\pre-dexed\debug\classes_5d474d2f4ff5cefe2d51cc1737370e651971a73d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTonline\app\libs\universal-image-loader-1.9.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="442dbfb517b9ab5cb5c6da7ebf8cc28ec5bd0375">
+        <dex dex="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTonline\app\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.5_0465bec19b302e4256d84ad092506812d7a0e18c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruvimbo\.android\build-cache\09c403a6e13ea46ec68077ac73de6486671ef537\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3469cb457f10f74c28cbc05f069b6c894f6cbdd0">
+        <dex dex="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTonline\app\build\intermediates\pre-dexed\debug\classes_09d13d2668b50ff77d0b48aeb996042266a48cd0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruvimbo\.android\build-cache\1f9b61543b8287b730cbd8084f8d3c2ae2d5b614\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b8a1048a1127beb355a77d65dcc446bfa3ca93d">
+        <dex dex="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTonline\app\build\intermediates\pre-dexed\debug\classes_955ef37eb1abb4985ddc1b12096abf914edcd3e2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruvimbo\.android\build-cache\3ffd77e1abfcde005b5694c58bd481ea4bc5b21e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
+        <dex dex="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTonline\app\build\intermediates\pre-dexed\debug\classes_f9e92a290fac0e4ce7781f2ebaf76e2e619e2a1a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruvimbo\.android\build-cache\8e45016e2d3f0e716c822463509de427c60d21ab\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e3885783ff8926ed9e2fdcd16816c2e1e73e7aee">
+        <dex dex="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTonline\app\build\intermediates\pre-dexed\debug\classes_8921710977f0057f1b602aeabd2e97cac0fdc078.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ruvimbo\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.2.1\support-annotations-23.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ccb693bc0774fcb637246f7360de25b4af7df318">
+        <dex dex="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTonline\app\build\intermediates\pre-dexed\debug\support-annotations-23.2.1_1c01b974d18c570f9b76fded73c73f6c9fe39348.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTonline\app\libs\volley.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fe4b50d0b8af44fce7a238fe146c7a3957074aa5">
+        <dex dex="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTonline\app\build\intermediates\transforms\dex\debug\folders\1000\2\volley_6d1934f7952256219b720244f56d2255feccf621\classes.dex" />
+    </item>
+
+</items>

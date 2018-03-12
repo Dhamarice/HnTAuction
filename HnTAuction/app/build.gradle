@@ -1,0 +1,41 @@
+
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'HntOnline'
+            keyPassword 'h4mm3r2017'
+            storePassword 'h4mm3r2017'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        applicationId "com.hammerandtongues.online.hntonline"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 11
+        versionName "1.10"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            zipAlignEnabled true
+        }
+    }
+    useLibrary 'org.apache.http.legacy'
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.2.1'
+    compile 'com.android.support:design:23.2.1'
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.daimajia.slider:library:1.1.5@aar'
+    compile 'com.daimajia.androidanimations:library:1.0.3@aar'
+    compile 'com.facebook.fresco:fresco:1.1.0'
+}

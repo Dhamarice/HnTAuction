@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\libs\picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\2\picasso-2.5.2_ef495b9a9531e8230d5aec6df63b260a49bf49a6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ruvimbo\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.2_a90c0ab66e0efad6f5f59e60c003c3d1ec8e6e5d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ruvimbo\.android\build-cache\02c1c24dfb2754ecb4140265c4a300507e003674\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5554f77bdded2b7101595222ea374898698c7670\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\libs\volley.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fe4b50d0b8af44fce7a238fe146c7a3957074aa5">
+        <dex dex="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\2\volley_d650f7b19abeb87300be0edb396955987d3146ac\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\libs\universal-image-loader-1.9.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="442dbfb517b9ab5cb5c6da7ebf8cc28ec5bd0375">
+        <dex dex="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\2\universal-image-loader-1.9.5_e94bf0af782a9d4f9a16f60916ab95aaf48a36a5\classes.dex" />
+    </item>
+
+</items>

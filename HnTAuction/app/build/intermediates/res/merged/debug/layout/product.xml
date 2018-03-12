@@ -1,0 +1,202 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorLightness"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:fitsSystemWindows="true"
+                 android:id="@+id/product_banner"
+                app:layout_collapseMode="pin"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"
+                app:layout_collapseMode="pin"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"
+                android:layout_gravity="bottom"
+                android:layout_alignBottom="@+id/image"
+                />
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/prodname"/>
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            android:paddingTop="0dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add to Cart"
+        android:background="@color/thatBlue"
+        android:textColor="@android:color/white"
+        android:layout_weight="1"
+        android:id="@+id/addToCart" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back To Shop"
+        android:layout_weight="1"
+        android:background="@color/colorDarkness"
+        android:textColor="@android:color/white"
+        android:id="@+id/btn_product_back" />
+
+</LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="true">
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:background="@color/colorDarkness"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/removeQnty" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/txtQnty"
+                    android:inputType="number"
+                    android:layout_weight="1"
+                    android:hint="Quantity"
+                    android:textAlignment="center"
+                    android:background="#00000000"
+                    android:layout_margin="5dp"
+                    />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@android:color/white"
+                    android:layout_weight="0"
+                    android:id="@+id/addQnty" />
+
+            </LinearLayout>
+
+            <Spinner
+                android:layout_height="wrap_content"
+                android:id="@+id/spn_variation"
+                android:layout_width="wrap_content"
+                android:drawSelectorOnTop="true"
+                android:prompt="@string/spin"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/noresult"
+                android:textColor="@color/colorAmber"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:textAlignment="center"/>
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollView"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="true">
+
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/prdctname"
+                android:textSize="15dp"
+                android:textColor="@color/colorDarkness"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/prdctprice"
+                android:textSize="18dp"
+                android:textColor="@color/colorAmber"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/instock"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent"/>
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:id="@+id/description"
+              android:textAlignment="center"/>
+</LinearLayout>
+            </ScrollView>
+
+          </LinearLayout>
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <include layout="@layout/bottom_bar" />
+
+</android.support.design.widget.CoordinatorLayout>

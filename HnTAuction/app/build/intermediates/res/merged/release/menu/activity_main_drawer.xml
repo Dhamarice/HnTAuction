@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="Quick Links">
+    <menu>
+        <item
+            android:id="@+id/stores"
+            android:icon="@drawable/store"
+            android:title="Stores" />
+        <item
+            android:id="@+id/category"
+            android:icon="@drawable/category"
+            android:title="Categories" />
+        <item
+            android:id="@+id/search"
+            android:icon="@drawable/search1"
+            android:title="Search" />
+
+    </menu>
+    </item>
+
+    <item android:title="My Profile">
+        <menu>
+            <item
+                android:id="@+id/myaccount"
+            android:icon="@drawable/account"
+            android:title="My Account" />
+        <item
+            android:id="@+id/cart"
+            android:icon="@drawable/cart"
+            android:title="Cart" />
+        <item
+            android:id="@+id/mytransactions"
+            android:icon="@drawable/history"
+            android:title="Transaction History" />
+</menu>
+    </item>
+
+
+    <item android:title="Get To Know Us">
+        <menu>
+            <item
+                android:id="@+id/about_us"
+                android:icon="@drawable/about"
+                android:title="About Us" />
+            <item
+                android:id="@+id/contact_us"
+                android:icon="@drawable/contact"
+                android:title="Contact Us" />
+            <item
+                android:id="@+id/terms"
+                android:icon="@drawable/tnc"
+                android:title="Terms and Conditions" />
+
+            <item
+                android:id="@+id/faqs"
+                android:icon="@drawable/faq"
+                android:title="(F.A.Qs) Frequently Asked Questions" />
+        </menu>
+    </item>
+</menu>

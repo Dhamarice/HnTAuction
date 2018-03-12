@@ -1,0 +1,261 @@
+-- Merging decision tree log ---
+manifest
+ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:2:1-127:12
+	package
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:3:5-52
+		INJECTED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml
+		INJECTED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml
+		INJECTED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml
+		INJECTED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:4:5-67
+MERGED from [com.daimajia.slider:library:1.1.5] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.daimajia.slider\library\1.1.5\AndroidManifest.xml:11:5-67
+	android:name
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:4:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:6:5-81
+MERGED from [com.daimajia.slider:library:1.1.5] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.daimajia.slider\library\1.1.5\AndroidManifest.xml:12:5-81
+	android:name
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:6:22-78
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:7:22-76
+permission#com.github.hathibelagal.pn.permission.C2D_MESSAGE
+ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:8:5-10:47
+	android:protectionLevel
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:10:9-44
+	android:name
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:9:9-73
+uses-permission#com.github.hathibelagal.pn.permission.C2D_MESSAGE
+ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:11:5-12:76
+	android:name
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:12:9-73
+application
+ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:14:5-125:19
+MERGED from [com.android.support:appcompat-v7:23.2.1] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:23.2.1] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.2.1] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.2.1\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.2.1] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.2.1] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:23.2.1] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.2.1] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:23.2.1] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.android.support\design\23.2.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.2.1] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.2.1] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:23.2.1] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.2.1] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.2.1\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.2.1] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.2.1] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:23.2.1] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.2.1] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.2.1] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:8.1.0] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.2.1] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:17:9-41
+	android:supportsRtl
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:18:9-35
+	android:hardwareAccelerated
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:21:9-44
+	android:allowBackup
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:15:9-35
+	android:icon
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:16:9-43
+	android:largeHeap
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:20:9-33
+	android:theme
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:19:9-40
+activity#com.hammerandtongues.online.hntonline.SplashActivity
+ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:22:9-29:20
+	android:theme
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:24:13-47
+	android:name
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:23:13-43
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:25:13-28:29
+action#android.intent.action.MAIN
+ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:26:17-69
+	android:name
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:26:25-66
+category#android.intent.category.LAUNCHER
+ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:27:17-77
+	android:name
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:27:27-74
+activity#com.hammerandtongues.online.hntonline.MainActivity
+ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:31:9-46:20
+	android:screenOrientation
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:35:13-49
+	android:label
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:33:13-45
+	android:theme
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:34:13-56
+	android:name
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:32:13-41
+intent-filter#android.intent.action.MAIN
+ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:36:13-38:29
+intent-filter#android.intent.action.SEARCH
+ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:39:13-41:29
+action#android.intent.action.SEARCH
+ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:40:17-70
+	android:name
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:40:25-68
+meta-data#android.app.searchable
+ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:42:13-44:56
+	android:resource
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:44:17-54
+	android:name
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:43:17-54
+activity#com.hammerandtongues.online.hntonline.Search
+ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:48:9-56:20
+	android:screenOrientation
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:50:13-49
+	android:theme
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:49:13-56
+	android:name
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:48:19-41
+activity#com.hammerandtongues.online.hntonline.NotificationView
+ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:58:9-64:20
+	android:label
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:59:13-52
+	android:parentActivityName
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:60:13-55
+	android:name
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:58:19-51
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:61:13-63:48
+	android:value
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:63:17-46
+	android:name
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:62:17-63
+activity#com.hammerandtongues.online.hntonline.CategoriesActivity
+ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:66:9-70:15
+	android:screenOrientation
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:69:13-49
+	android:theme
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:68:13-56
+	android:name
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:67:13-47
+activity#com.hammerandtongues.online.hntonline.StoresFragment
+ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:71:9-74:15
+	android:screenOrientation
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:73:13-49
+	android:theme
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:72:13-56
+	android:name
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:71:20-50
+activity#com.hammerandtongues.online.hntonline.PromotionsFragment
+ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:75:9-57
+	android:name
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:75:20-54
+activity#com.hammerandtongues.online.hntonline.Product
+ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:76:9-45
+	android:name
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:76:20-43
+activity#com.hammerandtongues.online.hntonline.Store
+ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:77:9-44
+	android:name
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:77:20-41
+activity#com.hammerandtongues.online.hntonline.Cart
+ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:78:9-43
+	android:name
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:78:20-40
+activity#com.hammerandtongues.online.hntonline.CheckOut_Activity
+ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:79:9-56
+	android:name
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:79:20-53
+activity#com.hammerandtongues.online.hntonline.UserActivity
+ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:80:9-51
+	android:name
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:80:20-48
+activity#com.hammerandtongues.online.hntonline.Products_List
+ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:81:9-52
+	android:name
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:81:20-49
+activity#com.hammerandtongues.online.hntonline.TransactionHistory
+ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:82:9-57
+	android:name
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:82:20-54
+activity#com.hammerandtongues.online.hntonline.AboutUs
+ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:83:9-46
+	android:name
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:83:20-43
+activity#com.hammerandtongues.online.hntonline.Faqs
+ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:84:9-43
+	android:name
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:84:20-40
+activity#com.hammerandtongues.online.hntonline.ContactUs
+ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:85:9-48
+	android:name
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:85:20-45
+activity#com.hammerandtongues.online.hntonline.TermsAndConditions
+ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:86:9-57
+	android:name
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:86:20-54
+activity#com.hammerandtongues.online.hntonline.WebViewActivity
+ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:87:9-54
+	android:name
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:87:20-51
+meta-data#com.google.android.gms.version
+ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:90:9-92:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:92:13-66
+	android:name
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:91:13-58
+service#com.hammerandtongues.online.hntonline.LocalService
+ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:95:11-96:42
+	android:exported
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:96:15-39
+	android:name
+		ADDED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:95:20-48
+uses-sdk
+INJECTED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:23.2.1] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:23.2.1] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:animated-vector-drawable:23.2.1] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.2.1\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.2.1] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.2.1] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:23.2.1] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.2.1] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:23.2.1] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.android.support\design\23.2.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.2.1] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.2.1] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:23.2.1] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:animated-vector-drawable:23.2.1] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.2.1\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.2.1] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.2.1] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:23.2.1] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.2.1] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.2.1] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.2.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.2.1] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-appindexing:8.1.0] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.2.1] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:20:5-43
+MERGED from [com.daimajia.slider:library:1.1.5] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.daimajia.slider\library\1.1.5\AndroidManifest.xml:7:5-9:41
+MERGED from [com.daimajia.androidanimations:library:1.0.3] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.daimajia.androidanimations\library\1.0.3\AndroidManifest.xml:8:5-10:41
+MERGED from [com.facebook.fresco:fresco:1.1.0] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.facebook.fresco\fresco\1.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.1.0] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.facebook.fresco\drawee\1.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.1.0] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\1.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.1.0] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\1.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.1.0] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline\1.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.1.0] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\1.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.1.0] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-base\1.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.1.0] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\1.1.0\AndroidManifest.xml:5:5-7:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:23.2.1] F:\MobileApp\HnTonline\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml
+		INJECTED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml
+		INJECTED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml
+android:uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from F:\MobileApp\HnTonline\app\src\main\AndroidManifest.xml:2:1-127:12 reason: com.daimajia.slider.library requested WRITE_EXTERNAL_STORAGE

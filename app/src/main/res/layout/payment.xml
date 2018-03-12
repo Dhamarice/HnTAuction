@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                                            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                                            android:layout_marginBottom="10dp"
+                                            android:layout_alignParentBottom="true"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentStart="true">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:id="@+id/payyee"
+    android:layout_centerHorizontal="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do you have a Discount Voucher?"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apply it here then select EWallet to complete your Transaction"
+        android:textSize="12dp"
+        android:textColor="@color/thatBlue"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp">
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="45dp"
+    android:hint="Voucher Code"
+    android:layout_gravity="center_horizontal"
+    android:textSize="15dp"
+    android:id="@+id/txtDiscount"
+    />
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="45dp"
+    android:text="Apply Voucher"
+    android:textSize="15dp"
+    android:id="@+id/btnVoucher"
+    />
+    </LinearLayout>
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Select Your Payment Method:"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center_horizontal"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/imgewallet"
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:src="@drawable/virtual"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/ewallet"
+    android:visibility="gone">
+</LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imgecocash"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:src="@drawable/ecocash"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ecocash"
+        android:visibility="gone">
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgtelecash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/telecash"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/telecash"
+        android:visibility="gone">
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgpaynow"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:src="@drawable/paynow"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/paynow"
+        android:visibility="gone">
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imgcod"
+        android:layout_width="195dp"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/cod"
+        android:visibility="gone">
+    </LinearLayout>
+
+</LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+    </RelativeLayout>

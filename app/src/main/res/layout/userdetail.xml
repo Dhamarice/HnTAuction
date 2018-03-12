@@ -1,0 +1,220 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hammerandtongues.hammer.ui.fragments.login.UserDetailsFragment">
+
+        <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:id="@+id/input_container"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/defaultpadding20"
+                android:paddingRight="@dimen/defaultpadding20"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/dlvryoptions">
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView"
+                    android:layout_marginTop="5dp"
+                    android:weightSum="1"
+                    android:id="@+id/radioGroup"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delivery"
+                        android:id="@+id/rd_delivery"
+                        android:layout_gravity="center_horizontal"
+                        android:checked="false"
+                        android:textSize="12dp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PickUp"
+                        android:id="@+id/rd_pickup"
+                        android:layout_gravity="center_horizontal"
+                        android:checked="false"
+                        android:textSize="12dp"
+                        android:layout_weight="0.13" />
+                </RadioGroup>
+
+                 <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView"
+                    android:weightSum="1"
+                    android:id="@+id/radioGroup2"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                     android:visibility="invisible">
+
+
+                        <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Registered Address"
+                        android:id="@+id/rd_RegAdd"
+                        android:layout_gravity="center_horizontal"
+                        android:checked="false"
+                        android:textSize="12dp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alternative Address"
+                        android:id="@+id/rd_AltAdd"
+                        android:layout_gravity="center_horizontal"
+                        android:checked="false"
+                        android:textSize="12dp"
+                        android:layout_weight="0.13" />
+
+                </RadioGroup>
+
+                <Spinner
+                    android:layout_height="50dp"
+                    android:id="@+id/spin_city"
+                    android:layout_width="fill_parent"
+                    android:drawSelectorOnTop="true"
+                    android:prompt="@string/spin"
+                    android:visibility="invisible"
+                    android:layout_marginBottom="10dp"/>
+                    <Spinner
+                        android:layout_height="50dp"
+                        android:id="@+id/spin_pickuplocations"
+                        android:layout_width="fill_parent"
+                        android:drawSelectorOnTop="true"
+                        android:prompt="@string/spin"
+                        android:visibility="invisible"
+                        android:layout_marginBottom="10dp"/>
+                    <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/address"/>
+
+                </LinearLayout>
+              <LinearLayout
+                  android:layout_marginBottom="10dp"
+                  android:orientation="vertical"
+                  android:id="@+id/editables"
+                  android:paddingTop="@dimen/activity_horizontal_margin"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_centerHorizontal="true"
+                  android:visibility="invisible">
+
+                  <EditText
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/addressLn1"
+                      android:hint="Address Line 1"
+                      android:padding="15dp"
+                      android:background="@drawable/roundcorner"
+                      android:layout_gravity="center_horizontal"/>
+
+                  <EditText
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/addressLn2"
+                      android:hint="Address Line 2"
+                      android:layout_marginTop="10dp"
+                      android:padding="15dp"
+                      android:background="@drawable/roundcorner"
+                      android:layout_gravity="center_horizontal"/>
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/txtinfo"
+                      android:visibility="gone"
+                      android:textColor="@android:color/holo_red_dark"/>
+                  <Spinner
+                      android:layout_height="50dp"
+                      android:id="@+id/spin_country"
+                      android:entries="@array/countries"
+                      android:layout_width="fill_parent"
+                      android:drawSelectorOnTop="true"
+                      android:prompt="@string/spin"
+                      android:layout_marginBottom="10dp"/>
+
+                  <Spinner
+                      android:layout_height="50dp"
+                      android:id="@+id/spin_Province"
+                      android:layout_width="fill_parent"
+                      android:drawSelectorOnTop="true"
+                      android:prompt="@string/spin"
+                      android:layout_marginBottom="10dp"/>
+                  <Spinner
+                      android:layout_height="50dp"
+                      android:id="@+id/spin_city1"
+                      android:layout_width="fill_parent"
+                      android:drawSelectorOnTop="true"
+                      android:prompt="@string/spin"
+                      android:layout_marginBottom="10dp"/>
+
+                  <Spinner
+                      android:layout_height="50dp"
+                      android:id="@+id/spin_surburbs"
+                      android:layout_width="fill_parent"
+                      android:drawSelectorOnTop="true"
+                      android:prompt="@string/spin"
+                      android:layout_marginBottom="10dp"/>
+
+
+
+
+                                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="2dp"
+                        android:text="Next"
+                        android:textColor="#ecf0f1"
+                        android:background="@drawable/default_rounded"
+                        android:padding="15dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/btn_submit"/>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,242 @@
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.hammerandtongues.online.hntonline.UserActivity">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/input_container"
+                    android:paddingTop="@dimen/activity_horizontal_margin"
+                    android:paddingLeft="@dimen/defaultpadding20"
+                    android:paddingRight="@dimen/defaultpadding20"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true">
+                <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/personaldetails"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:hint="username"
+            android:padding="15dp"
+            android:background="@drawable/roundcorner"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/useremail"
+            android:layout_marginTop="10dp"
+            android:hint="email"
+            android:padding="15dp"
+            android:background="@drawable/roundcorner"
+            android:layout_gravity="center_horizontal"
+            />
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/first_name"
+                android:hint="First name"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:padding="15dp"
+                android:background="@drawable/roundcorner"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:id="@+id/surname"
+                android:hint="Last name"
+                android:padding="15dp"
+                android:background="@drawable/roundcorner"
+                android:layout_gravity="center_horizontal"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password_login"
+                android:inputType="textPassword"
+                android:hint="password"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:paddingTop="@dimen/defaultpadding20"
+                android:padding="15dp"
+                android:background="@drawable/roundcorner"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:id="@+id/password_confrim"
+                android:inputType="textPassword"
+                android:hint="re-type password"
+                android:padding="15dp"
+                android:background="@drawable/roundcorner"
+                android:layout_gravity="center_horizontal"
+                />
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/national_id_number"
+            android:hint="National ID Number"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:background="@drawable/roundcorner"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/telephone"
+            android:hint="Telephone"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:background="@drawable/roundcorner"
+            android:layout_gravity="center_horizontal"
+            />
+    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical"
+                        android:id="@+id/addressdetails"
+                        android:paddingTop="@dimen/activity_horizontal_margin"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/addressLn1"
+                            android:hint="Address Line 1"
+                            android:padding="15dp"
+                            android:background="@drawable/roundcorner"
+                            android:layout_gravity="center_horizontal"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/addressLn2"
+                            android:hint="Address Line 2"
+                            android:layout_marginTop="10dp"
+                            android:padding="15dp"
+                            android:background="@drawable/roundcorner"
+                            android:layout_gravity="center_horizontal"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/country"
+                            android:hint="Country"
+                            android:layout_marginTop="10dp"
+                            android:padding="15dp"
+                            android:background="@drawable/roundcorner"
+                            android:layout_gravity="center_horizontal"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/regionstate"
+                            android:hint="Region/State"
+                            android:layout_marginTop="10dp"
+                            android:padding="15dp"
+                            android:background="@drawable/roundcorner"
+                            android:layout_gravity="center_horizontal"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/city"
+                            android:hint="City"
+                            android:layout_marginTop="10dp"
+                            android:padding="15dp"
+                            android:background="@drawable/roundcorner"
+                            android:layout_gravity="center_horizontal"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/surbub"
+                            android:hint="Suburb"
+                            android:layout_marginTop="10dp"
+                            android:padding="15dp"
+                            android:background="@drawable/roundcorner"
+                            android:layout_gravity="center_horizontal"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="2dp"
+            android:text="Next"
+            android:textColor="#ecf0f1"
+            android:background="@drawable/default_rounded"
+            android:padding="15dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/register"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+    </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    </RelativeLayout>

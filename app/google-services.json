@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "744502210154",
+    "firebase_url": "https://hntonline-f4208.firebaseio.com",
+    "project_id": "hntonline-f4208",
+    "storage_bucket": "hntonline-f4208.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:744502210154:android:b6d5e4555806bc18",
+        "android_client_info": {
+          "package_name": "com.hammerandtongues.online.hntonline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "744502210154-na569skm0qa4d7g0e6lmhr9bfle917kl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hammerandtongues.online.hntonline",
+            "certificate_hash": "89fa642c62f5c568b05eea82478e6475f9415f06"
+          }
+        },
+        {
+          "client_id": "744502210154-quicsoki114d7tkser2s9fvgdvdjh2mj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAimLm2QXiEt235fcHtwsy7Sj7c7gAIfOo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "744502210154-quicsoki114d7tkser2s9fvgdvdjh2mj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

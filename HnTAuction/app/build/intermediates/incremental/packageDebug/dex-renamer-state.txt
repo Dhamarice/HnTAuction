@@ -1,0 +1,7 @@
+#Mon Oct 23 10:07:05 CAT 2017
+base.0=C\:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_563509a792cfda4d39d2557b427ba372fd44ecbf
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_5c0c63b280a0131dc4dea7021ab8825cf867a3f1\\classes.dex
+base.1=C\:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_5c0c63b280a0131dc4dea7021ab8825cf867a3f1
+file.0=C\:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_563509a792cfda4d39d2557b427ba372fd44ecbf\\classes.dex

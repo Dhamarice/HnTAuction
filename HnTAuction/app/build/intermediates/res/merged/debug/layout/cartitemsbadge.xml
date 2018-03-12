@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="15dp"
+    android:id="@+id/cartitemwrapper">
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="32dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_shopping_cart_white"/>
+
+    <TextView
+        android:layout_width="24dp"
+        android:layout_height="22dp"
+        android:id="@+id/cartitems"
+        android:background="@drawable/txt_bckgrnd"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="16dp"
+        android:paddingTop="1dp"
+        android:textAlignment="center"
+        android:text="10"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"/>
+
+</RelativeLayout>

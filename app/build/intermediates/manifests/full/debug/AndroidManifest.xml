@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hammerandtongues.online.hntonline"
+    android:versionCode="11"
+    android:versionName="1.10" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Include following permission if you want to cache images on SD card -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <permission
+        android:name="com.github.hathibelagal.pn.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.github.hathibelagal.pn.permission.C2D_MESSAGE" />
+
+    <!-- Optional permission for Analytics to run. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Permissions required for GCM -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <permission
+        android:name="com.hammerandtongues.online.hntonline.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.hammerandtongues.online.hntonline.permission.C2D_MESSAGE" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.hammerandtongues.online.hntauction.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hammerandtongues.online.hntauction.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@layout/searchable" />
+        </activity>
+        <activity
+            android:name="com.hammerandtongues.online.hntauction.Search"
+            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@layout/searchable" />
+        </activity>
+        <activity
+            android:name="com.hammerandtongues.online.hntauction.NotificationView"
+            android:label="Details of notification"
+            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name="com.hammerandtongues.online.hntauction.CategoriesActivity"
+            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.hammerandtongues.online.hntauction.StoresFragment"
+            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.hammerandtongues.online.hntauction.PromotionsFragment"
+            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity" />
+        <activity
+            android:name="com.hammerandtongues.online.hntauction.Single_Product"
+            android:parentActivityName="com.hammerandtongues.online.hntauction.Products_list" />
+        <activity
+            android:name="com.hammerandtongues.online.hntauction.Store"
+            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity" />
+        <activity
+            android:name="com.hammerandtongues.online.hntauction.Cart"
+            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity" />
+        <activity
+            android:name="com.hammerandtongues.online.hntauction.CheckOut_Activity"
+            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity" >
+        </activity>
+        <activity
+            android:name="com.hammerandtongues.online.hntauction.UserActivity"
+            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity" />
+        <activity
+            android:name="com.hammerandtongues.online.hntauction.Products_list"
+            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity" />
+        <activity
+            android:name="com.hammerandtongues.online.hntauction.TransactionHistory"
+            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity" />
+        <activity
+            android:name="com.hammerandtongues.online.hntauction.AboutUs"
+            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity" />
+        <activity
+            android:name="com.hammerandtongues.online.hntauction.Faqs"
+            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity" />
+        <activity
+            android:name="com.hammerandtongues.online.hntauction.ContactUs"
+            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity" />
+        <activity
+            android:name="com.hammerandtongues.online.hntauction.TermsAndConditions"
+            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity" />
+        <activity
+            android:name="com.hammerandtongues.online.hntauction.WebViewActivity"
+            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity" />
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <service
+            android:name="com.hammerandtongues.online.hntauction.LocalService"
+            android:exported="false" />
+
+        <fragment android:name=".Register" />
+        <fragment android:name=".Login" />
+
+        <receiver android:name="com.hammerandtongues.online.hntauction.NetworkStateChecker" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.hammerandtongues.online.hntauction.MyAppReciever" >
+            <intent-filter>
+                <action android:name="android.Intent.ACTION_TIME_TICK" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+        <!--
+              <receiver
+                     android:name="com.google.android.gms.gcm.GcmReceiver"
+                     android:exported="true"
+                     android:permission="com.google.android.c2dm.permission.SEND" >
+                     <intent-filter>
+                         <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                         <category android:name="com.hammerandtongues.online.hntonline" />
+                     </intent-filter>
+                 </receiver>
+
+                 <service
+                     android:name=".TokenRefreshListenerService"
+                     android:exported="false">
+                     <intent-filter>
+                         <action android:name="com.google.android.gms.iid.InstanceID" />
+                     </intent-filter>
+                 </service>
+
+                 <service
+                     android:name=".NotificationsListenerService"
+                     android:exported="false" >
+                     <intent-filter>
+                         <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                     </intent-filter>
+                 </service>
+        -->
+        <activity
+            android:name="com.hammerandtongues.online.hntauction.Favourites"
+            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity" >
+        </activity>
+        <activity
+            android:name="com.hammerandtongues.online.hntauction.Register"
+            android:label="@string/title_activity_register"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.hammerandtongues.online.hntauction.Login"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"
+            android:theme="@style/Theme.IAPTheme" />
+        <activity
+            android:name="com.google.android.gms.appinvite.PreviewActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppInvite.Preview" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.appinvite.ACTION_PREVIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--
+Service handling Google Sign-In user revocation. For apps that do not integrate with
+            Google Sign-In, this service will never be started.
+        -->
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:exported="true"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+        <service
+            android:name="com.google.firebase.crash.internal.service.FirebaseCrashReceiverService"
+            android:process=":background_crash" />
+        <service
+            android:name="com.google.firebase.crash.internal.service.FirebaseCrashSenderService"
+            android:process=":background_crash" />
+        <!--
+ FirebaseMessagingService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.google.android.gms.tagmanager.TagManagerService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name="com.google.android.gms.tagmanager.TagManagerPreviewActivity"
+            android:noHistory="true" > <!-- optional, removes the previewActivity from the activity stack. -->
+            <intent-filter>
+                <data android:scheme="tagmanager.c.com.hammerandtongues.online.hntonline" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.measurement.UPLOAD" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.hammerandtongues.online.hntonline" />
+            </intent-filter>
+        </receiver>
+        <!--
+ Internal (not exported) receiver used by the app to start its own exported services
+             without risk of being spoofed.
+        -->
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"
+            android:exported="false" />
+        <!--
+ FirebaseInstanceIdService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.hammerandtongues.online.hntonline.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+    </application>
+
+</manifest>

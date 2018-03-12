@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hammerandtongues.online.hntonline"
+    android:versionCode="11"
+    android:versionName="1.10" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Include following permission if you want to cache images on SD card -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <permission
+        android:name="com.github.hathibelagal.pn.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.github.hathibelagal.pn.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.hammerandtongues.online.hntonline.SplashActivity"
+            android:theme="@style/SplashTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hammerandtongues.online.hntonline.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@layout/searchable" />
+        </activity>
+        <activity
+            android:name="com.hammerandtongues.online.hntonline.Search"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@layout/searchable" />
+        </activity>
+        <activity
+            android:name="com.hammerandtongues.online.hntonline.NotificationView"
+            android:label="Details of notification"
+            android:parentActivityName="com.hammerandtongues.online.hntonline.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name="com.hammerandtongues.online.hntonline.CategoriesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.hammerandtongues.online.hntonline.StoresFragment"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.hammerandtongues.online.hntonline.PromotionsFragment" />
+        <activity android:name="com.hammerandtongues.online.hntonline.Product" />
+        <activity android:name="com.hammerandtongues.online.hntonline.Store" />
+        <activity android:name="com.hammerandtongues.online.hntonline.Cart" />
+        <activity android:name="com.hammerandtongues.online.hntonline.CheckOut_Activity" />
+        <activity android:name="com.hammerandtongues.online.hntonline.UserActivity" />
+        <activity android:name="com.hammerandtongues.online.hntonline.Products_List" />
+        <activity android:name="com.hammerandtongues.online.hntonline.TransactionHistory" />
+        <activity android:name="com.hammerandtongues.online.hntonline.AboutUs" />
+        <activity android:name="com.hammerandtongues.online.hntonline.Faqs" />
+        <activity android:name="com.hammerandtongues.online.hntonline.ContactUs" />
+        <activity android:name="com.hammerandtongues.online.hntonline.TermsAndConditions" />
+        <activity android:name="com.hammerandtongues.online.hntonline.WebViewActivity" />
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <service
+            android:name="com.hammerandtongues.online.hntonline.LocalService"
+            android:exported="false" />
+
+        <fragment android:name=".Register" />
+        <fragment android:name=".Login" />
+
+        <!--
+              <receiver
+                     android:name="com.google.android.gms.gcm.GcmReceiver"
+                     android:exported="true"
+                     android:permission="com.google.android.c2dm.permission.SEND" >
+                     <intent-filter>
+                         <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                         <category android:name="com.hammerandtongues.online.hntonline" />
+                     </intent-filter>
+                 </receiver>
+
+                 <service
+                     android:name=".TokenRefreshListenerService"
+                     android:exported="false">
+                     <intent-filter>
+                         <action android:name="com.google.android.gms.iid.InstanceID" />
+                     </intent-filter>
+                 </service>
+
+                 <service
+                     android:name=".NotificationsListenerService"
+                     android:exported="false" >
+                     <intent-filter>
+                         <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                     </intent-filter>
+                 </service>
+        -->
+    </application>
+
+</manifest>

@@ -1,0 +1,322 @@
+[
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\ic_error.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\ic_error.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\productbanner.jpg",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\productbanner.jpg"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\design_fab_background.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.2.1\\res\\drawable\\design_fab_background.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\faq.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\faq.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\contact.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\contact.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\ic_empty.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\ic_empty.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\cart02selected.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\cart02selected.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_colored_material.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\paymentgateways.PNG",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\paymentgateways.PNG"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\categories.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\categories.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\indicator_corner_bg.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.daimajia.slider\\library\\1.1.5\\res\\drawable\\indicator_corner_bg.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\splash.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\splash.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\ic_launcher_59.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\ic_launcher_59.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\d1.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\d1.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_check_material.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_cab_background_top_material.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\logo.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\logo.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\side_nav_bar.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\side_nav_bar.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\store.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\store.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_switch_thumb_material.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_addtocart.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\btn_addtocart.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\virtual.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\virtual.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\default_rounded_purple.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\default_rounded_purple.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\tnc.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\tnc.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\search1.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\search1.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\wishlist.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\wishlist.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\border.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\border.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_track_material.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\history.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\history.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\profileselected.jpg",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\profileselected.jpg"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\about.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\about.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\cart02.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\cart02.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\paynow.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\paynow.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\abc.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\ic_search_white.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\ic_search_white.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_dialog_material_background_dark.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_dialog_material_background_dark.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\account.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\account.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\cart.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\cart.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\telecash.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\telecash.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\progress_animation.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\progress_animation.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\searchselected.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\searchselected.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\ic_stub.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\ic_stub.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\tw.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\tw.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\onspecial.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\onspecial.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\design_snackbar_background.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.2.1\\res\\drawable\\design_snackbar_background.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\yt.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\yt.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\ic_shopping_cart_white.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\ic_shopping_cart_white.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\category.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\category.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\roundcorner.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\roundcorner.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\product.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\product.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_dialog_material_background_light.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_dialog_material_background_light.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\homeselected.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\homeselected.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_tab_indicator_material.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\categoryselected.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\categoryselected.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_edit_text_material.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\default_rounded.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\default_rounded.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\in.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\in.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\profile.jpg",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\profile.jpg"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_item_background_holo_light.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\search.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\search.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\home.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\home.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\txt_bckgrnd.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\txt_bckgrnd.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_radio_material.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_text_cursor_material.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\ecocash.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\ecocash.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_textfield_search_material.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_borderless_material.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_full_material.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_ratingbar_full_material.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\fb.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\fb.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    }
+]

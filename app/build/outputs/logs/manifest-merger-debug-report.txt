@@ -1,0 +1,633 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:2:1-190:12
+	package
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:3:11-59
+		INJECTED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:5:5-66
+MERGED from [com.google.android.gms:play-services-ads-lite:9.0.0] C:\Users\Ruvimbo\.android\build-cache\30747ddd6ef0c5d0ccd6e031efe3517188c692af\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics:9.0.0] C:\Users\Ruvimbo\.android\build-cache\12b57f4a3e9607f6532a97da77cfb87ee9852501\output\AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-appinvite:9.0.0] C:\Users\Ruvimbo\.android\build-cache\a92bacdd835391304cde351e6f2c244b6e71f053\output\AndroidManifest.xml:19:5-67
+MERGED from [com.google.firebase:firebase-crash:9.0.0] C:\Users\Ruvimbo\.android\build-cache\89d90b128a9b1ed63d07b52484bad8007a88ff37\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-gcm:9.0.0] C:\Users\Ruvimbo\.android\build-cache\293c6df38eff686cd2fad0d131580d64a99d62be\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-iid:9.0.0] C:\Users\Ruvimbo\.android\build-cache\7b40a86da6b4ee846848fe7ee8fca46387ce6e0f\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-analytics-impl:9.0.0] C:\Users\Ruvimbo\.android\build-cache\7ae8504c32a487e4b99d0ea04299666597b5b6ad\output\AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-tagmanager-api:9.0.0] C:\Users\Ruvimbo\.android\build-cache\5e0c17d39eda889e837490d9fa2c0660ad6b0783\output\AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-maps:9.0.0] C:\Users\Ruvimbo\.android\build-cache\3ea8b042a63ed69360050922e49d9ba0d4fbe8a1\output\AndroidManifest.xml:21:5-66
+MERGED from [com.daimajia.slider:library:1.1.5] C:\Users\Ruvimbo\.android\build-cache\98155e4b465fc6b002d23a8eb19e1d4a87b14e79\output\AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-analytics:9.0.0] C:\Users\Ruvimbo\.android\build-cache\60c552ce7e50028337a7b1e183b187569edacd20\output\AndroidManifest.xml:21:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:9.0.0] C:\Users\Ruvimbo\.android\build-cache\708aa1df20cb9b89700d157dfa0050a541bdf0c3\output\AndroidManifest.xml:21:5-67
+MERGED from [com.google.firebase:firebase-iid:9.0.0] C:\Users\Ruvimbo\.android\build-cache\27b91e8075816fdd6e0ed5daf1b8d72c98f3c400\output\AndroidManifest.xml:21:5-67
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:7:5-80
+MERGED from [com.daimajia.slider:library:1.1.5] C:\Users\Ruvimbo\.android\build-cache\98155e4b465fc6b002d23a8eb19e1d4a87b14e79\output\AndroidManifest.xml:12:5-81
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:7:22-78
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:8:5-78
+MERGED from [com.google.android.gms:play-services-ads-lite:9.0.0] C:\Users\Ruvimbo\.android\build-cache\30747ddd6ef0c5d0ccd6e031efe3517188c692af\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-analytics:9.0.0] C:\Users\Ruvimbo\.android\build-cache\12b57f4a3e9607f6532a97da77cfb87ee9852501\output\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-nearby:9.0.0] C:\Users\Ruvimbo\.android\build-cache\66a8f9c2d3260c9b8bb0e8c62a85f53a7a4c95e2\output\AndroidManifest.xml:19:5-79
+MERGED from [com.google.android.gms:play-services-analytics-impl:9.0.0] C:\Users\Ruvimbo\.android\build-cache\7ae8504c32a487e4b99d0ea04299666597b5b6ad\output\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-tagmanager-api:9.0.0] C:\Users\Ruvimbo\.android\build-cache\5e0c17d39eda889e837490d9fa2c0660ad6b0783\output\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-maps:9.0.0] C:\Users\Ruvimbo\.android\build-cache\3ea8b042a63ed69360050922e49d9ba0d4fbe8a1\output\AndroidManifest.xml:20:5-78
+MERGED from [com.google.firebase:firebase-analytics:9.0.0] C:\Users\Ruvimbo\.android\build-cache\60c552ce7e50028337a7b1e183b187569edacd20\output\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:9.0.0] C:\Users\Ruvimbo\.android\build-cache\708aa1df20cb9b89700d157dfa0050a541bdf0c3\output\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:9.0.0] C:\Users\Ruvimbo\.android\build-cache\27b91e8075816fdd6e0ed5daf1b8d72c98f3c400\output\AndroidManifest.xml:20:5-79
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:8:22-76
+permission#com.github.hathibelagal.pn.permission.C2D_MESSAGE
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:10:5-12:46
+	android:protectionLevel
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:12:9-44
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:11:9-73
+uses-permission#com.github.hathibelagal.pn.permission.C2D_MESSAGE
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:14:5-88
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:14:22-86
+application
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:16:5-188:19
+MERGED from [com.android.support:design:23.2.1] C:\Users\Ruvimbo\.android\build-cache\a61c9e2d7d85707856c7fdfb5974c0ac71141b61\output\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services:9.0.0] C:\Users\Ruvimbo\.android\build-cache\bf035b91b6dbd841f7d1db96aae6bd177736de60\output\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-ads-lite:9.0.0] C:\Users\Ruvimbo\.android\build-cache\30747ddd6ef0c5d0ccd6e031efe3517188c692af\output\AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.android.gms:play-services-analytics:9.0.0] C:\Users\Ruvimbo\.android\build-cache\12b57f4a3e9607f6532a97da77cfb87ee9852501\output\AndroidManifest.xml:27:5-20
+MERGED from [com.google.android.gms:play-services-appinvite:9.0.0] C:\Users\Ruvimbo\.android\build-cache\a92bacdd835391304cde351e6f2c244b6e71f053\output\AndroidManifest.xml:20:5-30:19
+MERGED from [com.google.android.gms:play-services-auth:9.0.0] C:\Users\Ruvimbo\.android\build-cache\11853b040e0c60789803565e95ab67b2ee1cc48f\output\AndroidManifest.xml:20:5-32:19
+MERGED from [com.google.android.gms:play-services-cast:9.0.0] C:\Users\Ruvimbo\.android\build-cache\437d325005a7af7529a7b3634f24c9cfe16585de\output\AndroidManifest.xml:19:5-20
+MERGED from [com.android.support:mediarouter-v7:23.0.0] C:\Users\Ruvimbo\.android\build-cache\cb3406751825e6f5455612edb5233deafbcee39e\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.2.1] C:\Users\Ruvimbo\.android\build-cache\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.2.1] C:\Users\Ruvimbo\.android\build-cache\09c403a6e13ea46ec68077ac73de6486671ef537\output\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.2.1] C:\Users\Ruvimbo\.android\build-cache\52547ebc0998ca684ef6929ae7fb1caff01707b7\output\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-config:9.0.0] C:\Users\Ruvimbo\.android\build-cache\658bdcad5cba3fc546135152480e454724d44f61\output\AndroidManifest.xml:19:5-20
+MERGED from [com.google.firebase:firebase-crash:9.0.0] C:\Users\Ruvimbo\.android\build-cache\89d90b128a9b1ed63d07b52484bad8007a88ff37\output\AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.firebase:firebase-auth:9.0.0] C:\Users\Ruvimbo\.android\build-cache\ce0f815362384f6380dd0bccf35adf3749206179\output\AndroidManifest.xml:20:5-21:19
+MERGED from [com.google.firebase:firebase-auth-common:9.0.0] C:\Users\Ruvimbo\.android\build-cache\20d949343e47142c27aa2335fb6c69fe46053354\output\AndroidManifest.xml:20:5-21:19
+MERGED from [com.google.firebase:firebase-messaging:9.0.0] C:\Users\Ruvimbo\.android\build-cache\bb6941a854ae06b0610680bec2c3250409fc9636\output\AndroidManifest.xml:20:5-32:19
+MERGED from [com.google.android.gms:play-services-fitness:9.0.0] C:\Users\Ruvimbo\.android\build-cache\6db27877b324b5de75042fc71b5d0c20256ab343\output\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-games:9.0.0] C:\Users\Ruvimbo\.android\build-cache\63bc409ab8fcbeaf36d7ffc0381917a7595fd44b\output\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-drive:9.0.0] C:\Users\Ruvimbo\.android\build-cache\c63b2f794b89b36a773ef1ebdf65f37b4a023cd9\output\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-gcm:9.0.0] C:\Users\Ruvimbo\.android\build-cache\293c6df38eff686cd2fad0d131580d64a99d62be\output\AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:9.0.0] C:\Users\Ruvimbo\.android\build-cache\70d34d44c2d8efe9c29e285ebd1c53d4d3feedd8\output\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-iid:9.0.0] C:\Users\Ruvimbo\.android\build-cache\7b40a86da6b4ee846848fe7ee8fca46387ce6e0f\output\AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-location:9.0.0] C:\Users\Ruvimbo\.android\build-cache\a90769084dfd728c2f14b81e9abfb0f86e720098\output\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-nearby:9.0.0] C:\Users\Ruvimbo\.android\build-cache\66a8f9c2d3260c9b8bb0e8c62a85f53a7a4c95e2\output\AndroidManifest.xml:20:5-20
+MERGED from [com.google.android.gms:play-services-panorama:9.0.0] C:\Users\Ruvimbo\.android\build-cache\86ebaa9eaf47ddfc3cd45e29ee0268eeff2bd0f0\output\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-plus:9.0.0] C:\Users\Ruvimbo\.android\build-cache\f1088f935f4fe72f52d10533ccc9dc02d224343c\output\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-safetynet:9.0.0] C:\Users\Ruvimbo\.android\build-cache\31b6853ca5ae77411a16e452d3aeb42d2024f64c\output\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-analytics-impl:9.0.0] C:\Users\Ruvimbo\.android\build-cache\7ae8504c32a487e4b99d0ea04299666597b5b6ad\output\AndroidManifest.xml:27:5-20
+MERGED from [com.google.android.gms:play-services-tagmanager-api:9.0.0] C:\Users\Ruvimbo\.android\build-cache\5e0c17d39eda889e837490d9fa2c0660ad6b0783\output\AndroidManifest.xml:24:5-38:19
+MERGED from [com.google.android.gms:play-services-vision:9.0.0] C:\Users\Ruvimbo\.android\build-cache\0d60f195239d1bd101a8294404c07d89f5b8342b\output\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-identity:9.0.0] C:\Users\Ruvimbo\.android\build-cache\38706b8bb98a54c1229f9c579a486078cc317522\output\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-maps:9.0.0] C:\Users\Ruvimbo\.android\build-cache\3ea8b042a63ed69360050922e49d9ba0d4fbe8a1\output\AndroidManifest.xml:27:5-20
+MERGED from [com.google.android.gms:play-services-wearable:9.0.0] C:\Users\Ruvimbo\.android\build-cache\03b80532df1242253b1845665c060622e54fb1fa\output\AndroidManifest.xml:19:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Ruvimbo\.android\build-cache\02c1c24dfb2754ecb4140265c4a300507e003674\output\AndroidManifest.xml:9:5-20
+MERGED from [com.google.firebase:firebase-core:9.0.0] C:\Users\Ruvimbo\.android\build-cache\d1d632388ff55639207159ef7a50bdcef619ff46\output\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics:9.0.0] C:\Users\Ruvimbo\.android\build-cache\60c552ce7e50028337a7b1e183b187569edacd20\output\AndroidManifest.xml:26:5-41:19
+MERGED from [com.google.firebase:firebase-analytics-impl:9.0.0] C:\Users\Ruvimbo\.android\build-cache\708aa1df20cb9b89700d157dfa0050a541bdf0c3\output\AndroidManifest.xml:26:5-41:19
+MERGED from [com.google.android.gms:play-services-base:9.0.0] C:\Users\Ruvimbo\.android\build-cache\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\output\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.firebase:firebase-iid:9.0.0] C:\Users\Ruvimbo\.android\build-cache\27b91e8075816fdd6e0ed5daf1b8d72c98f3c400\output\AndroidManifest.xml:30:5-59:19
+MERGED from [com.google.firebase:firebase-common:9.0.0] C:\Users\Ruvimbo\.android\build-cache\85646b8b25c451547d07a6f2664814963ad6cc64\output\AndroidManifest.xml:5:5-12:19
+MERGED from [com.google.android.gms:play-services-tasks:9.0.0] C:\Users\Ruvimbo\.android\build-cache\70506c0513686597b40fe1d4b559d317e44c4304\output\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:9.0.0] C:\Users\Ruvimbo\.android\build-cache\d705ac71968ea69f3b07a71712a6942752f6b6fc\output\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Ruvimbo\.android\build-cache\bffb6bfee99c14f71e7eba819164fd88e69ce028\output\AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:21:9-41
+	android:supportsRtl
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:23:9-35
+	android:hardwareAccelerated
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:19:9-44
+	android:allowBackup
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:18:9-35
+	android:icon
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:20:9-43
+	android:largeHeap
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:22:9-33
+	android:theme
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:24:9-40
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:17:9-68
+activity#com.hammerandtongues.online.hntauction.SplashActivity
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:25:9-33:20
+	android:theme
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:27:13-56
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:26:13-43
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:28:13-32:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:29:17-68
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:29:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:31:17-76
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:31:27-74
+activity#com.hammerandtongues.online.hntauction.MainActivity
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:34:9-46:20
+	android:screenOrientation
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:37:13-49
+	android:label
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:36:13-45
+	android:theme
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:38:13-56
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:35:13-41
+intent-filter#android.intent.action.SEARCH
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:39:13-41:29
+action#android.intent.action.SEARCH
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:40:17-70
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:40:25-68
+meta-data#android.app.searchable
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:43:13-45:56
+	android:resource
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:45:17-54
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:44:17-54
+activity#com.hammerandtongues.online.hntauction.Search
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:47:9-59:20
+	android:screenOrientation
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:50:13-49
+	android:parentActivityName
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:49:13-55
+	android:theme
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:51:13-56
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:48:13-35
+activity#com.hammerandtongues.online.hntauction.NotificationView
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:60:9-67:20
+	android:label
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:62:13-52
+	android:parentActivityName
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:63:13-55
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:61:13-45
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:64:13-66:48
+	android:value
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:66:17-46
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:65:17-63
+activity#com.hammerandtongues.online.hntauction.CategoriesActivity
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:68:9-72:58
+	android:screenOrientation
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:71:13-49
+	android:parentActivityName
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:70:13-55
+	android:theme
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:72:13-56
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:69:13-47
+activity#com.hammerandtongues.online.hntauction.StoresFragment
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:73:9-77:58
+	android:screenOrientation
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:76:13-49
+	android:parentActivityName
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:75:13-55
+	android:theme
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:77:13-56
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:74:13-43
+activity#com.hammerandtongues.online.hntauction.PromotionsFragment
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:78:9-80:57
+	android:parentActivityName
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:80:13-55
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:79:13-47
+activity#com.hammerandtongues.online.hntauction.Single_Product
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:81:9-83:58
+	android:parentActivityName
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:83:13-56
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:82:13-43
+activity#com.hammerandtongues.online.hntauction.Store
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:84:9-86:57
+	android:parentActivityName
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:86:13-55
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:85:13-34
+activity#com.hammerandtongues.online.hntauction.Cart
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:87:9-89:57
+	android:parentActivityName
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:89:13-55
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:88:13-33
+activity#com.hammerandtongues.online.hntauction.CheckOut_Activity
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:90:9-93:20
+	android:parentActivityName
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:92:13-55
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:91:13-46
+activity#com.hammerandtongues.online.hntauction.UserActivity
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:94:9-96:57
+	android:parentActivityName
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:96:13-55
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:95:13-41
+activity#com.hammerandtongues.online.hntauction.Products_list
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:97:9-99:57
+	android:parentActivityName
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:99:13-55
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:98:13-42
+activity#com.hammerandtongues.online.hntauction.TransactionHistory
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:100:9-102:57
+	android:parentActivityName
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:102:13-55
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:101:13-47
+activity#com.hammerandtongues.online.hntauction.AboutUs
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:103:9-105:57
+	android:parentActivityName
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:105:13-55
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:104:13-36
+activity#com.hammerandtongues.online.hntauction.Faqs
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:106:9-108:57
+	android:parentActivityName
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:108:13-55
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:107:13-33
+activity#com.hammerandtongues.online.hntauction.ContactUs
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:109:9-111:57
+	android:parentActivityName
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:111:13-55
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:110:13-38
+activity#com.hammerandtongues.online.hntauction.TermsAndConditions
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:112:9-114:57
+	android:parentActivityName
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:114:13-55
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:113:13-47
+activity#com.hammerandtongues.online.hntauction.WebViewActivity
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:115:9-117:57
+	android:parentActivityName
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:117:13-55
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:116:13-44
+meta-data#com.google.android.gms.version
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:122:9-124:68
+MERGED from [com.google.android.gms:play-services-basement:9.0.0] C:\Users\Ruvimbo\.android\build-cache\d705ac71968ea69f3b07a71712a6942752f6b6fc\output\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:124:13-66
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:123:13-58
+service#com.hammerandtongues.online.hntauction.LocalService
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:126:9-128:39
+	android:exported
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:128:13-37
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:127:13-41
+fragment
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:130:9-45
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:130:19-43
+receiver#com.hammerandtongues.online.hntauction.NetworkStateChecker
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:133:9-137:20
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:133:19-54
+intent-filter#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:134:13-136:29
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:135:17-78
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:135:25-76
+receiver#com.hammerandtongues.online.hntauction.MyAppReciever
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:138:9-143:20
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:138:19-48
+intent-filter#android.Intent.ACTION_TIME_TICK+android.intent.action.TIMEZONE_CHANGED
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:139:13-142:29
+action#android.Intent.ACTION_TIME_TICK
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:140:17-73
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:140:25-71
+action#android.intent.action.TIMEZONE_CHANGED
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:141:17-80
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:141:25-78
+activity#com.hammerandtongues.online.hntauction.Favourites
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:174:9-177:20
+	android:parentActivityName
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:176:13-55
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:175:13-39
+activity#com.hammerandtongues.online.hntauction.Register
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:178:9-182:20
+	android:label
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:180:13-60
+	android:theme
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:181:13-56
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:179:13-37
+activity#com.hammerandtongues.online.hntauction.Login
+ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:183:9-187:20
+	android:label
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:185:13-57
+	android:theme
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:186:13-56
+	android:name
+		ADDED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:184:13-34
+uses-sdk
+INJECTED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:multidex:1.0.1] C:\Users\Ruvimbo\.android\build-cache\026f45176b471bc872f054fad140440fb868758a\output\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:design:23.2.1] C:\Users\Ruvimbo\.android\build-cache\a61c9e2d7d85707856c7fdfb5974c0ac71141b61\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.2.1] C:\Users\Ruvimbo\.android\build-cache\8e45016e2d3f0e716c822463509de427c60d21ab\output\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services:9.0.0] C:\Users\Ruvimbo\.android\build-cache\bf035b91b6dbd841f7d1db96aae6bd177736de60\output\AndroidManifest.xml:4:5-42
+MERGED from [com.google.android.gms:play-services-ads:9.0.0] C:\Users\Ruvimbo\.android\build-cache\abdbec81b97204fb24d936e97c7d77936817de52\output\AndroidManifest.xml:19:5-42
+MERGED from [com.google.android.gms:play-services-ads-lite:9.0.0] C:\Users\Ruvimbo\.android\build-cache\30747ddd6ef0c5d0ccd6e031efe3517188c692af\output\AndroidManifest.xml:23:5-42
+MERGED from [com.google.android.gms:play-services-analytics:9.0.0] C:\Users\Ruvimbo\.android\build-cache\12b57f4a3e9607f6532a97da77cfb87ee9852501\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-appinvite:9.0.0] C:\Users\Ruvimbo\.android\build-cache\a92bacdd835391304cde351e6f2c244b6e71f053\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-auth:9.0.0] C:\Users\Ruvimbo\.android\build-cache\11853b040e0c60789803565e95ab67b2ee1cc48f\output\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-cast:9.0.0] C:\Users\Ruvimbo\.android\build-cache\437d325005a7af7529a7b3634f24c9cfe16585de\output\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:mediarouter-v7:23.0.0] C:\Users\Ruvimbo\.android\build-cache\cb3406751825e6f5455612edb5233deafbcee39e\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.2.1] C:\Users\Ruvimbo\.android\build-cache\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:23.2.1] C:\Users\Ruvimbo\.android\build-cache\09c403a6e13ea46ec68077ac73de6486671ef537\output\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.2.1] C:\Users\Ruvimbo\.android\build-cache\52547ebc0998ca684ef6929ae7fb1caff01707b7\output\AndroidManifest.xml:5:5-43
+MERGED from [com.google.firebase:firebase-config:9.0.0] C:\Users\Ruvimbo\.android\build-cache\658bdcad5cba3fc546135152480e454724d44f61\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-crash:9.0.0] C:\Users\Ruvimbo\.android\build-cache\89d90b128a9b1ed63d07b52484bad8007a88ff37\output\AndroidManifest.xml:22:5-42
+MERGED from [com.google.firebase:firebase-auth:9.0.0] C:\Users\Ruvimbo\.android\build-cache\ce0f815362384f6380dd0bccf35adf3749206179\output\AndroidManifest.xml:18:5-43
+MERGED from [com.google.firebase:firebase-auth-common:9.0.0] C:\Users\Ruvimbo\.android\build-cache\20d949343e47142c27aa2335fb6c69fe46053354\output\AndroidManifest.xml:18:5-43
+MERGED from [com.google.firebase:firebase-auth-module:9.0.0] C:\Users\Ruvimbo\.android\build-cache\843780a830309546245e722979f77885a9d77c63\output\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-database:9.0.0] C:\Users\Ruvimbo\.android\build-cache\9d8f11b49d2b2c0b1554678e300a1b0df5cbc232\output\AndroidManifest.xml:5:5-43
+MERGED from [com.google.firebase:firebase-database-connection:9.0.0] C:\Users\Ruvimbo\.android\build-cache\8bb0a0fa3b42c52423f85bbb1cd49f0f614cbffd\output\AndroidManifest.xml:5:5-43
+MERGED from [com.google.firebase:firebase-messaging:9.0.0] C:\Users\Ruvimbo\.android\build-cache\bb6941a854ae06b0610680bec2c3250409fc9636\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-storage:9.0.0] C:\Users\Ruvimbo\.android\build-cache\05829cea36965e1ffc68db2ed89523db9b4e81b3\output\AndroidManifest.xml:5:5-43
+MERGED from [com.google.firebase:firebase-storage-common:9.0.0] C:\Users\Ruvimbo\.android\build-cache\c3af39db315fb8b94e5d4045b2cbbc6126db6f5d\output\AndroidManifest.xml:5:5-43
+MERGED from [com.google.android.gms:play-services-fitness:9.0.0] C:\Users\Ruvimbo\.android\build-cache\6db27877b324b5de75042fc71b5d0c20256ab343\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-games:9.0.0] C:\Users\Ruvimbo\.android\build-cache\63bc409ab8fcbeaf36d7ffc0381917a7595fd44b\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-drive:9.0.0] C:\Users\Ruvimbo\.android\build-cache\c63b2f794b89b36a773ef1ebdf65f37b4a023cd9\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-gcm:9.0.0] C:\Users\Ruvimbo\.android\build-cache\293c6df38eff686cd2fad0d131580d64a99d62be\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-appindexing:9.0.0] C:\Users\Ruvimbo\.android\build-cache\70d34d44c2d8efe9c29e285ebd1c53d4d3feedd8\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-iid:9.0.0] C:\Users\Ruvimbo\.android\build-cache\7b40a86da6b4ee846848fe7ee8fca46387ce6e0f\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-location:9.0.0] C:\Users\Ruvimbo\.android\build-cache\a90769084dfd728c2f14b81e9abfb0f86e720098\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-nearby:9.0.0] C:\Users\Ruvimbo\.android\build-cache\66a8f9c2d3260c9b8bb0e8c62a85f53a7a4c95e2\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-panorama:9.0.0] C:\Users\Ruvimbo\.android\build-cache\86ebaa9eaf47ddfc3cd45e29ee0268eeff2bd0f0\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-plus:9.0.0] C:\Users\Ruvimbo\.android\build-cache\f1088f935f4fe72f52d10533ccc9dc02d224343c\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-auth-base:9.0.0] C:\Users\Ruvimbo\.android\build-cache\5f0b5608e16360f7495f8fe3c6b2c4b653b45fc8\output\AndroidManifest.xml:5:5-43
+MERGED from [com.google.android.gms:play-services-safetynet:9.0.0] C:\Users\Ruvimbo\.android\build-cache\31b6853ca5ae77411a16e452d3aeb42d2024f64c\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-tagmanager:9.0.0] C:\Users\Ruvimbo\.android\build-cache\94a0229d821a563cdbbdfd050c3195d36febdca3\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-analytics-impl:9.0.0] C:\Users\Ruvimbo\.android\build-cache\7ae8504c32a487e4b99d0ea04299666597b5b6ad\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-tagmanager-api:9.0.0] C:\Users\Ruvimbo\.android\build-cache\5e0c17d39eda889e837490d9fa2c0660ad6b0783\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-vision:9.0.0] C:\Users\Ruvimbo\.android\build-cache\0d60f195239d1bd101a8294404c07d89f5b8342b\output\AndroidManifest.xml:4:5-42
+MERGED from [com.google.android.gms:play-services-wallet:9.0.0] C:\Users\Ruvimbo\.android\build-cache\4563451a4806083578ea431f145b209b53701a8c\output\AndroidManifest.xml:19:5-42
+MERGED from [com.google.android.gms:play-services-identity:9.0.0] C:\Users\Ruvimbo\.android\build-cache\38706b8bb98a54c1229f9c579a486078cc317522\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-maps:9.0.0] C:\Users\Ruvimbo\.android\build-cache\3ea8b042a63ed69360050922e49d9ba0d4fbe8a1\output\AndroidManifest.xml:26:5-42
+MERGED from [com.google.android.gms:play-services-wearable:9.0.0] C:\Users\Ruvimbo\.android\build-cache\03b80532df1242253b1845665c060622e54fb1fa\output\AndroidManifest.xml:18:5-42
+MERGED from [com.daimajia.slider:library:1.1.5] C:\Users\Ruvimbo\.android\build-cache\98155e4b465fc6b002d23a8eb19e1d4a87b14e79\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.daimajia.androidanimations:library:1.0.3] C:\Users\Ruvimbo\.android\build-cache\976dffd1e6bddac08595ae5a3e74f91dca3e6096\output\AndroidManifest.xml:8:5-10:41
+MERGED from [com.facebook.fresco:fresco:1.1.0] C:\Users\Ruvimbo\.android\build-cache\789fa041a42563c7e255eac9f8c901e198538f42\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.1.0] C:\Users\Ruvimbo\.android\build-cache\1dad805c156a0f5a6762058d4120b9abfe01a824\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.1.0] C:\Users\Ruvimbo\.android\build-cache\0ea0ffbc5317733a488244454ba57f2d6765189d\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.1.0] C:\Users\Ruvimbo\.android\build-cache\082cbd255f8496127167a40c88e5dcb36ebdf68f\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.1.0] C:\Users\Ruvimbo\.android\build-cache\5e20cf95d28843beb22ed53ffcf8799af31d1417\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Ruvimbo\.android\build-cache\02c1c24dfb2754ecb4140265c4a300507e003674\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-core:9.0.0] C:\Users\Ruvimbo\.android\build-cache\d1d632388ff55639207159ef7a50bdcef619ff46\output\AndroidManifest.xml:4:5-42
+MERGED from [com.google.firebase:firebase-analytics:9.0.0] C:\Users\Ruvimbo\.android\build-cache\60c552ce7e50028337a7b1e183b187569edacd20\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-analytics-impl:9.0.0] C:\Users\Ruvimbo\.android\build-cache\708aa1df20cb9b89700d157dfa0050a541bdf0c3\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:9.0.0] C:\Users\Ruvimbo\.android\build-cache\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-iid:9.0.0] C:\Users\Ruvimbo\.android\build-cache\27b91e8075816fdd6e0ed5daf1b8d72c98f3c400\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-common:9.0.0] C:\Users\Ruvimbo\.android\build-cache\85646b8b25c451547d07a6f2664814963ad6cc64\output\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:9.0.0] C:\Users\Ruvimbo\.android\build-cache\70506c0513686597b40fe1d4b559d317e44c4304\output\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:9.0.0] C:\Users\Ruvimbo\.android\build-cache\d705ac71968ea69f3b07a71712a6942752f6b6fc\output\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Ruvimbo\.android\build-cache\bffb6bfee99c14f71e7eba819164fd88e69ce028\output\AndroidManifest.xml:20:5-43
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:23.2.1] C:\Users\Ruvimbo\.android\build-cache\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\output\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml
+activity#com.google.android.gms.ads.AdActivity
+ADDED from [com.google.android.gms:play-services-ads-lite:9.0.0] C:\Users\Ruvimbo\.android\build-cache\30747ddd6ef0c5d0ccd6e031efe3517188c692af\output\AndroidManifest.xml:26:9-29:64
+	android:configChanges
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.0.0] C:\Users\Ruvimbo\.android\build-cache\30747ddd6ef0c5d0ccd6e031efe3517188c692af\output\AndroidManifest.xml:28:13-122
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.0.0] C:\Users\Ruvimbo\.android\build-cache\30747ddd6ef0c5d0ccd6e031efe3517188c692af\output\AndroidManifest.xml:29:13-61
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.0.0] C:\Users\Ruvimbo\.android\build-cache\30747ddd6ef0c5d0ccd6e031efe3517188c692af\output\AndroidManifest.xml:27:13-65
+activity#com.google.android.gms.ads.purchase.InAppPurchaseActivity
+ADDED from [com.google.android.gms:play-services-ads-lite:9.0.0] C:\Users\Ruvimbo\.android\build-cache\30747ddd6ef0c5d0ccd6e031efe3517188c692af\output\AndroidManifest.xml:30:9-31:52
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.0.0] C:\Users\Ruvimbo\.android\build-cache\30747ddd6ef0c5d0ccd6e031efe3517188c692af\output\AndroidManifest.xml:31:13-50
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.0.0] C:\Users\Ruvimbo\.android\build-cache\30747ddd6ef0c5d0ccd6e031efe3517188c692af\output\AndroidManifest.xml:30:19-91
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.android.gms:play-services-analytics:9.0.0] C:\Users\Ruvimbo\.android\build-cache\12b57f4a3e9607f6532a97da77cfb87ee9852501\output\AndroidManifest.xml:25:5-67
+MERGED from [com.google.android.gms:play-services-analytics-impl:9.0.0] C:\Users\Ruvimbo\.android\build-cache\7ae8504c32a487e4b99d0ea04299666597b5b6ad\output\AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-analytics:9.0.0] C:\Users\Ruvimbo\.android\build-cache\60c552ce7e50028337a7b1e183b187569edacd20\output\AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:9.0.0] C:\Users\Ruvimbo\.android\build-cache\708aa1df20cb9b89700d157dfa0050a541bdf0c3\output\AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-iid:9.0.0] C:\Users\Ruvimbo\.android\build-cache\27b91e8075816fdd6e0ed5daf1b8d72c98f3c400\output\AndroidManifest.xml:22:5-68
+	android:name
+		ADDED from [com.google.android.gms:play-services-analytics:9.0.0] C:\Users\Ruvimbo\.android\build-cache\12b57f4a3e9607f6532a97da77cfb87ee9852501\output\AndroidManifest.xml:25:22-65
+activity#com.google.android.gms.appinvite.PreviewActivity
+ADDED from [com.google.android.gms:play-services-appinvite:9.0.0] C:\Users\Ruvimbo\.android\build-cache\a92bacdd835391304cde351e6f2c244b6e71f053\output\AndroidManifest.xml:21:9-29:20
+	android:exported
+		ADDED from [com.google.android.gms:play-services-appinvite:9.0.0] C:\Users\Ruvimbo\.android\build-cache\a92bacdd835391304cde351e6f2c244b6e71f053\output\AndroidManifest.xml:23:17-40
+	android:theme
+		ADDED from [com.google.android.gms:play-services-appinvite:9.0.0] C:\Users\Ruvimbo\.android\build-cache\a92bacdd835391304cde351e6f2c244b6e71f053\output\AndroidManifest.xml:24:17-63
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:9.0.0] C:\Users\Ruvimbo\.android\build-cache\a92bacdd835391304cde351e6f2c244b6e71f053\output\AndroidManifest.xml:22:17-48
+intent-filter#android.intent.category.DEFAULT+com.google.android.gms.appinvite.ACTION_PREVIEW
+ADDED from [com.google.android.gms:play-services-appinvite:9.0.0] C:\Users\Ruvimbo\.android\build-cache\a92bacdd835391304cde351e6f2c244b6e71f053\output\AndroidManifest.xml:25:13-28:29
+action#com.google.android.gms.appinvite.ACTION_PREVIEW
+ADDED from [com.google.android.gms:play-services-appinvite:9.0.0] C:\Users\Ruvimbo\.android\build-cache\a92bacdd835391304cde351e6f2c244b6e71f053\output\AndroidManifest.xml:26:17-89
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:9.0.0] C:\Users\Ruvimbo\.android\build-cache\a92bacdd835391304cde351e6f2c244b6e71f053\output\AndroidManifest.xml:26:25-87
+category#android.intent.category.DEFAULT
+ADDED from [com.google.android.gms:play-services-appinvite:9.0.0] C:\Users\Ruvimbo\.android\build-cache\a92bacdd835391304cde351e6f2c244b6e71f053\output\AndroidManifest.xml:27:17-75
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:9.0.0] C:\Users\Ruvimbo\.android\build-cache\a92bacdd835391304cde351e6f2c244b6e71f053\output\AndroidManifest.xml:27:27-73
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:9.0.0] C:\Users\Ruvimbo\.android\build-cache\11853b040e0c60789803565e95ab67b2ee1cc48f\output\AndroidManifest.xml:21:9-24:46
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:9.0.0] C:\Users\Ruvimbo\.android\build-cache\11853b040e0c60789803565e95ab67b2ee1cc48f\output\AndroidManifest.xml:23:19-52
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:9.0.0] C:\Users\Ruvimbo\.android\build-cache\11853b040e0c60789803565e95ab67b2ee1cc48f\output\AndroidManifest.xml:24:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:9.0.0] C:\Users\Ruvimbo\.android\build-cache\11853b040e0c60789803565e95ab67b2ee1cc48f\output\AndroidManifest.xml:22:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:9.0.0] C:\Users\Ruvimbo\.android\build-cache\11853b040e0c60789803565e95ab67b2ee1cc48f\output\AndroidManifest.xml:21:19-68
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:9.0.0] C:\Users\Ruvimbo\.android\build-cache\11853b040e0c60789803565e95ab67b2ee1cc48f\output\AndroidManifest.xml:28:9-31:110
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:9.0.0] C:\Users\Ruvimbo\.android\build-cache\11853b040e0c60789803565e95ab67b2ee1cc48f\output\AndroidManifest.xml:30:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:9.0.0] C:\Users\Ruvimbo\.android\build-cache\11853b040e0c60789803565e95ab67b2ee1cc48f\output\AndroidManifest.xml:31:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:9.0.0] C:\Users\Ruvimbo\.android\build-cache\11853b040e0c60789803565e95ab67b2ee1cc48f\output\AndroidManifest.xml:29:13-58
+service#com.google.firebase.crash.internal.service.FirebaseCrashReceiverService
+ADDED from [com.google.firebase:firebase-crash:9.0.0] C:\Users\Ruvimbo\.android\build-cache\89d90b128a9b1ed63d07b52484bad8007a88ff37\output\AndroidManifest.xml:26:9-27:50
+	android:process
+		ADDED from [com.google.firebase:firebase-crash:9.0.0] C:\Users\Ruvimbo\.android\build-cache\89d90b128a9b1ed63d07b52484bad8007a88ff37\output\AndroidManifest.xml:27:13-48
+	android:name
+		ADDED from [com.google.firebase:firebase-crash:9.0.0] C:\Users\Ruvimbo\.android\build-cache\89d90b128a9b1ed63d07b52484bad8007a88ff37\output\AndroidManifest.xml:26:18-79
+service#com.google.firebase.crash.internal.service.FirebaseCrashSenderService
+ADDED from [com.google.firebase:firebase-crash:9.0.0] C:\Users\Ruvimbo\.android\build-cache\89d90b128a9b1ed63d07b52484bad8007a88ff37\output\AndroidManifest.xml:29:9-30:50
+	android:process
+		ADDED from [com.google.firebase:firebase-crash:9.0.0] C:\Users\Ruvimbo\.android\build-cache\89d90b128a9b1ed63d07b52484bad8007a88ff37\output\AndroidManifest.xml:30:13-48
+	android:name
+		ADDED from [com.google.firebase:firebase-crash:9.0.0] C:\Users\Ruvimbo\.android\build-cache\89d90b128a9b1ed63d07b52484bad8007a88ff37\output\AndroidManifest.xml:29:18-77
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:9.0.0] C:\Users\Ruvimbo\.android\build-cache\bb6941a854ae06b0610680bec2c3250409fc9636\output\AndroidManifest.xml:24:9-30:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:9.0.0] C:\Users\Ruvimbo\.android\build-cache\bb6941a854ae06b0610680bec2c3250409fc9636\output\AndroidManifest.xml:26:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:9.0.0] C:\Users\Ruvimbo\.android\build-cache\bb6941a854ae06b0610680bec2c3250409fc9636\output\AndroidManifest.xml:25:13-82
+intent-filter#com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:9.0.0] C:\Users\Ruvimbo\.android\build-cache\bb6941a854ae06b0610680bec2c3250409fc9636\output\AndroidManifest.xml:27:13-29:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-messaging:9.0.0] C:\Users\Ruvimbo\.android\build-cache\bb6941a854ae06b0610680bec2c3250409fc9636\output\AndroidManifest.xml:27:28-51
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:9.0.0] C:\Users\Ruvimbo\.android\build-cache\bb6941a854ae06b0610680bec2c3250409fc9636\output\AndroidManifest.xml:28:17-78
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:9.0.0] C:\Users\Ruvimbo\.android\build-cache\bb6941a854ae06b0610680bec2c3250409fc9636\output\AndroidManifest.xml:28:25-75
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.android.gms:play-services-gcm:9.0.0] C:\Users\Ruvimbo\.android\build-cache\293c6df38eff686cd2fad0d131580d64a99d62be\output\AndroidManifest.xml:21:5-82
+MERGED from [com.google.android.gms:play-services-iid:9.0.0] C:\Users\Ruvimbo\.android\build-cache\7b40a86da6b4ee846848fe7ee8fca46387ce6e0f\output\AndroidManifest.xml:21:5-82
+MERGED from [com.google.firebase:firebase-iid:9.0.0] C:\Users\Ruvimbo\.android\build-cache\27b91e8075816fdd6e0ed5daf1b8d72c98f3c400\output\AndroidManifest.xml:23:5-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-gcm:9.0.0] C:\Users\Ruvimbo\.android\build-cache\293c6df38eff686cd2fad0d131580d64a99d62be\output\AndroidManifest.xml:21:22-79
+service#com.google.android.gms.tagmanager.TagManagerService
+ADDED from [com.google.android.gms:play-services-tagmanager-api:9.0.0] C:\Users\Ruvimbo\.android\build-cache\5e0c17d39eda889e837490d9fa2c0660ad6b0783\output\AndroidManifest.xml:25:9-27:42
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.0.0] C:\Users\Ruvimbo\.android\build-cache\5e0c17d39eda889e837490d9fa2c0660ad6b0783\output\AndroidManifest.xml:27:17-39
+	android:exported
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.0.0] C:\Users\Ruvimbo\.android\build-cache\5e0c17d39eda889e837490d9fa2c0660ad6b0783\output\AndroidManifest.xml:26:17-41
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.0.0] C:\Users\Ruvimbo\.android\build-cache\5e0c17d39eda889e837490d9fa2c0660ad6b0783\output\AndroidManifest.xml:25:18-84
+activity#com.google.android.gms.tagmanager.TagManagerPreviewActivity
+ADDED from [com.google.android.gms:play-services-tagmanager-api:9.0.0] C:\Users\Ruvimbo\.android\build-cache\5e0c17d39eda889e837490d9fa2c0660ad6b0783\output\AndroidManifest.xml:28:9-37:20
+	android:noHistory
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.0.0] C:\Users\Ruvimbo\.android\build-cache\5e0c17d39eda889e837490d9fa2c0660ad6b0783\output\AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.0.0] C:\Users\Ruvimbo\.android\build-cache\5e0c17d39eda889e837490d9fa2c0660ad6b0783\output\AndroidManifest.xml:29:13-87
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from [com.google.android.gms:play-services-tagmanager-api:9.0.0] C:\Users\Ruvimbo\.android\build-cache\5e0c17d39eda889e837490d9fa2c0660ad6b0783\output\AndroidManifest.xml:31:13-36:29
+data
+ADDED from [com.google.android.gms:play-services-tagmanager-api:9.0.0] C:\Users\Ruvimbo\.android\build-cache\5e0c17d39eda889e837490d9fa2c0660ad6b0783\output\AndroidManifest.xml:32:17-72
+	android:scheme
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.0.0] C:\Users\Ruvimbo\.android\build-cache\5e0c17d39eda889e837490d9fa2c0660ad6b0783\output\AndroidManifest.xml:32:23-69
+action#android.intent.action.VIEW
+ADDED from [com.google.android.gms:play-services-tagmanager-api:9.0.0] C:\Users\Ruvimbo\.android\build-cache\5e0c17d39eda889e837490d9fa2c0660ad6b0783\output\AndroidManifest.xml:33:17-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.0.0] C:\Users\Ruvimbo\.android\build-cache\5e0c17d39eda889e837490d9fa2c0660ad6b0783\output\AndroidManifest.xml:33:25-66
+category#android.intent.category.BROWSABLE
+ADDED from [com.google.android.gms:play-services-tagmanager-api:9.0.0] C:\Users\Ruvimbo\.android\build-cache\5e0c17d39eda889e837490d9fa2c0660ad6b0783\output\AndroidManifest.xml:35:17-77
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.0.0] C:\Users\Ruvimbo\.android\build-cache\5e0c17d39eda889e837490d9fa2c0660ad6b0783\output\AndroidManifest.xml:35:27-75
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:9.0.0] C:\Users\Ruvimbo\.android\build-cache\3ea8b042a63ed69360050922e49d9ba0d4fbe8a1\output\AndroidManifest.xml:22:5-24:33
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:9.0.0] C:\Users\Ruvimbo\.android\build-cache\3ea8b042a63ed69360050922e49d9ba0d4fbe8a1\output\AndroidManifest.xml:23:8-40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:9.0.0] C:\Users\Ruvimbo\.android\build-cache\3ea8b042a63ed69360050922e49d9ba0d4fbe8a1\output\AndroidManifest.xml:24:8-31
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\src\main\AndroidManifest.xml:2:1-190:12 reason: com.daimajia.slider.library requested WRITE_EXTERNAL_STORAGE
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:9.0.0] C:\Users\Ruvimbo\.android\build-cache\60c552ce7e50028337a7b1e183b187569edacd20\output\AndroidManifest.xml:28:7-34:18
+MERGED from [com.google.firebase:firebase-analytics-impl:9.0.0] C:\Users\Ruvimbo\.android\build-cache\708aa1df20cb9b89700d157dfa0050a541bdf0c3\output\AndroidManifest.xml:28:7-34:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:9.0.0] C:\Users\Ruvimbo\.android\build-cache\60c552ce7e50028337a7b1e183b187569edacd20\output\AndroidManifest.xml:30:11-33
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:9.0.0] C:\Users\Ruvimbo\.android\build-cache\60c552ce7e50028337a7b1e183b187569edacd20\output\AndroidManifest.xml:29:11-83
+intent-filter#com.google.android.gms.measurement.UPLOAD
+ADDED from [com.google.firebase:firebase-analytics:9.0.0] C:\Users\Ruvimbo\.android\build-cache\60c552ce7e50028337a7b1e183b187569edacd20\output\AndroidManifest.xml:31:9-33:25
+action#com.google.android.gms.measurement.UPLOAD
+ADDED from [com.google.firebase:firebase-analytics:9.0.0] C:\Users\Ruvimbo\.android\build-cache\60c552ce7e50028337a7b1e183b187569edacd20\output\AndroidManifest.xml:32:11-77
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:9.0.0] C:\Users\Ruvimbo\.android\build-cache\60c552ce7e50028337a7b1e183b187569edacd20\output\AndroidManifest.xml:32:19-75
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:9.0.0] C:\Users\Ruvimbo\.android\build-cache\60c552ce7e50028337a7b1e183b187569edacd20\output\AndroidManifest.xml:36:7-39:37
+MERGED from [com.google.firebase:firebase-analytics-impl:9.0.0] C:\Users\Ruvimbo\.android\build-cache\708aa1df20cb9b89700d157dfa0050a541bdf0c3\output\AndroidManifest.xml:36:7-39:37
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:9.0.0] C:\Users\Ruvimbo\.android\build-cache\60c552ce7e50028337a7b1e183b187569edacd20\output\AndroidManifest.xml:38:11-33
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:9.0.0] C:\Users\Ruvimbo\.android\build-cache\60c552ce7e50028337a7b1e183b187569edacd20\output\AndroidManifest.xml:39:11-35
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:9.0.0] C:\Users\Ruvimbo\.android\build-cache\60c552ce7e50028337a7b1e183b187569edacd20\output\AndroidManifest.xml:37:11-82
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:9.0.0] C:\Users\Ruvimbo\.android\build-cache\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\output\AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:9.0.0] C:\Users\Ruvimbo\.android\build-cache\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\output\AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:9.0.0] C:\Users\Ruvimbo\.android\build-cache\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\output\AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:9.0.0] C:\Users\Ruvimbo\.android\build-cache\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\output\AndroidManifest.xml:20:19-85
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:9.0.0] C:\Users\Ruvimbo\.android\build-cache\27b91e8075816fdd6e0ed5daf1b8d72c98f3c400\output\AndroidManifest.xml:25:5-26:47
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:9.0.0] C:\Users\Ruvimbo\.android\build-cache\27b91e8075816fdd6e0ed5daf1b8d72c98f3c400\output\AndroidManifest.xml:26:9-44
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.0.0] C:\Users\Ruvimbo\.android\build-cache\27b91e8075816fdd6e0ed5daf1b8d72c98f3c400\output\AndroidManifest.xml:25:17-71
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:9.0.0] C:\Users\Ruvimbo\.android\build-cache\27b91e8075816fdd6e0ed5daf1b8d72c98f3c400\output\AndroidManifest.xml:28:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.0.0] C:\Users\Ruvimbo\.android\build-cache\27b91e8075816fdd6e0ed5daf1b8d72c98f3c400\output\AndroidManifest.xml:28:22-76
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:9.0.0] C:\Users\Ruvimbo\.android\build-cache\27b91e8075816fdd6e0ed5daf1b8d72c98f3c400\output\AndroidManifest.xml:32:9-41:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:9.0.0] C:\Users\Ruvimbo\.android\build-cache\27b91e8075816fdd6e0ed5daf1b8d72c98f3c400\output\AndroidManifest.xml:34:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:9.0.0] C:\Users\Ruvimbo\.android\build-cache\27b91e8075816fdd6e0ed5daf1b8d72c98f3c400\output\AndroidManifest.xml:35:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.0.0] C:\Users\Ruvimbo\.android\build-cache\27b91e8075816fdd6e0ed5daf1b8d72c98f3c400\output\AndroidManifest.xml:33:13-78
+intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION
+ADDED from [com.google.firebase:firebase-iid:9.0.0] C:\Users\Ruvimbo\.android\build-cache\27b91e8075816fdd6e0ed5daf1b8d72c98f3c400\output\AndroidManifest.xml:36:13-40:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:9.0.0] C:\Users\Ruvimbo\.android\build-cache\27b91e8075816fdd6e0ed5daf1b8d72c98f3c400\output\AndroidManifest.xml:37:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.0.0] C:\Users\Ruvimbo\.android\build-cache\27b91e8075816fdd6e0ed5daf1b8d72c98f3c400\output\AndroidManifest.xml:37:25-78
+action#com.google.android.c2dm.intent.REGISTRATION
+ADDED from [com.google.firebase:firebase-iid:9.0.0] C:\Users\Ruvimbo\.android\build-cache\27b91e8075816fdd6e0ed5daf1b8d72c98f3c400\output\AndroidManifest.xml:38:17-86
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.0.0] C:\Users\Ruvimbo\.android\build-cache\27b91e8075816fdd6e0ed5daf1b8d72c98f3c400\output\AndroidManifest.xml:38:25-83
+category#${applicationId}
+ADDED from [com.google.firebase:firebase-iid:9.0.0] C:\Users\Ruvimbo\.android\build-cache\27b91e8075816fdd6e0ed5daf1b8d72c98f3c400\output\AndroidManifest.xml:39:17-61
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.0.0] C:\Users\Ruvimbo\.android\build-cache\27b91e8075816fdd6e0ed5daf1b8d72c98f3c400\output\AndroidManifest.xml:39:27-58
+receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
+ADDED from [com.google.firebase:firebase-iid:9.0.0] C:\Users\Ruvimbo\.android\build-cache\27b91e8075816fdd6e0ed5daf1b8d72c98f3c400\output\AndroidManifest.xml:45:9-47:40
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:9.0.0] C:\Users\Ruvimbo\.android\build-cache\27b91e8075816fdd6e0ed5daf1b8d72c98f3c400\output\AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.0.0] C:\Users\Ruvimbo\.android\build-cache\27b91e8075816fdd6e0ed5daf1b8d72c98f3c400\output\AndroidManifest.xml:46:13-86
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:9.0.0] C:\Users\Ruvimbo\.android\build-cache\27b91e8075816fdd6e0ed5daf1b8d72c98f3c400\output\AndroidManifest.xml:51:9-57:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:9.0.0] C:\Users\Ruvimbo\.android\build-cache\27b91e8075816fdd6e0ed5daf1b8d72c98f3c400\output\AndroidManifest.xml:53:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.0.0] C:\Users\Ruvimbo\.android\build-cache\27b91e8075816fdd6e0ed5daf1b8d72c98f3c400\output\AndroidManifest.xml:52:13-77
+intent-filter#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:9.0.0] C:\Users\Ruvimbo\.android\build-cache\27b91e8075816fdd6e0ed5daf1b8d72c98f3c400\output\AndroidManifest.xml:54:13-56:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:9.0.0] C:\Users\Ruvimbo\.android\build-cache\27b91e8075816fdd6e0ed5daf1b8d72c98f3c400\output\AndroidManifest.xml:54:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:9.0.0] C:\Users\Ruvimbo\.android\build-cache\27b91e8075816fdd6e0ed5daf1b8d72c98f3c400\output\AndroidManifest.xml:55:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.0.0] C:\Users\Ruvimbo\.android\build-cache\27b91e8075816fdd6e0ed5daf1b8d72c98f3c400\output\AndroidManifest.xml:55:25-77
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:9.0.0] C:\Users\Ruvimbo\.android\build-cache\85646b8b25c451547d07a6f2664814963ad6cc64\output\AndroidManifest.xml:7:9-11:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:9.0.0] C:\Users\Ruvimbo\.android\build-cache\85646b8b25c451547d07a6f2664814963ad6cc64\output\AndroidManifest.xml:8:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:9.0.0] C:\Users\Ruvimbo\.android\build-cache\85646b8b25c451547d07a6f2664814963ad6cc64\output\AndroidManifest.xml:10:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:9.0.0] C:\Users\Ruvimbo\.android\build-cache\85646b8b25c451547d07a6f2664814963ad6cc64\output\AndroidManifest.xml:11:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:9.0.0] C:\Users\Ruvimbo\.android\build-cache\85646b8b25c451547d07a6f2664814963ad6cc64\output\AndroidManifest.xml:9:13-58

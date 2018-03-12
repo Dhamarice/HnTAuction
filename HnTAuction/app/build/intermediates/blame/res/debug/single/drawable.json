@@ -1,0 +1,642 @@
+[
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\yt.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\yt.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tw.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\tw.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cart02selected.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\cart02selected.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_empty.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\ic_empty.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\faq.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\faq.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tnc.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\tnc.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\store.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\store.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_launcher_59.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\ic_launcher_59.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\side_nav_bar.xml",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\side_nav_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cart02.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\cart02.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\paynow.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\paynow.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\telecash.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\telecash.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\categories.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\categories.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\wishlist.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\wishlist.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\default_rounded_purple.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\default_rounded_purple.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\contact.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\contact.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ecocash.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\ecocash.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\virtual.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\virtual.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\fb.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\fb.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\d1.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\d1.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_search_white.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\ic_search_white.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\d1.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\d1.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\txt_bckgrnd.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\txt_bckgrnd.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\a61c9e2d7d85707856c7fdfb5974c0ac71141b61\\output\\res\\drawable\\design_snackbar_background.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\fb.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\fb.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\paymentgateways.PNG",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\paymentgateways.PNG"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\homeselected.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\homeselected.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\faq.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\faq.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\profile.jpg",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\profile.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cart.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\cart.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_empty.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\ic_empty.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\paymentgateways.PNG",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\paymentgateways.PNG"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_stub.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\ic_stub.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\telecash.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\telecash.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_light.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_dialog_material_background_light.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_addtocart.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\btn_addtocart.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tnc.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\tnc.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\default_rounded.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\default_rounded.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\border.xml",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\border.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_stub.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\ic_stub.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\productbanner.jpg",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\productbanner.jpg"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\paynow.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\paynow.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_launcher_59.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\ic_launcher_59.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\border.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\border.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\profileselected.jpg",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\profileselected.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\abc.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\onspecial.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\onspecial.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cart02.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\cart02.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\home.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\home.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\default_rounded_purple.xml",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\default_rounded_purple.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\yt.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\yt.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\roundcorner.xml",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\roundcorner.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_ratingbar_full_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\profile.jpg",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\profile.jpg"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\categoryselected.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\categoryselected.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\progress_animation.xml",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\progress_animation.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\product.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\product.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\progress_animation.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\progress_animation.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\home.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\home.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\profileselected.jpg",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\profileselected.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_search_white.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\ic_search_white.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_error.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\ic_error.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_shopping_cart_white.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\ic_shopping_cart_white.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\logo.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\abc.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\account.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\account.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\searchselected.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\searchselected.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\txt_bckgrnd.xml",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\txt_bckgrnd.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.2.1\\res\\drawable\\design_fab_background.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_dialog_material_background_dark.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_light.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_dialog_material_background_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_dialog_material_background_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\default_rounded.xml",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\default_rounded.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tw.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\tw.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\indicator_corner_bg.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.daimajia.slider\\library\\1.1.5\\res\\drawable\\indicator_corner_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\categoryselected.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\categoryselected.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\about.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\about.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cart.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\cart.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\category.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\category.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\search1.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\search1.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\productbanner.jpg",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\productbanner.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\virtual.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\virtual.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\searchselected.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\searchselected.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_shopping_cart_white.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\ic_shopping_cart_white.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_error.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\ic_error.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\search1.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\search1.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\roundcorner.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\roundcorner.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\search.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\search.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\side_nav_bar.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\side_nav_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_addtocart.xml",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\btn_addtocart.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\splash.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\a61c9e2d7d85707856c7fdfb5974c0ac71141b61\\output\\res\\drawable\\design_fab_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\indicator_corner_bg.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\1720dffacc51299f36e61bf26181a80fd81299c5\\output\\res\\drawable\\indicator_corner_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\in.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\in.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ecocash.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\ecocash.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\about.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\about.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\product.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\product.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\history.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\history.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_ratingbar_full_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\logo.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\search.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\search.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\wishlist.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\wishlist.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\homeselected.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\homeselected.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\onspecial.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\onspecial.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cart02selected.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\cart02selected.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.2.1\\res\\drawable\\design_snackbar_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\history.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\history.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\in.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\in.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\category.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\category.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\store.png",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\drawable\\store.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\categories.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\categories.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\splash.xml",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\contact.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\contact.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\account.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTonline\\app\\src\\main\\res\\drawable\\account.png"
+    }
+]

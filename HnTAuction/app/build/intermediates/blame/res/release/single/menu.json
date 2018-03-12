@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\menu\\activity_main_drawer.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\menu\\activity_main_drawer.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\menu\\main.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\HnTonline\\app\\build\\intermediates\\res\\merged\\release\\menu\\menu_main.xml",
+        "source": "F:\\MobileApp\\HnTonline\\app\\src\\main\\res\\menu\\menu_main.xml"
+    }
+]
