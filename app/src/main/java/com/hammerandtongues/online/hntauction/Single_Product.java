@@ -30,6 +30,13 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.DefaultRetryPolicy;
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.squareup.picasso.Picasso;
 
@@ -43,6 +50,7 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -54,9 +62,12 @@ public class Single_Product extends AppCompatActivity  {
 
 
     public static final String MyPREFERENCES = "MyPrefs";
+    SharedPreferences shared;
 
-    private TextView prodName, productDesc, prodPrice, prodBidInc;
-    private static final String TAG = "CART Actions";
+
+
+    private TextView prodName, productDesc, prodPrice, prodBidInc, highest_bid;
+    private static final String TAG = "Single Product";
     // Progress Dialog
     private ProgressDialog pDialog;
     int limit, offset;
@@ -67,24 +78,28 @@ public class Single_Product extends AppCompatActivity  {
 
     private static final String GETPRODUCT_URL = "https://devshop.hammerandtongues.com/webservice/getsingleproduct.php";
     private static final String GETPRODUCT_VARIATION = "https://devshop.hammerandtongues.com/webservice/getproductvariation.php";
+    private static final String BIDS_URL = "http://10.0.2.2:8012/auctionwebservice/highest_bids.php";
+    private static final String PLACE_BIDS_URL = "http://10.0.2.2:8012/auctionwebservice/place_bid.php";
+
 
     //JSON element ids from repsonse of php script:
     private static final String TAG_SUCCESS = "success";
     private static final String TAG_MESSAGE = "message";
     private static final String TAG_PRODUCTDETAILS = "posts";
 
-    String productID, name, price, post_id, qnty, desc, seller, location, auction_name, min_bid_inc, imgurl = "";
+    String productID, userID, name, price, post_id, qnty, desc, seller, location, auction_name, min_bid_inc, imgurl = "";
     Single_Product product = null;
     ImageView banner;
     TextView inStock, Location, Aucname, ProductID,Qnty ;
     EditText txtquantity;
-    int cartid, currcart, priceint, minbidint;
+    int cartid, currcart, priceint, minbidint, maxbid;
     LinearLayout layout, produtc;
     TextView noresult;
     private int cnt_cart;
-    String bidinfo, Bidamount;
+    String bidinfo, Bidamount, high_bid;
     private TextView txtcartitems;
     SharedPreferences sharedpreferences;
+    DatabaseHelper dbHandler;
 
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -102,10 +117,23 @@ public class Single_Product extends AppCompatActivity  {
                 SharedPreferences shared = getSharedPreferences(MyPREFERENCES, MODE_PRIVATE);
                 noresult = (TextView) findViewById(R.id.noresult);
                 productID = (shared.getString("idKey", ""));
+                userID = shared.getString("userid", "");
                 produtc = (LinearLayout) findViewById(R.id.product);
                 GET_TYPE = "description";
+
+
+                //shared.edit().remove("bid_amount").apply();
+
+                SharedPreferences.Editor editor = shared.edit();
+                editor.remove("from_product");
+                editor.apply();
+
+                dbHandler = new DatabaseHelper(this);
+
                 new GetConnectionStatus().execute();
                 //getOneProduct();
+
+                get_bids(productID);
 
                 //if (haveNetworkConnection() == true && isNetworkAvailable() == true) {
                 getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
@@ -113,6 +141,7 @@ public class Single_Product extends AppCompatActivity  {
                 prodName = (TextView) findViewById(R.id.prdctname);
                 prodBidInc = (TextView) findViewById(R.id.prdctbidinc);
                 prodPrice = (TextView) findViewById(R.id.prdctprice);
+                highest_bid = (TextView) findViewById(R.id.highestbid);
                 banner = (ImageView) findViewById(R.id.product_banner);
                 inStock = (TextView) findViewById(R.id.instock);
                 ProductID = (TextView) findViewById(R.id.prdctid);
@@ -357,51 +386,11 @@ public class Single_Product extends AppCompatActivity  {
 
         int seller = Integer.parseInt(sharedpreferences.getString("seller", ""));
 
-        Log.e("Notifications", "Picking up variables for saving" + String.valueOf((qty)) + " <= Quantity; " + String.valueOf(cartid) + "<=This is the current cart ID");
-/*
-        CartManagement ctm = new CartManagement(cartid, name, qty, id, imgurl, subtot, itmprice, seller);
-        Log.d("Notifications", "Saving the product to cart with a cart id");
-        db.addCartItem(ctm);
-        Log.d("Notifications", "Finished saving an item");
-        Locale locale = new Locale("en", "US");
-        NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance(locale);
 
-        CartManagement crtItms = db.getCartItemsCount(cartid);
-
-        if (crtItms != null) {
-
-
-            Snackbar snackbar = Snackbar
-                    .make(produtc, name + "Added to Cart with : " + String.valueOf((crtItms.get_Cart_Items_Count())) + " items Total amount so far: " + currencyFormatter.format(Double.parseDouble(String.valueOf(crtItms.get_Cart_Items_Value()))), Snackbar.LENGTH_LONG);
-
-            snackbar.setActionTextColor(Color.YELLOW);
-            snackbar.show();
-
-*/
-
-
-
-
-            //Toast.makeText(this, "Product Added to Cart with : " + String.valueOf((crtItms.get_Cart_Items_Count())) + " items Total amount so far: " + currencyFormatter.format(Double.parseDouble(String.valueOf(crtItms.get_Cart_Items_Value()))), Toast.LENGTH_LONG).show();
-            //idCartItems.setText("Items in cart: " + String.valueOf((crtItms.get_Cart_Items_Count())));
-
-            //DatabaseHelper db = new DatabaseHelper(this);
-            //CartManagement crtItms = db.getCartItemsCount(1);
-            //cnt_cart = (crtItms.get_Cart_Items_Count());
-
-            //cnt_cart = cnt_cart + 1;
-
-            //SharedPreferences shared = getSharedPreferences(MyPREFERENCES, MODE_PRIVATE);
-            //SharedPreferences.Editor editor = shared.edit();
-            //editor.putString("CartNO", String.valueOf(cnt_cart));
-            //editor.commit();
-            //editor.apply();
 
         }
 
 
-
-    //}
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -615,6 +604,164 @@ public class Single_Product extends AppCompatActivity  {
 
 
 
+
+
+
+    private void get_bids(final String Pid){
+        com.android.volley.RequestQueue requestQueue= Volley.newRequestQueue(getBaseContext());
+        pDialog.show();
+        StringRequest stringRequest=new StringRequest(Request.Method.POST, BIDS_URL, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String s) {
+                pDialog.dismiss();
+
+                Log.e("Success",""+s);
+                Log.e("Zitapass", "" + Pid);
+
+
+                try {
+                    JSONObject jsonobject=new JSONObject(s);
+                    String message=jsonobject.getString("message");
+                    int success=jsonobject.getInt("success");
+
+                    if(success==1){
+
+                        String bid=jsonobject.getString("bid");
+
+                        shared = getSharedPreferences(MyPREFERENCES, MODE_PRIVATE);
+
+                        SharedPreferences.Editor editor = shared.edit();
+                        editor.putString("bid_amount", bid);
+
+                        editor.commit();
+                        editor.apply();
+
+                        Log.e(TAG, "Bid amount: " + bid);
+
+
+                    }else{
+
+                    }
+
+
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError volleyError) {
+                pDialog.dismiss();
+                volleyError.printStackTrace();
+                Log.e("RUEERROR",""+volleyError);
+                Toast.makeText(getBaseContext(), "Please check your Intenet and try again!", Toast.LENGTH_LONG).show();
+            }
+        }){
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String,String> values=new HashMap();
+                values.put("productid",Pid);
+
+
+                return values;
+            }
+
+
+        };
+
+        stringRequest.setRetryPolicy(new DefaultRetryPolicy(100000,0,DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+        requestQueue.add(stringRequest);
+
+
+
+    }
+
+
+
+
+    private void place_bid(final String Product_id, final String User_id, final String Bid_amount){
+        com.android.volley.RequestQueue requestQueue= Volley.newRequestQueue(getBaseContext());
+        pDialog.show();
+        StringRequest stringRequest=new StringRequest(Request.Method.POST, PLACE_BIDS_URL, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String s) {
+                pDialog.dismiss();
+
+                Log.e("Success",""+s);
+                Log.e("Zitapass", "" + Bid_amount);
+
+                try {
+                    JSONObject jsonobject=new JSONObject(s);
+                    String message=jsonobject.getString("message");
+                    int success=jsonobject.getInt("success");
+
+                    if(success==1){
+
+
+                        dbHandler.fill_bids(User_id, Bid_amount, Product_id);
+
+                        Toast.makeText(getBaseContext(), (message), Toast.LENGTH_SHORT).show();
+
+
+                        new AlertDialog.Builder(Single_Product.this)
+                                .setTitle("Info")
+                                .setPositiveButton("Ok", null)
+
+                                .setNegativeButton("", null)
+                                .setMessage(Html.fromHtml(message))
+                                .show();
+
+
+                    }else{
+
+                        Toast.makeText(getBaseContext(), (message), Toast.LENGTH_SHORT).show();
+                    }
+
+
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError volleyError) {
+                pDialog.dismiss();
+                volleyError.printStackTrace();
+                Log.e("RUEERROR",""+volleyError);
+                Toast.makeText(getBaseContext(), "Please check your Intenet and try again!", Toast.LENGTH_LONG).show();
+            }
+        }){
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String,String> values=new HashMap();
+                values.put("productid",Product_id);
+                values.put("user_id",User_id);
+                values.put("bid_amount",Bid_amount);
+
+
+                return values;
+            }
+
+
+        };
+
+        stringRequest.setRetryPolicy(new DefaultRetryPolicy(100000,0,DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+        requestQueue.add(stringRequest);
+
+
+
+    }
+
+
+
+
+
+
+
     class GetConnectionStatus extends AsyncTask<String, Void, Boolean> {
 
         protected void onPreExecute() {
@@ -678,7 +825,7 @@ public class Single_Product extends AppCompatActivity  {
         //      pDialog.setIndeterminate(false);
         //    pDialog.setCancelable(true);
         //pDialog.show();
-        SharedPreferences shared = getSharedPreferences(MyPREFERENCES, MODE_PRIVATE);
+       final SharedPreferences shared = getSharedPreferences(MyPREFERENCES, MODE_PRIVATE);
 
         sharedpreferences = getSharedPreferences(MyPREFERENCES, MODE_PRIVATE);
 
@@ -687,13 +834,13 @@ public class Single_Product extends AppCompatActivity  {
         editor.commit();
         editor.apply();
 
-        String pid = productID;
+        final String pid = productID;
         limit = 15;
         offset = 0;
         try {
 
             Log.e("Cursor items","statrted calling database" );
-            DatabaseHelper dbHandler = new DatabaseHelper(getBaseContext());
+
             //productID = (shared.getString("idKey", ""));
             int pID = Integer.parseInt(pid);
             dbHandler.getProduct(pID);
@@ -714,6 +861,7 @@ public class Single_Product extends AppCompatActivity  {
                 auction_name = cursor.getString(24);
                 location = cursor.getString(26);
                 min_bid_inc = cursor.getString(25);
+                high_bid = shared.getString("bid_amount", "");
 
 
                 //LinearLayout prdctinfo = new LinearLayout(this);
@@ -736,16 +884,35 @@ public class Single_Product extends AppCompatActivity  {
                 //ViewGroup.LayoutParams imglayoutParams = imgstore.getLayoutParams();
 
                 pDialog.dismiss();
-                Log.e("Setting Banner", imgurl);
+
+                Log.e("BID AMOUNT IS: ", shared.getString("bid_amount", ""));
                 // LinearLayout.LayoutParams layout = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
 
 
                 SetBanner(imgurl);
                 prodName.setText(name);
-                prodBidInc.setText("Minimum increament: $"+ min_bid_inc);
+                prodBidInc.setText("Minimum increment: $"+ min_bid_inc);
                 prodPrice.setText("Starting Price:  US $" + price);
                 prodPrice.setTextColor(getResources().getColor(R.color.colorAmber));
                 prodPrice.setTypeface(null, Typeface.BOLD);
+
+                if (shared.getString("bid_amount", "") != null && shared.getString("bid_amount", "") !="" && shared.getString("bid_amount", "") !="null" && !(shared.getString("bid_amount", "").contentEquals("null")) && !(shared.getString("bid_amount", "").contentEquals(""))) {
+                    highest_bid.setText("Highest bid:  $" + high_bid);
+                    highest_bid.setTextColor(getResources().getColor(R.color.colorAmber));
+                    highest_bid.setTypeface(null, Typeface.BOLD);
+
+                }
+
+
+                else {
+
+                    highest_bid.setText("No bids have been placed yet!");
+                    highest_bid.setTextColor(getResources().getColor(R.color.colorAmber));
+                    highest_bid.setTypeface(null, Typeface.BOLD);
+
+                }
+
+
                 //TextView inStock = new TextView(this);
                 inStock.setText(qnty);
 
@@ -799,7 +966,7 @@ priceint = Integer.parseInt(price);
         Qnty.setText(price);
 
 
-        Bidamount = txtquantity.getText().toString();
+        bidinfo = "Proceed with bid amount:    $" + txtquantity.getText().toString();
 
         Button add = (Button) findViewById(R.id.addQnty);
         add.setOnClickListener(new View.OnClickListener() {
@@ -816,6 +983,7 @@ priceint = Integer.parseInt(price);
                     txtquantity.setText(Integer.toString(CurrQnty));
 
                     Bidamount = txtquantity.getText().toString();
+
 
                     Log.e("Plus Button", "Bid amount" + txtquantity.getText().toString());
                 } catch (Exception e) {
@@ -844,6 +1012,8 @@ priceint = Integer.parseInt(price);
                     Qnty.setText(Integer.toString(CurrQnty));
                     Bidamount = txtquantity.getText().toString();
 
+                    bidinfo = "Proceed with bid amount:    $" + txtquantity.getText().toString();
+
                     Log.e("Minus Button", "Bid amount" + txtquantity.getText().toString());
 
 
@@ -855,38 +1025,113 @@ priceint = Integer.parseInt(price);
         });
 
 
+        //Bidamount = txtquantity.getText().toString();
 
 
-     bidinfo = "Proceed with bid amount:    $" + Bidamount;
+
+
 
                 Button addtocart = (Button) findViewById(R.id.addToCart);
         addtocart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View arg0) {
-                try {
-
+               // try {
+                bidinfo = "Proceed with bid amount:    $" + txtquantity.getText().toString();
                     {
-                        new AlertDialog.Builder(Single_Product.this)
-                                .setTitle("Confirm Bid")
-                                .setPositiveButton("Place Bid", new DialogInterface.OnClickListener() {
-                                    @Override
-                                    public void onClick(DialogInterface dialog, int which) {
 
-                                        addProduct(arg0);
-                                    }
-                                })
-                                .setNegativeButton("Cancel", null)
-                                .setMessage(Html.fromHtml(bidinfo))
-                                .show();
+
+                    if    (shared.getString("userid", "") != null && shared.getString("userid", "") !="" && shared.getString("userid", "") !="null" && !(shared.getString("userid", "").contentEquals("null")) && !(shared.getString("userid", "").contentEquals(""))) {
+
+                        int bid = Integer.parseInt(txtquantity.getText().toString());
+
+                        if (shared.getString("bid_amount", "") != null && shared.getString("bid_amount", "") !="" && shared.getString("bid_amount", "") !="null" && !(shared.getString("bid_amount", "").contentEquals("null")) && !(shared.getString("bid_amount", "").contentEquals("")))
+
+
+                        {
+                            maxbid = Integer.parseInt(high_bid);
+                        }
+
+                        else {
+                            maxbid = 0;
+                        }
+
+                            if (bid < priceint) {
+
+                                //Toast.makeText(Single_Product.this, ("Bid is less than starting price!"), Toast.LENGTH_SHORT).show();
+
+                                new AlertDialog.Builder(Single_Product.this)
+                                        .setTitle("Info")
+                                        .setPositiveButton("Ok", null)
+
+                                        .setNegativeButton("", null)
+                                        .setMessage(Html.fromHtml("Bid is less than starting price!"))
+                                        .show();
+
+                            } else if (bid < maxbid) {
+
+                                //Toast.makeText(Single_Product.this, ("Bid amount is less than or equal to current highest bid!"), Toast.LENGTH_SHORT).show();
+                                new AlertDialog.Builder(Single_Product.this)
+                                        .setTitle("Info")
+                                        .setPositiveButton("Ok", null)
+
+                                        .setNegativeButton("", null)
+                                        .setMessage(Html.fromHtml("Please place a bid that is more than the current highest bid!"))
+                                        .show();
+
+                            } else if (bid <= (maxbid + priceint)) {
+
+                                //Toast.makeText(Single_Product.this, ("Increment is less than minimum bid increment!"), Toast.LENGTH_SHORT).show();
+
+                                new AlertDialog.Builder(Single_Product.this)
+                                        .setTitle("Info")
+                                        .setPositiveButton("Ok", null)
+
+                                        .setNegativeButton("", null)
+                                        .setMessage(Html.fromHtml("Increment is less than minimum bid increment!"))
+                                        .show();
+
+                            } else {
+
+
+                                new AlertDialog.Builder(Single_Product.this)
+                                        .setTitle("Confirm Bid")
+                                        .setPositiveButton("Place Bid", new DialogInterface.OnClickListener() {
+                                            @Override
+                                            public void onClick(DialogInterface dialog, int which) {
+
+
+                                                place_bid(post_id, userID, txtquantity.getText().toString());
+                                            }
+                                        })
+                                        .setNegativeButton("Cancel", null)
+                                        .setMessage(Html.fromHtml(bidinfo))
+                                        .show();
+                            }
+
+                    }
+                    else {
+
+                        SharedPreferences.Editor editor = sharedpreferences.edit();
+                        editor.putString("from_product", "from_product");
+                        editor.commit();
+                        editor.apply();
+
+                        Intent intent = new Intent(getBaseContext(), Login.class);
+                        startActivity(intent);
+
+
                     }
 
-                }
-                catch(Exception ex){
-                    Log.e("Add To Cart Error", ex.toString());
-                }
+                    }
+
+               // }
+               // catch(Exception ex){
+                //    Log.e("Add To Cart Error", ex.toString());
+               // }
 
             }
         });
+
 
         Button backtoshop = (Button) findViewById(R.id.btn_product_back);
         backtoshop.setOnClickListener(new View.OnClickListener() {

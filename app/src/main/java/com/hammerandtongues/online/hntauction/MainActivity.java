@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity
     private int cnt_cart, currcart ;
     private TextView txtcartitems, end;
     private Button signup, signin;
-    private String post_id, name, startdate, closedate, splitmonthinwords, end_date,discount,deposit, minimun_increament, cdatevalue  ;
+    private String post_id, name, startdate, closedate, splitmonthinwords, ppost_id,discount,deposit, bid_date, cdatevalue, UserID, bid_amnt, pname, minimun_increament, end_date ;
     private int cartid, limit, offset;
     private ImageView imgstore[] = new ImageView[150];
 
@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity
     public String PName, monthinwords, dayinwords, dayofyeartext, dayofyearstored, timeofday, previoussec = "1";
     private  TextView noresult;
     private LinearLayout noAuction;
-    private TextView txtDay, txtHour, txtMinute, txtSecond;
+    private TextView txtDay, txtHour, txtMinute, txtSecond, txtmybid;
     private TextView tvEventStart;
     private Handler handler;
     private Runnable runnable;
@@ -133,6 +133,8 @@ public class MainActivity extends AppCompatActivity
                 currcart = 0;
             }
 
+        UserID = sharedpreferences.getString("userid", "");
+
 
             end = new TextView(this);
 
@@ -167,8 +169,11 @@ public class MainActivity extends AppCompatActivity
             shopbycateg = (Button) findViewById(R.id.btn_ShopByCateg);
             shopbycateg.setOnClickListener(this);
 
+        txtmybid = (TextView) findViewById(R.id.txtmybid);
 
-            //pDialog = new ProgressDialog(MainActivity.this);
+        getmybids();
+
+        //pDialog = new ProgressDialog(MainActivity.this);
             //dbHandler.setProgressBar(progress);
             //Store Slider
 
@@ -1149,6 +1154,77 @@ public class MainActivity extends AppCompatActivity
 //                Toast.makeText(getContext(), "Weak / No Network Connection", Toast.LENGTH_SHORT).show();
             }
         }
+    }
+
+
+
+
+    public void getmybids() {
+
+
+
+
+
+        if (dbHandler.getmybids(UserID)!= null) {
+            Cursor cursor = dbHandler.getmybids(UserID);
+            if (cursor != null && cursor.moveToFirst()) {
+
+                Log.e("Cursor Full", cursor.getColumnCount() + " Columns");
+                Log.e("Auctions", "Values" + DatabaseUtils.dumpCursorToString(cursor));
+
+                int cartitms[] = new int[cursor.getCount()];
+
+                for (int i = 0; i < cursor.getCount(); i++) {
+
+
+
+
+
+                    LinearLayout hzvw = new LinearLayout(this);
+                    LinearLayout.LayoutParams hzvwParams = new LinearLayout.LayoutParams(
+                            LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+
+                    hzvwParams.setMargins(12, 12, 12, 2);
+
+                    hzvw.setOrientation(LinearLayout.VERTICAL);
+                    hzvw.setBackgroundColor(getResources().getColor(R.color.colorLightness));
+
+
+                    pname = cursor.getString(8);
+                    ppost_id = cursor.getString(1);
+                    bid_date = cursor.getString(2);
+                    bid_amnt = cursor.getString(3);
+
+
+
+                    Log.e("DB Full", " Loading Views!");
+
+                    txtmybid.setTypeface(null, Typeface.BOLD);
+                    txtmybid.setText("Your bid for " + pname + " is curently the Highest!!!");
+
+
+
+                    cursor.moveToNext();
+                }
+
+
+
+                //noAuction.setVisibility(View.GONE);
+            }else {
+
+                txtmybid.setTypeface(null, Typeface.BOLD);
+                txtmybid.setText("You have not placed any bids!");
+            }
+
+
+        }else {
+
+
+
+            txtmybid.setTypeface(null, Typeface.BOLD);
+            txtmybid.setText("You have not placed any bids!");
+        }
+
     }
 
 

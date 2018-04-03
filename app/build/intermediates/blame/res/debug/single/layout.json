@@ -52,12 +52,12 @@
         "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\layout\\content_main.xml"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\layout\\abc_alert_dialog_material.xml"
-    },
-    {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\layout\\store.xml",
         "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\layout\\store.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\layout\\abc_alert_dialog_material.xml"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nav_header_main.xml",
@@ -96,12 +96,12 @@
         "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\layout\\abc_action_bar_title_item.xml"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\layout\\place_autocomplete_item_powered_by_google.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\a90769084dfd728c2f14b81e9abfb0f86e720098\\output\\res\\layout\\place_autocomplete_item_powered_by_google.xml"
-    },
-    {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
         "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\layout\\place_autocomplete_item_powered_by_google.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\a90769084dfd728c2f14b81e9abfb0f86e720098\\output\\res\\layout\\place_autocomplete_item_powered_by_google.xml"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
@@ -140,12 +140,12 @@
         "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\layout\\activity_promotions.xml"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
-    },
-    {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_home.xml",
         "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
@@ -160,16 +160,16 @@
         "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\layout\\abc_list_menu_item_layout.xml"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_media_route_controller_material_dialog_b.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\cb3406751825e6f5455612edb5233deafbcee39e\\output\\res\\layout\\mr_media_route_controller_material_dialog_b.xml"
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\a61c9e2d7d85707856c7fdfb5974c0ac71141b61\\output\\res\\layout\\design_navigation_item_subheader.xml"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
         "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\a61c9e2d7d85707856c7fdfb5974c0ac71141b61\\output\\res\\layout\\design_layout_snackbar_include.xml"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\a61c9e2d7d85707856c7fdfb5974c0ac71141b61\\output\\res\\layout\\design_navigation_item_subheader.xml"
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_media_route_controller_material_dialog_b.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\cb3406751825e6f5455612edb5233deafbcee39e\\output\\res\\layout\\mr_media_route_controller_material_dialog_b.xml"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\layout\\webview.xml",

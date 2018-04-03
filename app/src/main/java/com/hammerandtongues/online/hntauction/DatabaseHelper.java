@@ -165,7 +165,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(CREATE_TABLE_USER);
 
 
-        String CREATE_TABLE_BIDS = "CREATE TABLE `tbluser` (\n" +
+        String CREATE_TABLE_BIDS = "CREATE TABLE `tblbids` (\n" +
                 "\t`id`\tINTEGER,\n" +
                 "\t`post_id`\tINTEGER,\n" +
                 "\t`date_Created`\tDATETIME DEFAULT (CURRENT_TIMESTAMP),\n" +
@@ -215,18 +215,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
 
-    public void updatecart(String qtnty, String ProId){
-
-        String UPDATE_TABLE_CART = "UPDATE tbl_CartValues SET quantity =" + qtnty + " WHERE product_id =" + ProId;
-        SQLiteDatabase db = this.getWritableDatabase();
-        db.execSQL(UPDATE_TABLE_CART);
-
-    }
 
 
-    public Cursor getcartItems(int CartID) {
+    public Cursor getmybids(String UserId) {
         //String query = "Select * FROM " + TABLE_PRODUCTS + " WHERE " + COLUMN_STATUS + " =  \"" + statusid + "\"";
-        String mod_query = "select * from tbl_CartValues where cart_id=" + CartID;
+        String mod_query = "select b.*, p.name from tblbids b inner join tblauctioncontent p on b.product = p.post_id where b.post_id=" + UserId;
         SQLiteDatabase db = this.getWritableDatabase();
 
         Cursor cursor = db.rawQuery(mod_query, null);
@@ -337,10 +330,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
 
-    public void fillcart(){
-        String INSERT_TABLE_CART = "INSERT INTO tbl_Cart (id ,status) VALUES (16,0)";
+    public void fill_bids( String user_id, String bid_amount, String product_id){
+        String INSERT_TABLE_CART = "INSERT INTO tblbids (post_id ,bid_amount, product) VALUES ('" + user_id + "', '" + bid_amount + "', '" + product_id + "' )";
         SQLiteDatabase db = this.getWritableDatabase();
         db.execSQL(INSERT_TABLE_CART);
+
+        Log.e("Fill Bids query", INSERT_TABLE_CART);
     }
 
     public void fillfav(int ProductID){

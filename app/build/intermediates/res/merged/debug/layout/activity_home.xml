@@ -88,6 +88,7 @@
                 android:layout_alignRight="@id/myImageView"
                 android:layout_alignBottom="@id/myImageView"
                 android:background="#7ad7d7d7"
+                android:id="@+id/txtmybid"
                 android:gravity="center"
                 android:text="You have not placed any bids at the moment"
                 android:textColor="@color/colorPrimaryDarkold"

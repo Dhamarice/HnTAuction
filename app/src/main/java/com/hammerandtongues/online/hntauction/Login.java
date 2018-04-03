@@ -550,10 +550,28 @@ try{
                         editor.commit();
                         editor.apply();
 
-                        Intent intent = new Intent(getBaseContext(), Login.class);
-                        startActivity(intent);
+
+                        if    (shared.getString("from_product", "") != null){
 
 
+                            //shared.edit().remove("from_product").apply();
+
+                            editor.remove("from_product");
+                            editor.apply();
+
+                            Intent intent = new Intent(getBaseContext(), Single_Product.class);
+                            startActivity(intent);
+
+
+                        }
+
+
+                    else {
+
+                            Intent intent = new Intent(getBaseContext(), Login.class);
+                            startActivity(intent);
+
+                        }
                         Toast.makeText(getBaseContext(), ("Login successfull!"), Toast.LENGTH_SHORT).show();
 
                     }else{

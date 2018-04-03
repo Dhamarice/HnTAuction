@@ -35,6 +35,9 @@ public class SplashActivity extends AppCompatActivity {
         try {
 
 
+
+            Thread.sleep(10000);
+
             super.onCreate(savedInstanceState);
             setContentView(R.layout.splashscreen);
 
@@ -97,6 +100,10 @@ public class SplashActivity extends AppCompatActivity {
                     Log.e("My App day  ", "Previously stored day from splash screen was" + dayofyearstored);
 
                     new GetConnectionStatus().execute();
+
+                    Log.e("Spalshscreen  ", "Starting Main Activity");
+                    Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+                    startActivity(intent);
 
 
 
@@ -261,9 +268,7 @@ public class SplashActivity extends AppCompatActivity {
 
 
 
-            Log.e("Spalshscreen  ", "Starting Main Activity");
-            Intent intent = new Intent(SplashActivity.this, MainActivity.class);
-            startActivity(intent);
+
 
 
 

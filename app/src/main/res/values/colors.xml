@@ -11,6 +11,7 @@
     <color name="colorLightness">#ffffff</color>
     <color name="thatBlue">#0db1d6</color>
     <color name="gray">#808080</color>
+    <color name="lihgtgreen">#2E8B57</color>
     <color name="thatGreen">#32CD32</color>
     <color name="hyperBlue">#027abf</color>
 </resources>
