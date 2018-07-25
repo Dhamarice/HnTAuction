@@ -370,8 +370,8 @@ itmcontr.setVisibility(View.VISIBLE);
                 dbHandler = new DatabaseHelper (getBaseContext());
                 JSONArray JsonArr = new JSONArray();
 
-                if (dbHandler.getProduct(currcart) != null) {
-                    Cursor cursor01 = dbHandler.getProduct(currcart);
+                if (dbHandler.getProduct(currcart, userID) != null) {
+                        Cursor cursor01 = dbHandler.getProduct(currcart, userID);
                     if (cursor01 != null && cursor01.moveToFirst()) {
                         Log.e("Cart Cursor Count", "Items in Cart: " + cursor01.getCount()
                                 + "  PrdID:" + cursor01.getString(8)

@@ -12,6 +12,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
@@ -49,7 +50,9 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -78,8 +81,8 @@ public class Single_Product extends AppCompatActivity  {
 
     private static final String GETPRODUCT_URL = "https://devshop.hammerandtongues.com/webservice/getsingleproduct.php";
     private static final String GETPRODUCT_VARIATION = "https://devshop.hammerandtongues.com/webservice/getproductvariation.php";
-    private static final String BIDS_URL = "http://10.0.2.2:8012/auctionwebservice/highest_bids.php";
-    private static final String PLACE_BIDS_URL = "http://10.0.2.2:8012/auctionwebservice/place_bid.php";
+    private static final String BIDS_URL = "http://devauction.hammerandtongues.com/webservice/highest_bids.php";
+    private static final String PLACE_BIDS_URL = "http://devauction.hammerandtongues.com/webservice/place_bid.php";
 
 
     //JSON element ids from repsonse of php script:
@@ -87,12 +90,12 @@ public class Single_Product extends AppCompatActivity  {
     private static final String TAG_MESSAGE = "message";
     private static final String TAG_PRODUCTDETAILS = "posts";
 
-    String productID, userID, name, price, post_id, qnty, desc, seller, location, auction_name, min_bid_inc, imgurl = "";
+    String productID, userID, name, price, post_id, qnty, desc, seller, location, auction_name, min_bid_inc, startdate, closedate,splitmonthinwords,minebid, imgurl = "";
     Single_Product product = null;
     ImageView banner;
-    TextView inStock, Location, Aucname, ProductID,Qnty ;
+    TextView inStock, Location, Aucname, ProductID,Qnty, txtdays, txthours, txtmin, txtsec, mybid ;
     EditText txtquantity;
-    int cartid, currcart, priceint, minbidint, maxbid;
+    int cartid, currcart, priceint, minbidint, maxbid, mymaxbid;
     LinearLayout layout, produtc;
     TextView noresult;
     private int cnt_cart;
@@ -100,6 +103,8 @@ public class Single_Product extends AppCompatActivity  {
     private TextView txtcartitems;
     SharedPreferences sharedpreferences;
     DatabaseHelper dbHandler;
+    private Handler handler;
+    private Runnable runnable;
 
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -117,7 +122,14 @@ public class Single_Product extends AppCompatActivity  {
                 SharedPreferences shared = getSharedPreferences(MyPREFERENCES, MODE_PRIVATE);
                 noresult = (TextView) findViewById(R.id.noresult);
                 productID = (shared.getString("idKey", ""));
-                userID = shared.getString("userid", "");
+                if (shared.getString("userid", "") != null && shared.getString("userid", "") != "") {
+                    userID = shared.getString("userid", "");
+                }
+                else {
+
+                    userID = "0";
+
+                }
                 produtc = (LinearLayout) findViewById(R.id.product);
                 GET_TYPE = "description";
 
@@ -142,13 +154,17 @@ public class Single_Product extends AppCompatActivity  {
                 prodBidInc = (TextView) findViewById(R.id.prdctbidinc);
                 prodPrice = (TextView) findViewById(R.id.prdctprice);
                 highest_bid = (TextView) findViewById(R.id.highestbid);
+                mybid = (TextView) findViewById(R.id.mytbid);
                 banner = (ImageView) findViewById(R.id.product_banner);
                 inStock = (TextView) findViewById(R.id.instock);
                 ProductID = (TextView) findViewById(R.id.prdctid);
                  Qnty = (TextView) findViewById(R.id.txtQnty);
                 Aucname = (TextView) findViewById(R.id.prdctauc);
                 Location = (TextView) findViewById(R.id.prdctlocation);
-
+                txtdays = (TextView) findViewById(R.id.txtdays);
+                txthours = (TextView) findViewById(R.id.txthours);
+                txtmin = (TextView) findViewById(R.id.txtmin);
+                txtsec = (TextView) findViewById(R.id.txtsec);
                 if (shared.getString("CartID", "") != null && shared.getString("CartID", "") != "") {
                     currcart = Integer.parseInt(shared.getString("CartID", ""));
                 } else {
@@ -165,51 +181,11 @@ public class Single_Product extends AppCompatActivity  {
                 final TextView Qnty = (TextView) findViewById(R.id.txtQnty);
                 Qnty.setText("1");
 
-                Button add = (Button) findViewById(R.id.addQnty);
-                add.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View arg0) {
-                        int CurrQnty;
-                        try {
-                            if (Qnty.getText().toString() == "" || Qnty.getText().toString() == null) {
-                                CurrQnty = 0;
-                            } else {
-                                CurrQnty = Integer.parseInt(Qnty.getText().toString());
-                            }
-                            CurrQnty += 1;
-                            Qnty.setText(Integer.toString(CurrQnty));
-                        } catch (Exception e) {
-                            Log.e("Error  Quantity", e.toString());
-                        }
-                    }
 
-                });
 
-                Button minus = (Button) findViewById(R.id.removeQnty);
-                minus.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View arg0) {
-                        int CurrQnty;
-                        try {
-                            if (Qnty.getText().toString() == "" || Qnty.getText().toString() == null) {
-                                CurrQnty = 0;
-                            } else {
-                                CurrQnty = Integer.parseInt(Qnty.getText().toString());
-                            }
-                            CurrQnty -= 1;
-                            if (CurrQnty < 0) {
-                                CurrQnty = 0;
-                            }
 
-                            Qnty.setText(Integer.toString(CurrQnty));
-                        } catch (Exception e) {
-                            Log.e("Error  Quantity", e.toString());
-                        }
-                    }
 
-                });
-
-                Button addtocart = (Button) findViewById(R.id.addToCart);
+                Button addtocart = (Button) findViewById(R.id.placebid);
                 addtocart.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
@@ -636,6 +612,8 @@ public class Single_Product extends AppCompatActivity  {
                         editor.commit();
                         editor.apply();
 
+                        dbHandler.update_curr_bi( bid, Pid);
+
                         Log.e(TAG, "Bid amount: " + bid);
 
 
@@ -671,7 +649,8 @@ public class Single_Product extends AppCompatActivity  {
 
         };
 
-        stringRequest.setRetryPolicy(new DefaultRetryPolicy(100000,0,DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+        stringRequest.setRetryPolicy(new DefaultRetryPolicy(20 * 1000, 0,
+                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
         requestQueue.add(stringRequest);
 
 
@@ -699,15 +678,30 @@ public class Single_Product extends AppCompatActivity  {
 
                     if(success==1){
 
+if (mymaxbid > 0){
 
-                        dbHandler.fill_bids(User_id, Bid_amount, Product_id);
+
+    dbHandler.update_bids(User_id, Bid_amount, Product_id);
+
+}
+                        else {
+    dbHandler.fill_bids(User_id, Bid_amount, Product_id);
+}
 
                         Toast.makeText(getBaseContext(), (message), Toast.LENGTH_SHORT).show();
 
 
                         new AlertDialog.Builder(Single_Product.this)
                                 .setTitle("Info")
-                                .setPositiveButton("Ok", null)
+                                .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+
+
+                                        Intent intent = new Intent(Single_Product.this, Single_Product.class);
+                                        startActivity(intent);
+                                    }
+                                })
 
                                 .setNegativeButton("", null)
                                 .setMessage(Html.fromHtml(message))
@@ -749,7 +743,8 @@ public class Single_Product extends AppCompatActivity  {
 
         };
 
-        stringRequest.setRetryPolicy(new DefaultRetryPolicy(100000,0,DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+        stringRequest.setRetryPolicy(new DefaultRetryPolicy(20 * 1000, 0,
+                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
         requestQueue.add(stringRequest);
 
 
@@ -811,7 +806,7 @@ public class Single_Product extends AppCompatActivity  {
 //                layout.addView(noresult);
 
 
-                Toast.makeText( Single_Product.this ,"Network is Currently Unavailable", Toast.LENGTH_LONG).show();
+                //Toast.makeText( Single_Product.this ,"Network is Currently Unavailable", Toast.LENGTH_LONG).show();
             }
         }
     }
@@ -843,9 +838,9 @@ public class Single_Product extends AppCompatActivity  {
 
             //productID = (shared.getString("idKey", ""));
             int pID = Integer.parseInt(pid);
-            dbHandler.getProduct(pID);
-            if (dbHandler.getProduct(pID) != null) {
-                Cursor cursor = dbHandler.getProduct(pID);
+            dbHandler.getProduct(pID, userID);
+            if (dbHandler.getProduct(pID, userID) != null) {
+                Cursor cursor = dbHandler.getProduct(pID, userID);
 
                 Log.e("Cursor items","statrted getting cursor items" );
 
@@ -858,22 +853,101 @@ public class Single_Product extends AppCompatActivity  {
                 post_id = cursor.getString(1);
                 imgurl = cursor.getString(9);
                 price = cursor.getString(4);
-                auction_name = cursor.getString(24);
-                location = cursor.getString(26);
-                min_bid_inc = cursor.getString(25);
-                high_bid = shared.getString("bid_amount", "");
+                auction_name = cursor.getString(11);
+                location = cursor.getString(27);
+                min_bid_inc = cursor.getString(26);
+                high_bid = cursor.getString(30);
+                startdate = cursor.getString(22);
+                closedate =   cursor.getString(28);
+                minebid =   cursor.getString(29);
 
 
-                //LinearLayout prdctinfo = new LinearLayout(this);
-                //prdctinfo.setOrientation(LinearLayout.VERTICAL);
-                //layout = (LinearLayout)findViewById(R.id.product);
-                //getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
-                //productDesc = (TextView) findViewById(R.id.description);
-                //prodName = (TextView) findViewById(R.id.prdctname);
-                //prodPrice = (TextView) findViewById(R.id.prdctprice);
-                //banner = (ImageView) findViewById(R.id.product_banner);
-                //inStock = (TextView) findViewById(R.id.instock);
-                qnty = ("Quantity: 1");
+
+
+
+                //Splitting date formatts
+
+
+                String CurrentString = startdate;
+                String[] separated = CurrentString.split(" ");
+                String startdayserver = separated[0];
+                String starttimeserver = separated[1];
+
+
+                String Unsplitdate = startdayserver;
+                String[] separateddate = Unsplitdate.split("-");
+                String splityear = separateddate[0];
+                String splitmonth = separateddate[1];
+                String splitday = separateddate[2];
+
+
+                String CurrentEnddate = closedate;
+                String[] separatedate = CurrentEnddate.split(" ");
+                final  String closedayserver = separatedate[0];
+                String closetimeserver = separatedate[1];
+
+
+                String Unsplitday = closedayserver;
+                String[] separatedday = Unsplitday.split("-");
+                String splitcloseyear = separatedday[0];
+                String splitclosemonth = separatedday[1];
+                String splitcloseday = separatedday[2];
+
+
+                String Unsplittime = closetimeserver;
+                String[] separatedtime = Unsplittime.split("-");
+                String splitclosehour = separatedtime[0];
+                String splitcloseminute = separatedtime[1];
+                String splitclosesecond = separatedtime[2];
+
+
+
+
+                String sortclosetime = splitclosehour + ":" + splitcloseminute + ":" + splitclosesecond;
+
+                String sortstartdate = startdayserver + "T" + starttimeserver;
+
+                String sortclosedate = closedayserver + "T" + sortclosetime;
+
+
+
+                if (splitmonth.contentEquals("01")) {
+                    splitmonthinwords = "JANUARY";
+                } else if (splitmonth.contentEquals("02")) {
+                    splitmonthinwords = "FEBRUARY";
+                } else if (splitmonth.contentEquals("03")) {
+                    splitmonthinwords = "MARCH";
+                } else if (splitmonth.contentEquals("04")) {
+                    splitmonthinwords = "APRIL";
+                } else if (splitmonth.contentEquals("05")) {
+                    splitmonthinwords = "MAY";
+                } else if (splitmonth.contentEquals("06")) {
+                    splitmonthinwords = "JUNE";
+                } else if (splitmonth.contentEquals("07")) {
+                    splitmonthinwords = "JULY";
+                } else if (splitmonth.contentEquals("08")) {
+                    splitmonthinwords = "AUGUST";
+                } else if (splitmonth.contentEquals("09")) {
+                    splitmonthinwords = "SEPTEMBER";
+                } else if (splitmonth.contentEquals("10")) {
+                    splitmonthinwords = "OCTOBER";
+                } else if (splitmonth.contentEquals("11")) {
+                    splitmonthinwords = "NOVEMBER";
+                } else if (splitmonth.contentEquals("12")) {
+                    splitmonthinwords = "DECEMBER";
+                }
+
+
+
+                txtdays.setTextColor(getResources().getColor(R.color.colorPrimary));
+                txthours.setTextColor(getResources().getColor(R.color.colorPrimary));
+                txtmin.setTextColor(getResources().getColor(R.color.colorPrimary));
+                txtsec.setTextColor(getResources().getColor(R.color.colorPrimary));
+
+
+
+                countDownStart(sortclosedate, txtdays, txthours, txtmin, txtsec);
+                qnty = ("Started on:    " + splitday + "     " + splitmonthinwords + "     " + splityear);
 
 
                 //imageLoader.displayImage(imgurl, imgstore[i], options);
@@ -896,7 +970,7 @@ public class Single_Product extends AppCompatActivity  {
                 prodPrice.setTextColor(getResources().getColor(R.color.colorAmber));
                 prodPrice.setTypeface(null, Typeface.BOLD);
 
-                if (shared.getString("bid_amount", "") != null && shared.getString("bid_amount", "") !="" && shared.getString("bid_amount", "") !="null" && !(shared.getString("bid_amount", "").contentEquals("null")) && !(shared.getString("bid_amount", "").contentEquals(""))) {
+                if (high_bid != null && high_bid !="" && high_bid !="null" && !high_bid.contentEquals("null") && !high_bid.contentEquals("")) {
                     highest_bid.setText("Highest bid:  $" + high_bid);
                     highest_bid.setTextColor(getResources().getColor(R.color.colorAmber));
                     highest_bid.setTypeface(null, Typeface.BOLD);
@@ -909,6 +983,21 @@ public class Single_Product extends AppCompatActivity  {
                     highest_bid.setText("No bids have been placed yet!");
                     highest_bid.setTextColor(getResources().getColor(R.color.colorAmber));
                     highest_bid.setTypeface(null, Typeface.BOLD);
+
+                }
+
+                if (minebid != null && minebid !="" && minebid !="null" && !minebid.contentEquals("null") && !minebid.contentEquals("")) {
+                    mybid.setText("My Bid:  $" + minebid);
+                    mybid.setTextColor(getResources().getColor(R.color.colorAmber));
+                    mybid.setTypeface(null, Typeface.BOLD);
+
+                    mymaxbid = Integer.parseInt(minebid);
+
+                }
+
+                else {
+
+                    mymaxbid = 0;
 
                 }
 
@@ -928,7 +1017,7 @@ public class Single_Product extends AppCompatActivity  {
                 Location.setTextColor(getResources().getColor(R.color.thatGreen));
 
 
-                Aucname.setText("Auction: " + auction_name);
+                Aucname.setText("Auction ID: " + auction_name);
                 Aucname.setTextColor(getResources().getColor(R.color.thatGreen));
 
                 LinearLayout.LayoutParams btnsize = new LinearLayout.LayoutParams(200, 60);
@@ -956,7 +1045,7 @@ public class Single_Product extends AppCompatActivity  {
         //
         Map<String, ?> allEntries = shared.getAll();
         for (Map.Entry<String, ?> entry : allEntries.entrySet()) {
-            Log.d("map values 123", entry.getKey() + ": " + entry.getValue().toString());
+           // Log.d("map values 123", entry.getKey() + ": " + entry.getValue().toString());
         }
 priceint = Integer.parseInt(price);
         minbidint = Integer.parseInt(min_bid_inc);
@@ -968,61 +1057,8 @@ priceint = Integer.parseInt(price);
 
         bidinfo = "Proceed with bid amount:    $" + txtquantity.getText().toString();
 
-        Button add = (Button) findViewById(R.id.addQnty);
-        add.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-                int CurrQnty;
-                try {
-                    if (txtquantity.getText().toString() == "" || txtquantity.getText().toString() == null) {
-                        CurrQnty = priceint;
-                    } else {
-                        CurrQnty = Integer.parseInt(txtquantity.getText().toString());
-                    }
-                    CurrQnty += 1;
-                    txtquantity.setText(Integer.toString(CurrQnty));
-
-                    Bidamount = txtquantity.getText().toString();
 
 
-                    Log.e("Plus Button", "Bid amount" + txtquantity.getText().toString());
-                } catch (Exception e) {
-                    Log.e("Error  Quantity", e.toString());
-                }
-            }
-
-        });
-
-        Button minus = (Button) findViewById(R.id.removeQnty);
-        minus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-                int CurrQnty;
-                try {
-                    if (txtquantity.getText().toString() == "" || txtquantity.getText().toString() == null) {
-                        CurrQnty = priceint;
-                    } else {
-                        CurrQnty = Integer.parseInt(txtquantity.getText().toString());
-                    }
-                    CurrQnty -= 1;
-                    if (CurrQnty < priceint) {
-                        CurrQnty = priceint;
-                    }
-
-                    Qnty.setText(Integer.toString(CurrQnty));
-                    Bidamount = txtquantity.getText().toString();
-
-                    bidinfo = "Proceed with bid amount:    $" + txtquantity.getText().toString();
-
-                    Log.e("Minus Button", "Bid amount" + txtquantity.getText().toString());
-
-
-                } catch (Exception e) {
-                    Log.e("Error  Quantity", e.toString());
-                }
-            }
-
-        });
 
 
         //Bidamount = txtquantity.getText().toString();
@@ -1031,11 +1067,11 @@ priceint = Integer.parseInt(price);
 
 
 
-                Button addtocart = (Button) findViewById(R.id.addToCart);
-        addtocart.setOnClickListener(new View.OnClickListener() {
+                Button placebid = (Button) findViewById(R.id.placebid);
+        placebid.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View arg0) {
-               // try {
+             try {
                 bidinfo = "Proceed with bid amount:    $" + txtquantity.getText().toString();
                     {
 
@@ -1044,7 +1080,7 @@ priceint = Integer.parseInt(price);
 
                         int bid = Integer.parseInt(txtquantity.getText().toString());
 
-                        if (shared.getString("bid_amount", "") != null && shared.getString("bid_amount", "") !="" && shared.getString("bid_amount", "") !="null" && !(shared.getString("bid_amount", "").contentEquals("null")) && !(shared.getString("bid_amount", "").contentEquals("")))
+                        if (high_bid != null && high_bid !="" && high_bid !="null" && !high_bid.contentEquals("null") && !high_bid.contentEquals(""))
 
 
                         {
@@ -1067,7 +1103,7 @@ priceint = Integer.parseInt(price);
                                         .setMessage(Html.fromHtml("Bid is less than starting price!"))
                                         .show();
 
-                            } else if (bid < maxbid) {
+                            } else if (bid <= maxbid) {
 
                                 //Toast.makeText(Single_Product.this, ("Bid amount is less than or equal to current highest bid!"), Toast.LENGTH_SHORT).show();
                                 new AlertDialog.Builder(Single_Product.this)
@@ -1078,7 +1114,7 @@ priceint = Integer.parseInt(price);
                                         .setMessage(Html.fromHtml("Please place a bid that is more than the current highest bid!"))
                                         .show();
 
-                            } else if (bid <= (maxbid + priceint)) {
+                            } else if (bid < (mymaxbid + minbidint)) {
 
                                 //Toast.makeText(Single_Product.this, ("Increment is less than minimum bid increment!"), Toast.LENGTH_SHORT).show();
 
@@ -1112,7 +1148,7 @@ priceint = Integer.parseInt(price);
                     else {
 
                         SharedPreferences.Editor editor = sharedpreferences.edit();
-                        editor.putString("from_product", "from_product");
+                        editor.putString("placebid", "placebid");
                         editor.commit();
                         editor.apply();
 
@@ -1124,10 +1160,10 @@ priceint = Integer.parseInt(price);
 
                     }
 
-               // }
-               // catch(Exception ex){
-                //    Log.e("Add To Cart Error", ex.toString());
-               // }
+                }
+               catch(Exception ex){
+                    Log.e("Place Bid Error", ex.toString());
+              }
 
             }
         });
@@ -1143,10 +1179,83 @@ priceint = Integer.parseInt(price);
             }
         });
 
+        Button viewbids = (Button) findViewById(R.id.viewbids);
+        viewbids.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(final View arg0) {
 
 
+                SharedPreferences.Editor editor = sharedpreferences.edit();
+                editor.putString("prname", name );
+                editor.apply();
+
+                Intent intent = new Intent(Single_Product.this, AllBids.class);
+                startActivity(intent);
+
+
+
+            }
+
+        });
 
     }
+
+
+    public void countDownStart( final String closedate, final TextView day, final TextView hour, final TextView min, final  TextView sec) {
+        handler = new Handler();
+        runnable = new Runnable() {
+            @Override
+            public void run() {
+                handler.postDelayed(this, 1000);
+                try {
+                    SimpleDateFormat dateFormat = new SimpleDateFormat(
+                            "yyyy-MM-dd'T'HH:mm:ss");
+                    // Please here set your event date//YYYY-MM-DD
+                    Date futureDate = dateFormat.parse(closedate);
+                    Date currentDate = new Date();
+                    if (!currentDate.after(futureDate)) {
+                        long diff = futureDate.getTime()
+                                - currentDate.getTime();
+                        long days = diff / (24 * 60 * 60 * 1000);
+                        diff -= days * (24 * 60 * 60 * 1000);
+                        long hours = diff / (60 * 60 * 1000);
+                        diff -= hours * (60 * 60 * 1000);
+                        long minutes = diff / (60 * 1000);
+                        diff -= minutes * (60 * 1000);
+                        long seconds = diff / 1000;
+                        day.setText("Expiring in:  Days: " + String.format("%02d", days));
+                        hour.setText("  Hrs: " + String.format("%02d", hours));
+                        min.setText("  Min:"
+                                + String.format("%02d", minutes));
+                        sec.setText("  Sec: "
+                                + String.format("%02d", seconds));
+
+                        //Log.e("countDownStart", "Still running: " + closedate);
+                    } else {
+                        //tvEventStart.setVisibility(View.VISIBLE);
+                        //tvEventStart.setText("The event started!");
+                        //textViewGone();
+
+                        day.setText("Auction " );
+                        hour.setText("closed");
+                        min.setText("  on  ");
+                        sec.setText(closedate);
+
+                        //Log.e("countDownStart", "Closed!: " + closedate);
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        };
+        handler.postDelayed(runnable, 1 * 1000);
+    }
+
+
+
+
+
+
 
     @Override
 

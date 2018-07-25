@@ -4,16 +4,16 @@
         "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f1088f935f4fe72f52d10533ccc9dc02d224343c\\output\\res\\drawable-tvdpi-v4\\ic_plusone_small_off_client.png"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_full_open_on_phone.png",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_full_open_on_phone.png"
-    },
-    {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_tall_off_client.png",
         "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f1088f935f4fe72f52d10533ccc9dc02d224343c\\output\\res\\drawable-tvdpi-v4\\ic_plusone_tall_off_client.png"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_icon_light_pressed.9.png",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_google_signin_btn_icon_light_pressed.9.png"
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_full_open_on_phone.png",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_full_open_on_phone.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_text_light_disabled.9.png",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable-tvdpi-v4\\common_google_signin_btn_text_light_disabled.9.png"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_text_dark_focused.9.png",
@@ -24,32 +24,32 @@
         "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_google_signin_btn_text_dark_pressed.9.png"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_text_dark_disabled.9.png",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_google_signin_btn_text_dark_disabled.9.png"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_text_dark_pressed.9.png",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable-tvdpi-v4\\common_google_signin_btn_text_dark_pressed.9.png"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_light_pressed.9.png",
         "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_light_pressed.9.png"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_light_disabled.9.png",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_light_disabled.9.png"
-    },
-    {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_text_dark_normal.9.png",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_text_dark_normal.9.png"
-    },
-    {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_text_dark_disabled.9.png",
         "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_text_dark_disabled.9.png"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_text_light_focused.9.png",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_text_light_focused.9.png"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_icon_light_normal.9.png",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable-tvdpi-v4\\common_google_signin_btn_icon_light_normal.9.png"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_text_light_focused.9.png",
         "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_google_signin_btn_text_light_focused.9.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_text_dark_disabled.9.png",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable-tvdpi-v4\\common_google_signin_btn_text_dark_disabled.9.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_icon_dark_pressed.9.png",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable-tvdpi-v4\\common_google_signin_btn_icon_dark_pressed.9.png"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_icon_light_normal.9.png",
@@ -60,12 +60,32 @@
         "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_google_signin_btn_icon_dark_pressed.9.png"
     },
     {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_text_dark_focused.9.png",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_text_dark_focused.9.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_icon_dark_focused.9.png",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable-tvdpi-v4\\common_google_signin_btn_icon_dark_focused.9.png"
+    },
+    {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_text_light_normal.9.png",
         "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_text_light_normal.9.png"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_medium_off_client.png",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f1088f935f4fe72f52d10533ccc9dc02d224343c\\output\\res\\drawable-tvdpi-v4\\ic_plusone_medium_off_client.png"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_standard_off_client.png",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\bb8d4060cee3d8416828ba246298a1ae4dd32164\\output\\res\\drawable-tvdpi-v4\\ic_plusone_standard_off_client.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_icon_light_pressed.9.png",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable-tvdpi-v4\\common_google_signin_btn_icon_light_pressed.9.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_icon_dark_disabled.9.png",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable-tvdpi-v4\\common_google_signin_btn_icon_dark_disabled.9.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_text_dark_focused.9.png",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable-tvdpi-v4\\common_google_signin_btn_text_dark_focused.9.png"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_light_focused.9.png",
@@ -80,24 +100,12 @@
         "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_google_signin_btn_icon_dark_normal.9.png"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_text_dark_focused.9.png",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_google_signin_btn_text_dark_focused.9.png"
-    },
-    {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_text_dark_pressed.9.png",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_text_dark_pressed.9.png"
-    },
-    {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_text_light_pressed.9.png",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_google_signin_btn_text_light_pressed.9.png"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_text_dark_normal.9.png",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable-tvdpi-v4\\common_google_signin_btn_text_dark_normal.9.png"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_icon_dark_disabled.9.png",
         "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_google_signin_btn_icon_dark_disabled.9.png"
-    },
-    {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_text_dark_normal.9.png",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_google_signin_btn_text_dark_normal.9.png"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_text_light_disabled.9.png",
@@ -112,39 +120,179 @@
         "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_light_normal.9.png"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_icon_light_focused.9.png",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_google_signin_btn_icon_light_focused.9.png"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_dark_normal.9.png",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_dark_normal.9.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_text_light_normal.9.png",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_text_light_normal.9.png"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_text_light_pressed.9.png",
         "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_text_light_pressed.9.png"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_dark_disabled.9.png",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_dark_disabled.9.png"
-    },
-    {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_dark_normal.9.png",
         "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_dark_normal.9.png"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_icon_light_disabled.9.png",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_google_signin_btn_icon_light_disabled.9.png"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_light_focused.9.png",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_light_focused.9.png"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_dark_pressed.9.png",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_dark_pressed.9.png"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_icon_dark_normal.9.png",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable-tvdpi-v4\\common_google_signin_btn_icon_dark_normal.9.png"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_text_light_disabled.9.png",
         "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_text_light_disabled.9.png"
     },
     {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_dark_focused.9.png",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_dark_focused.9.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_text_dark_disabled.9.png",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_text_dark_disabled.9.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_text_light_pressed.9.png",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_text_light_pressed.9.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_text_light_normal.9.png",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable-tvdpi-v4\\common_google_signin_btn_text_light_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_icon_light_pressed.9.png",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_google_signin_btn_icon_light_pressed.9.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_dark_disabled.9.png",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_dark_disabled.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_text_dark_disabled.9.png",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_google_signin_btn_text_dark_disabled.9.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_dark_pressed.9.png",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_dark_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_light_disabled.9.png",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_light_disabled.9.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_text_dark_normal.9.png",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_text_dark_normal.9.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_small_off_client.png",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\bb8d4060cee3d8416828ba246298a1ae4dd32164\\output\\res\\drawable-tvdpi-v4\\ic_plusone_small_off_client.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_text_dark_normal.9.png",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_text_dark_normal.9.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_light_disabled.9.png",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_light_disabled.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_text_light_focused.9.png",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_text_light_focused.9.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_light_normal.9.png",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_light_normal.9.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_full_open_on_phone.png",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable-tvdpi-v4\\common_full_open_on_phone.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_icon_light_disabled.9.png",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable-tvdpi-v4\\common_google_signin_btn_icon_light_disabled.9.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_text_light_pressed.9.png",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable-tvdpi-v4\\common_google_signin_btn_text_light_pressed.9.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_icon_light_focused.9.png",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable-tvdpi-v4\\common_google_signin_btn_icon_light_focused.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_medium_off_client.png",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f1088f935f4fe72f52d10533ccc9dc02d224343c\\output\\res\\drawable-tvdpi-v4\\ic_plusone_medium_off_client.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_text_light_focused.9.png",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable-tvdpi-v4\\common_google_signin_btn_text_light_focused.9.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_medium_off_client.png",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\bb8d4060cee3d8416828ba246298a1ae4dd32164\\output\\res\\drawable-tvdpi-v4\\ic_plusone_medium_off_client.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_text_dark_pressed.9.png",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_text_dark_pressed.9.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_dark_focused.9.png",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_dark_focused.9.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_tall_off_client.png",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\bb8d4060cee3d8416828ba246298a1ae4dd32164\\output\\res\\drawable-tvdpi-v4\\ic_plusone_tall_off_client.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_text_dark_focused.9.png",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_google_signin_btn_text_dark_focused.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_text_dark_pressed.9.png",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_text_dark_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_text_light_pressed.9.png",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_google_signin_btn_text_light_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_text_dark_normal.9.png",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_google_signin_btn_text_dark_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_icon_light_focused.9.png",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_google_signin_btn_icon_light_focused.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_dark_disabled.9.png",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_dark_disabled.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_dark_pressed.9.png",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_dark_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_icon_light_disabled.9.png",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_google_signin_btn_icon_light_disabled.9.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_text_light_disabled.9.png",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_text_light_disabled.9.png"
+    },
+    {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_google_signin_btn_text_light_normal.9.png",
         "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_google_signin_btn_text_light_normal.9.png"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_dark_focused.9.png",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_dark_focused.9.png"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_light_pressed.9.png",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_icon_light_pressed.9.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\common_plus_signin_btn_text_light_focused.9.png",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable-tvdpi-v4\\common_plus_signin_btn_text_light_focused.9.png"
     }
 ]

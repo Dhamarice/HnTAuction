@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.hammerandtongues.online.hntauction">
+    package="com.hammerandtongues.online.hntauction">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
     <!-- Include following permission if you want to cache images on SD card -->
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
 
     <permission
-        android:name="com.github.hathibelagal.pn.permission.C2D_MESSAGE"
-        android:protectionLevel="signature"/>
+        android:name="com.github.hathibelagall.pn.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.github.hathibelagal.pn.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.github.hathibelagall.pn.permission.C2D_MESSAGE" />
 
     <application
         android:name="android.support.multidex.MultiDexApplication"
@@ -26,9 +27,9 @@
             android:name=".SplashActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
@@ -37,25 +38,24 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
-                <action android:name="android.intent.action.SEARCH"/>
+                <action android:name="android.intent.action.SEARCH" />
             </intent-filter>
 
             <meta-data
                 android:name="android.app.searchable"
-                android:resource="@layout/searchable"/>
+                android:resource="@layout/searchable" />
         </activity>
         <activity
             android:name=".Search"
             android:parentActivityName=".MainActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:screenOrientation="portrait">
             <intent-filter>
-                <action android:name="android.intent.action.SEARCH"/>
+                <action android:name="android.intent.action.SEARCH" />
             </intent-filter>
 
             <meta-data
                 android:name="android.app.searchable"
-                android:resource="@layout/searchable"/>
+                android:resource="@layout/searchable" />
         </activity>
         <activity
             android:name=".NotificationView"
@@ -63,86 +63,73 @@
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"/>
-        </activity>
-        <activity
-            android:name=".CategoriesActivity"
-            android:parentActivityName=".MainActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity
-            android:name=".StoresFragment"
-            android:parentActivityName=".MainActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity
-            android:name=".PromotionsFragment"
-            android:parentActivityName=".MainActivity"/>
-        <activity
-            android:name=".Single_Product"
-            android:parentActivityName=".Products_list"/>
-        <activity
-            android:name=".Store"
-            android:parentActivityName=".MainActivity"/>
-        <activity
-            android:name=".Cart"
-            android:parentActivityName=".MainActivity"/>
-        <activity
-            android:name=".CheckOut_Activity"
-            android:parentActivityName=".MainActivity">
+                android:screenOrientation="portrait"
+                android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".UserActivity"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Products_list"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Single_Product"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".TransactionHistory"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".AboutUs"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Faqs"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ContactUs"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".TermsAndConditions"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".WebViewActivity"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
         <!--
              ATTENTION: This was auto-generated to add Google Play services to your project for
              App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+             <receiver android:name=".NetworkStateChecker">
+        <intent-filter>
+            <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+        </intent-filter>
+    </receiver>
         -->
         <meta-data
             android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version"/>
+            android:value="@integer/google_play_services_version" />
 
         <service
             android:name=".LocalService"
-            android:exported="false"/>
+            android:exported="false" />
 
-        <fragment android:name=".Register"/>
-        <fragment android:name=".Login"/>
+        <fragment android:name=".Register" />
+        <fragment android:name=".Login" />
 
-        <receiver android:name=".NetworkStateChecker">
-            <intent-filter>
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
-            </intent-filter>
-        </receiver>
         <receiver android:name=".MyAppReciever">
             <intent-filter>
-                <action android:name="android.Intent.ACTION_TIME_TICK"/>
-                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+                <action android:name="android.Intent.ACTION_TIME_TICK" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
             </intent-filter>
         </receiver>
 
-        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
         <!--
               <receiver
@@ -171,19 +158,73 @@
                      </intent-filter>
                  </service>
         -->
-        <activity
-            android:name=".Favourites"
-            android:parentActivityName=".MainActivity">
-        </activity>
+
         <activity
             android:name=".Register"
             android:label="@string/title_activity_register"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Login"
             android:label="@string/title_activity_login"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:noHistory="true"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyBids"
+            android:noHistory="true"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PastAuctions"
+            android:label="@string/title_activity_past_auctions"
+            android:noHistory="true"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".UpcomingAuctions"
+            android:label="@string/title_activity_upcoming_auctions"
+            android:noHistory="true"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Calender"
+            android:label="@string/title_activity_calender"
+            android:noHistory="true"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Add_Note"
+            android:label="@string/title_activity_add__note"
+            android:noHistory="true"
+            android:parentActivityName=".Calender" />
+        <activity
+            android:name=".Note_Preview"
+            android:label="@string/title_activity_note__preview"
+            android:noHistory="true"
+            android:parentActivityName=".Calender" />
+        <activity
+            android:name=".Categories"
+            android:label="@string/title_activity_categories"
+            android:noHistory="true"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Locations"
+            android:label="@string/title_activity_locations"
+            android:noHistory="true"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MyFinances"
+            android:label="@string/title_activity_myfinances"
+            android:noHistory="true"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".AllBids"
+            android:label="@string/title_activity_all_bids"
+            android:noHistory="true"
+            android:parentActivityName=".Single_Product" />
+        <activity android:name=".Watchlist"
+            android:parentActivityName=".MainActivity">
+
+
         </activity>
     </application>
 

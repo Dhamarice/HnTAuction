@@ -1,7 +1,8 @@
 package com.hammerandtongues.online.hntauction;
 
 
-        import android.app.ProgressDialog;
+import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
@@ -11,9 +12,11 @@ import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
-        import android.preference.PreferenceManager;
-        import android.support.v4.widget.NestedScrollView;
+import android.preference.PreferenceManager;
+import android.support.v4.widget.NestedScrollView;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Html;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Gravity;
@@ -29,6 +32,13 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.DefaultRetryPolicy;
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -43,9 +53,13 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.text.NumberFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
+import java.util.Map;
 
 /**
  * Created by Ruvimbo on 2/2/2018.
@@ -70,13 +84,14 @@ public class Products_list extends AppCompatActivity {
     SharedPreferences shared;
 
     private static final String GETPRODUCT_URL = "https://devshop.hammerandtongues.com/webservice/getsingleproduct.php";
+    private static final String BIDS_URL = "http://devauction.hammerandtongues.com/webservice/highest_bids.php";
 
     //JSON element ids from repsonse of php script:
     private static final String TAG_SUCCESS = "success";
     private static final String TAG_MESSAGE = "message";
     private static final String TAG_PRODUCTDETAILS = "posts";
 
-    String productID, name, price,post_id, stock,  imgurl = "";
+    String productID, name, won, price,post_id, stock,  listtype, closedate, UserID,  imgurl = "";
     Single_Product product = null;
     ImageView banner;
     TextView inStock;
@@ -85,6 +100,7 @@ public class Products_list extends AppCompatActivity {
     View main;
     String lastid, type = "Product";
     String getlastid = "0";
+    //Cursor cursor01;
 
     private int cnt_cart;
     private TextView txtcartitems;
@@ -117,6 +133,8 @@ public class Products_list extends AppCompatActivity {
                     currcart = 0;
                 }
 
+                UserID = shared.getString("userid", "");
+
 
 
                 shared.edit().remove("lastid").apply();
@@ -124,16 +142,11 @@ public class Products_list extends AppCompatActivity {
 
 
                 categoryID = (shared.getString("idKey", ""));
+                listtype =  (shared.getString("Type", ""));
                 productID = (shared.getString("productID", ""));
                 limit = 15;
                 offset = 0;
-                if (categoryID == "NewArrivals") {
-                    categoryID = "99990";
-                } else if (categoryID == "OnSpecial") {
-                    categoryID = "99991";
-                } else if (categoryID == "Popular") {
-                    categoryID = "99992";
-                }
+
 
                 GetProducts = Boolean.FALSE;
                 new GetProductDetails().execute();
@@ -149,7 +162,6 @@ public class Products_list extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(Products_list.this, MainActivity.class);
-
                     startActivity(intent);
                 }
             });
@@ -158,9 +170,9 @@ public class Products_list extends AppCompatActivity {
             btncategs.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    //Intent intent = new Intent(Products_list.this, CategoriesActivity.class);
+                    Intent intent = new Intent(Products_list.this, Categories.class);
 
-                    //startActivity(intent);
+                    startActivity(intent);
                 }
             });
 
@@ -168,9 +180,25 @@ public class Products_list extends AppCompatActivity {
             btncart.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    //Intent intent = new Intent(Products_list.this, Cart.class);
+                    if (UserID != null && UserID != ""){
 
-                    //startActivity(intent);
+                        SharedPreferences.Editor editor = shared.edit();
+
+                        editor.putString("request", "My bids");
+                        editor.apply();
+
+                        Intent intent = new Intent(Products_list.this, MyBids.class);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        startActivity(intent);
+                    }
+
+                    else{
+
+                        Toast ToastMessage = Toast.makeText(Products_list.this, "You are not logged in!", Toast.LENGTH_LONG);
+                        View toastView = ToastMessage.getView();
+                        toastView.setBackgroundResource(R.drawable.toast_background);
+                        ToastMessage.show();
+                    }
                 }
             });
 
@@ -178,9 +206,9 @@ public class Products_list extends AppCompatActivity {
             btnprofile.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    //Intent intent = new Intent(Products_list.this, UserActivity.class);
+                    Intent intent = new Intent(Products_list.this, Login.class);
 
-                    //startActivity(intent);
+                    startActivity(intent);
                 }
             });
 
@@ -188,27 +216,12 @@ public class Products_list extends AppCompatActivity {
             btnsearch.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    //Intent intent = new Intent(Products_list.this, Search.class);
+                    Intent intent = new Intent(Products_list.this, Search.class);
 
-                    //startActivity(intent);
+                    startActivity(intent);
                 }
             });
 
-            ImageView imgsearch, imgcategories, imghome, imgcart, imgprofile;
-            imgsearch = (ImageView) findViewById(R.id.imgsearch01);
-            imgsearch.setImageResource(R.drawable.search);
-
-            imghome = (ImageView) findViewById(R.id.imghome);
-            imghome.setImageResource(R.drawable.homeselected);
-
-            imgcategories = (ImageView) findViewById(R.id.imgcategs);
-            imgcategories.setImageResource(R.drawable.categories);
-
-            imgcart = (ImageView) findViewById(R.id.imgcart);
-            imgcart.setImageResource(R.drawable.cart02);
-
-            imgprofile = (ImageView) findViewById(R.id.imgprofile);
-            imgprofile.setImageResource(R.drawable.profile);
             // ATTENTION: This was auto-generated to implement the App Indexing API.
             // See https://g.co/AppIndexing/AndroidStudio for more information.
             client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
@@ -275,6 +288,70 @@ public class Products_list extends AppCompatActivity {
         }
     }
 
+    //Inquire product status from server
+    private void get_bids(final String Pid){
+        com.android.volley.RequestQueue requestQueue= Volley.newRequestQueue(getBaseContext());
+        //pDialog.show();
+        StringRequest stringRequest=new StringRequest(Request.Method.POST, BIDS_URL, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String s) {
+                //pDialog.dismiss();
+
+                Log.e("Success",""+s);
+                Log.e("Zitapass", "" + Pid);
+
+
+                try {
+                    JSONObject jsonobject=new JSONObject(s);
+                    String message=jsonobject.getString("message");
+                    int success=jsonobject.getInt("success");
+
+                    if(success==1){
+
+                        String won =jsonobject.getString("date_chosen");
+
+                        dbHandler.update_won_prdct( won, Pid);
+
+
+
+
+                    }
+
+
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError volleyError) {
+                pDialog.dismiss();
+                volleyError.printStackTrace();
+                Log.e("RUEERROR",""+volleyError);
+                Toast.makeText(getBaseContext(), "Please check your Intenet and try again!", Toast.LENGTH_LONG).show();
+            }
+        }){
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String,String> values=new HashMap();
+                values.put("productid",Pid);
+
+
+                return values;
+            }
+
+
+        };
+
+        stringRequest.setRetryPolicy(new DefaultRetryPolicy(20 * 1000, 0,
+                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+        requestQueue.add(stringRequest);
+
+
+
+    }
 
 
 
@@ -287,6 +364,9 @@ public class Products_list extends AppCompatActivity {
         LinearLayout layout = (LinearLayout) findViewById(R.id.productslist);
 
 
+        Cursor cursor01 = null;
+
+
         categoryID = (shared.getString("idKey", ""));
 
         TextView noresult = (TextView) findViewById(R.id.txtinfo);
@@ -297,14 +377,6 @@ public class Products_list extends AppCompatActivity {
         int densityDpi = (int)(metrics.density * 160f);
 
 
-        if (categoryID.contentEquals("NewArrivals"))
-            categoryID="99999";
-        else if (categoryID.contentEquals("Popular"))
-            categoryID="99998";
-        else if (categoryID.contentEquals("OnSpecial"))
-            categoryID="99997";
-        else
-            categoryID = categoryID;
         int catid = Integer.parseInt(categoryID);
         int i;
         dbHandler = new DatabaseHelper(this);
@@ -316,8 +388,23 @@ public class Products_list extends AppCompatActivity {
         }
 
 
-        if (dbHandler.getAuctionsContets(catid,limit,offset, getlastid) != null) {
-            Cursor cursor01 = dbHandler.getAuctionsContets(catid,limit,offset,  getlastid);
+        if (listtype.contentEquals("Category")) {
+
+
+            cursor01 = dbHandler.getCategoryContets(catid, limit, offset, getlastid);
+            Log.e("if Product_list", "Values" + listtype);
+
+
+        }
+else if (listtype.contentEquals("Auction")) {
+            cursor01 = dbHandler.getAuctionsContets(catid, limit, offset, getlastid);
+            Log.e("else Product_list", "Values" + listtype);
+        }
+
+        else if (listtype.contentEquals("Location")) {
+            cursor01 = dbHandler.getLocationContets(catid, limit, offset, getlastid);
+            Log.e("else Product_list", "Values" + listtype);
+        }
 
             if (cursor01 != null && cursor01.moveToFirst()) {
 
@@ -345,6 +432,8 @@ public class Products_list extends AppCompatActivity {
                     post_id = cursor01.getString(1);
                     imgurl = cursor01.getString(9);
                     PPrice = cursor01.getString(4);
+                    won = cursor01.getString(24);
+                    closedate = cursor01.getString(25);
 
 
                     SharedPreferences.Editor editor = shared.edit();
@@ -352,191 +441,327 @@ public class Products_list extends AppCompatActivity {
                     editor.commit();
                     editor.apply();
 
+                    get_bids(post_id);
 
 
-                    //imageLoader.displayImage(imgurl, imgstore[i], options);
-                    Picasso.with(this).load(imgurl)
-                            .placeholder(R.drawable.progress_animation)
-                            .error(R.drawable.offline)
-                            .into(imgstore[i]);
-                    ViewGroup.LayoutParams imglayoutParams = imgstore[i].getLayoutParams();
+                    //Splitting date formatts
 
-                    int imglength = (int)(metrics.density *80);
-                    int imgwidth = (int)(metrics.density * 80);
+                    String CurrentEnddate = closedate;
+                    String[] separatedate = CurrentEnddate.split(" ");
+                    final String closedayserver = separatedate[0];
+                    String closetimeserver = separatedate[1];
 
 
-                    imglayoutParams.width = imglength;
-                    imglayoutParams.height = imgwidth;
-
-                    imgstore[i].setLayoutParams(imglayoutParams);
-
-                    Log.e("Setting Banner", imgurl);
-                    LinearLayout.LayoutParams lparams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-
-                    LinearLayout prdctinfo = new LinearLayout(this);
-                    prdctinfo.setOrientation(LinearLayout.VERTICAL);
+                    String Unsplitday = closedayserver;
+                    String[] separatedday = Unsplitday.split("-");
+                    String splitcloseyear = separatedday[0];
+                    String splitclosemonth = separatedday[1];
+                    String splitcloseday = separatedday[2];
 
 
+                    String Unsplittime = closetimeserver;
+                    String[] separatedtime = Unsplittime.split("-");
+                    String splitclosehour = separatedtime[0];
+                    String splitcloseminute = separatedtime[1];
+                    String splitclosesecond = separatedtime[2];
 
-                    TextView ProductName = new TextView(this);
-                    TextView Price = new TextView(this);
-                    ProductName.setText(PName);
-                    Price.setText("Starting Price: $" + PPrice);
-                    Price.setTextColor(getResources().getColor(R.color.colorAmber));
-                    Price.setTypeface(null, Typeface.BOLD);
-                    Price.setTextSize(13);
 
-                    LinearLayout.LayoutParams btnsize = new LinearLayout.LayoutParams(200, 60);
-                    btnsize.setMargins(20, 0, 20, 0);
-                    btnsize.gravity = Gravity.RIGHT;
+                    try {
+                        SimpleDateFormat dateFormat = new SimpleDateFormat(
+                                "yyyyy-MM-dd");
+                        // Please here set your event date//YYYY-MM-DD
+                        Date futureDate = dateFormat.parse(closedayserver);
+                        Date currentDate = new Date();
 
-                    prdctinfo.addView(ProductName);
-                    prdctinfo.addView(Price);
 
-                    LinearLayout theBut = new LinearLayout(this);
-                    theBut.setOrientation(LinearLayout.HORIZONTAL);
 
-                    Button Place_Bid = new Button(this);
-                    Place_Bid.setText("Place Bid");
-                    Place_Bid.setTextColor(Color.WHITE);
-                    Place_Bid.setTextSize(12);
-                    Place_Bid.setId(Integer.parseInt(post_id));
-                    Place_Bid.setOnClickListener(new View.OnClickListener() {
 
-                        @Override
-                        public void onClick(View view) {
-                            // do stuff
-                            String id1 = Integer.toString(view.getId());
-                            SharedPreferences.Editor editor = shared.edit();
-                            editor.putString(Product, id1);
-                            editor.commit();
-                            Intent i = new Intent(Products_list.this, Single_Product.class);
-                            startActivity(i);
+                            //imageLoader.displayImage(imgurl, imgstore[i], options);
+                            Picasso.with(this).load(imgurl)
+                                    .placeholder(R.drawable.progress_animation)
+                                    .error(R.drawable.offline)
+                                    .into(imgstore[i]);
+                            ViewGroup.LayoutParams imglayoutParams = imgstore[i].getLayoutParams();
+
+                            int imglength = (int) (metrics.density * 80);
+                            int imgwidth = (int) (metrics.density * 80);
+
+
+                            imglayoutParams.width = imglength;
+                            imglayoutParams.height = imgwidth;
+
+                            imgstore[i].setLayoutParams(imglayoutParams);
+
+                            Log.e("Setting Banner", imgurl);
+                            LinearLayout.LayoutParams lparams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+
+                            LinearLayout prdctinfo = new LinearLayout(this);
+                            prdctinfo.setOrientation(LinearLayout.VERTICAL);
+
+
+                            TextView ProductName = new TextView(this);
+                            TextView Price = new TextView(this);
+                            ProductName.setText(PName);
+                            Price.setText("Starting Price: $" + PPrice);
+                            Price.setTextColor(getResources().getColor(R.color.colorAmber));
+                            Price.setTypeface(null, Typeface.BOLD);
+                            Price.setTextSize(13);
+
+                            LinearLayout.LayoutParams btnsize = new LinearLayout.LayoutParams(200, 60);
+                            btnsize.setMargins(20, 0, 20, 0);
+                            btnsize.gravity = Gravity.RIGHT;
+
+                            prdctinfo.addView(ProductName);
+                            prdctinfo.addView(Price);
+
+                            LinearLayout theBut = new LinearLayout(this);
+                            theBut.setOrientation(LinearLayout.HORIZONTAL);
+
+
+
+                        if (currentDate.after(futureDate)) {
+
+
+
+                            Button Place_Bid = new Button(this);
+                            Place_Bid.setText("Closed!");
+                            Place_Bid.setTextColor(Color.WHITE);
+                            Place_Bid.setTextSize(12);
+                            Place_Bid.setId(Integer.parseInt(post_id));
+                            Place_Bid.setOnClickListener(new View.OnClickListener() {
+
+                                @Override
+                                public void onClick(View view) {
+
+                                    new AlertDialog.Builder(Products_list.this)
+                                            .setTitle("Info")
+                                            .setPositiveButton("Ok", null)
+
+                                            .setNegativeButton("", null)
+                                            .setMessage(Html.fromHtml("This auction has been closed!"))
+                                            .show();
+
+
+                                }
+
+                            });
+
+                            int length = (int) (metrics.density * 100);
+                            int width = (int) (metrics.density * 35);
+
+                            LinearLayout.LayoutParams btnsize2 = new LinearLayout.LayoutParams(length, width, 1);
+                            btnsize2.setMargins(15, 0, 15, 0);
+
+                            Place_Bid.setLayoutParams(btnsize2);
+                            Place_Bid.setBackgroundColor(getResources().getColor(R.color.colorOrange));
+
+                            theBut.addView(Place_Bid);
+                            prdctinfo.addView(theBut);
 
 
                         }
 
-                    });
 
 
-                    Button AddToFav = new Button(this);
-                    AddToFav.setText("Watch List");
-                    AddToFav.setTextColor(Color.WHITE);
-                    AddToFav.setTextSize(12);
-                    AddToFav.setId(Integer.parseInt(post_id));
-                    AddToFav.setOnClickListener(new View.OnClickListener() {
+                          else  if (won != null && won != "" && won != "0" && !won.contentEquals("0")) {
 
-                        @Override
-                        public void onClick(View arg0) {
-                            // do stuff
-                            String id1 = Integer.toString(arg0.getId());
-                            SharedPreferences.Editor editor = shared.edit();
-                            editor.putString(Product, id1);
-                            editor.commit();
-                            productID = (shared.getString(Product, ""));
-                            addtoFav(id1);
 
-                            final SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
-                            boolean agreed = sharedPreferences.getBoolean("agreedauction",false);
-                            if (!agreed) {
+                                Button Place_Bid = new Button(this);
+                                Place_Bid.setText("WON!");
+                                Place_Bid.setTextColor(Color.WHITE);
+                                Place_Bid.setTextSize(12);
+                                Place_Bid.setId(Integer.parseInt(post_id));
+                                Place_Bid.setOnClickListener(new View.OnClickListener() {
 
-                                Intent i = new Intent(Products_list.this, MainActivity.class);
-                                startActivity(i);
+                                    @Override
+                                    public void onClick(View view) {
+
+                                        new AlertDialog.Builder(Products_list.this)
+                                                .setTitle("Info")
+                                                .setPositiveButton("Ok", null)
+
+                                                .setNegativeButton("", null)
+                                                .setMessage(Html.fromHtml("Product has already been won!"))
+                                                .show();
+
+
+                                    }
+
+                                });
+
+                                int length = (int) (metrics.density * 100);
+                                int width = (int) (metrics.density * 35);
+
+                                LinearLayout.LayoutParams btnsize2 = new LinearLayout.LayoutParams(length, width, 1);
+                                btnsize2.setMargins(15, 0, 15, 0);
+
+                                Place_Bid.setLayoutParams(btnsize2);
+                                Place_Bid.setBackgroundColor(getResources().getColor(R.color.colorOrange));
+
+                                theBut.addView(Place_Bid);
+                                prdctinfo.addView(theBut);
+
+                            } else {
+
+
+                                Button Place_Bid = new Button(this);
+                                Place_Bid.setText("View");
+                                Place_Bid.setTextColor(Color.WHITE);
+                                Place_Bid.setTextSize(12);
+                                Place_Bid.setId(Integer.parseInt(post_id));
+                                Place_Bid.setOnClickListener(new View.OnClickListener() {
+
+                                    @Override
+                                    public void onClick(View view) {
+                                        // do stuff
+
+                                        if (won != null && won != "" && won != "0" && !won.contentEquals("0")) {
+
+                                            new AlertDialog.Builder(Products_list.this)
+                                                    .setTitle("Info")
+                                                    .setPositiveButton("Ok", null)
+
+                                                    .setNegativeButton("", null)
+                                                    .setMessage(Html.fromHtml("Product has already been won!"))
+                                                    .show();
+
+                                        } else {
+
+
+                                            String id1 = Integer.toString(view.getId());
+                                            SharedPreferences.Editor editor = shared.edit();
+                                            editor.putString(Product, id1);
+                                            editor.commit();
+                                            Intent i = new Intent(Products_list.this, Single_Product.class);
+                                            startActivity(i);
+
+
+                                        }
+
+
+                                    }
+
+                                });
+
+
+                                Button AddToFav = new Button(this);
+                                AddToFav.setText("Watch List");
+                                AddToFav.setTextColor(Color.WHITE);
+                                AddToFav.setTextSize(12);
+                                AddToFav.setId(Integer.parseInt(post_id));
+                                AddToFav.setOnClickListener(new View.OnClickListener() {
+
+                                    @Override
+                                    public void onClick(View arg0) {
+                                        // do stuff
+
+                                        if (won != null && won != "" && won != "0" && !won.contentEquals("0")) {
+
+
+                                            new AlertDialog.Builder(Products_list.this)
+                                                    .setTitle("Info")
+                                                    .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                                                        @Override
+                                                        public void onClick(DialogInterface dialog, int which) {
+
+
+                                                            Intent intent = new Intent(Products_list.this, Products_list.class);
+                                                            startActivity(intent);
+                                                        }
+                                                    })
+
+                                                    .setNegativeButton("", null)
+                                                    .setMessage(Html.fromHtml("Product has already been won!"))
+                                                    .show();
+
+                                        } else {
+
+                                            String id1 = Integer.toString(arg0.getId());
+                                            SharedPreferences.Editor editor = shared.edit();
+                                            editor.putString(Product, id1);
+                                            editor.commit();
+                                            productID = (shared.getString(Product, ""));
+                                            addtoFav(id1);
+
+                                            final SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+                                            boolean agreed = sharedPreferences.getBoolean("agreedauction", false);
+                                            if (!agreed) {
+
+                                                Intent i = new Intent(Products_list.this, MainActivity.class);
+                                                startActivity(i);
+
+                                            }
+
+                                        }
+
+                                    }
+
+
+                                });
+
+
+                                int length = (int) (metrics.density * 100);
+                                int width = (int) (metrics.density * 35);
+
+
+
+                                LinearLayout.LayoutParams btnsize2 = new LinearLayout.LayoutParams(length, width, 1);
+                                btnsize2.setMargins(15, 0, 15, 0);
+
+                                Place_Bid.setLayoutParams(btnsize2);
+                                Place_Bid.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+
+                                AddToFav.setLayoutParams(btnsize2);
+                                AddToFav.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+
+                                //prdctinfo.setOrientation(LinearLayout.HORIZONTAL);
+                                theBut.addView(Place_Bid);
+
+                                theBut.addView(AddToFav);
+                                prdctinfo.addView(theBut);
+
 
                             }
 
 
-                        }
-
-                    });
-
-
-                    int length = (int)(metrics.density*100);
-                    int width = (int)(metrics.density*35);
-                    //}// else {
-                    // AddToCart.setText("Auction Only");
-                    // AddToCart.setOnClickListener(new View.OnClickListener() {
-
-                    //  @Override
-                    // public void onClick(View view) {
-                    // do stuff
-                    //  Toast.makeText( Products_List.this, "Auction Only", Toast.LENGTH_SHORT).show();
-                    //}
-
-                    //});
-                    // }
-
-                    // int length = (int)(metrics.density *100);
-                    //int width = (int)(metrics.density * 35);
+                            prdctinfo.setLayoutParams(lparams);
+                            itmcontr.addView(prdctinfo);
+                            itmcontr.setId(Integer.parseInt(post_id));
+                            layout.addView(itmcontr, layoutParams);
 
 
-                    LinearLayout.LayoutParams btnsize2 = new LinearLayout.LayoutParams(length,width,1);
-                    btnsize2.setMargins(15, 0, 15, 0);
 
-                    Place_Bid.setLayoutParams(btnsize2);
-                    Place_Bid.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
 
-                    AddToFav.setLayoutParams(btnsize2);
-                    AddToFav.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
 
-                    //prdctinfo.setOrientation(LinearLayout.HORIZONTAL);
-                    theBut.addView(Place_Bid);
 
-                    theBut.addView(AddToFav);
-                    prdctinfo.addView(theBut);
+                        noresult.setVisibility(View.GONE);
 
-                    prdctinfo.setLayoutParams(lparams);
-                    itmcontr.addView(prdctinfo);
-                    itmcontr.setId(Integer.parseInt(post_id));
-                    itmcontr.setOnClickListener(new View.OnClickListener() {
 
-                        @Override
-                        public void onClick(View view) {
-                            // do stuff
-                            String id1 = Integer.toString(view.getId());
-                            SharedPreferences.Editor editor = shared.edit();
-                            editor.putString(Product, id1);
-                            editor.commit();
-                            Intent i = new Intent(Products_list.this, Single_Product.class);
-                            startActivity(i);
-                        }
-
-                    });
-                    layout.addView(itmcontr, layoutParams);
+                    } catch (Exception ex) {
+                        Log.e("Image Button Error", ex.toString());
+                    }
                     cursor01.moveToNext();
-
-
                 }
-                noresult.setVisibility(View.GONE);
 
-            } else {
+
+
+
+
+
+            }
+            else {
                 String msg="";
                 if (offset==0) {
-                    msg="No Listings To Display Under This Category At The Moment";
+                    msg="No Additional Contents to Display";
                 }
                 else{
-                    msg ="No Additional Products to Display";
+                    msg ="No Contents to Display";
                 }
                 noresult.setText(msg);
                 Toast.makeText(this, msg , Toast.LENGTH_LONG).show();
                 noresult.setVisibility(View.VISIBLE);
             }
-            noresult.setVisibility(View.GONE);
-        }else {
-
-
-
-            String msg="";
-            if (offset==0) {
-                msg="No Listings To Display Under This Category At The Moment";
-            }
-            else{
-                msg ="No Additional Products to Display";
-            }
-            noresult.setText(msg);
-            Toast.makeText(this, msg , Toast.LENGTH_LONG).show();
-            noresult.setVisibility(View.VISIBLE);
-        }
+            //noresult.setVisibility(View.GONE);
     }
 
 
@@ -548,65 +773,22 @@ public class Products_list extends AppCompatActivity {
         int qty = 1;
 
         int id = Integer.parseInt(id1.toString());
-        //int catId = Integer.parseInt(categoryID);
-        //double itmprice = db.getProductPrice(id);
-        //double subtot = db.getProductPrice(id);
+
+        db.fillfav(id);
         Log.d("Notifications", "Picking up variables for saving" + String.valueOf((qty)) + " <= Quantity; " + String.valueOf(cartid) + "<=This is the current cart ID");
 
-        //CartManagement ctm = new CartManagement(id, type ,db.getProductName(id));
         Log.e("Notifications", "Saving the product to favs!");
-        //db.addFavoriteItem(ctm);
         Log.e("Notifications", "Finished saving an item" + id );
 
         Toast.makeText(Products_list.this , "Item added to your watchlist!", Toast.LENGTH_LONG).show();
         Locale locale = new Locale("en", "US");
         NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance(locale);
 
-        // CartManagement crtItms = db.getCartItemsCount(cartid);
-        // if (crtItms != null) {
-        //    Intent i = new Intent(Products_List.this, Products_List.class);
-        //   startActivity(i);
-        //   Toast.makeText(Products_List.this , "Network is Currently Unavailable", Toast.LENGTH_LONG).show();
-        //idCartItems.setText("Items in cart: " + String.valueOf((crtItms.get_Cart_Items_Count())));
-        //} else {
-        //idCartItems.setText("Items in cart: 0");
-        // }
-
 
     }
 
 
-    public void newCart(View view) {
-        SharedPreferences shared = getSharedPreferences(MyPREFERENCES, MODE_PRIVATE);
-        String TAG = "NEW CART";
-        Log.v(TAG, "Creating New Cart");
-        DatabaseHelper dbHandler = new DatabaseHelper(this);
 
-        int status = 1;
-        String formattedDate = "07/06/2016";
-        Log.v(TAG, "Variables taken");
-        //CartManagement cartManagement =
-                //new CartManagement(status, formattedDate);
-
-        //dbHandler.addCart(cartManagement);
-        Log.v(TAG, "now loading saved details after save");
-        //   try
-        //   {
-        //CartManagement cartno = dbHandler.findCart();
-        SharedPreferences.Editor editor = shared.edit();
-        //editor.putString("CartID", String.valueOf(cartno.get_CartID()));
-        editor.commit();
-        editor.apply();
-        //Toast.makeText(this, "New Shopping Session Created" + String.valueOf(cartno.get_CartID()), Toast.LENGTH_LONG).show();
-        //currcart = cartno.get_CartID();
-
-            /*
-       catch (Exception ex)
-        {
-            Log.d("Problemo!", "Error while retrieving the saved cart id " + ex.getMessage());
-        }
-        */
-    }
 
 
 
@@ -637,7 +819,7 @@ public class Products_list extends AppCompatActivity {
                 // Otherwise, set the URL to null.
                 Uri.parse("http://host/path"),
                 // TODO: Make sure this auto-generated app deep link URI is correct.
-                Uri.parse("android-app://com.hammerandtongues.online.hntonline/http/host/path")
+                Uri.parse("android-app://com.hammerandtongues.online.hntauction/http/host/path")
         );
         AppIndex.AppIndexApi.start(client, viewAction);
     }
@@ -659,7 +841,7 @@ public class Products_list extends AppCompatActivity {
                 // Otherwise, set the URL to null.
                 Uri.parse("http://host/path"),
                 // TODO: Make sure this auto-generated app deep link URI is correct.
-                Uri.parse("android-app://com.hammerandtongues.online.hntonline/http/host/path")
+                Uri.parse("android-app://com.hammerandtongues.online.hntauction/http/host/path")
         );
         AppIndex.AppIndexApi.end(client, viewAction);
         client.disconnect();
@@ -678,6 +860,12 @@ public class Products_list extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.menu_search) {
             Intent intent = new Intent(Products_list.this, Search.class);
+            startActivity(intent);
+            return true;
+        }
+
+        if (id == R.id.refresh) {
+            Intent intent = new Intent(Products_list.this, Products_list.class);
             startActivity(intent);
             return true;
         }
@@ -740,95 +928,6 @@ public class Products_list extends AppCompatActivity {
     }
 
 
-    class GetStockAvailability extends AsyncTask<String, String, String> {
-
-        /**
-         * Before starting background thread Show Progress Dialog
-         */
-        boolean failure = false;
-
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-
-//            pDialog.show();
-        }
-
-        @Override
-        protected String doInBackground(String... args) {
-            // TODO Auto-generated method stub
-            // Check for success tag
-            int success;
-            String pid = productID;
-
-            try {
-                // Building Parameters
-                List<NameValuePair> params = new ArrayList<NameValuePair>();
-                params.add(new BasicNameValuePair("productid", pid));
-                JSONObject json1;
-                // getting product details by making HTTP request
-                json1 = jsonParser.makeHttpRequest(
-                        GETPRODUCT_URL, "POST", params);
-                Log.e("PID + URL", productID + GETPRODUCT_URL);
-
-
-                // json success tag
-                success = json1.getInt(TAG_SUCCESS);
-                if (success == 1) {
-                    return json1.getString(TAG_PRODUCTDETAILS);
-                } else {
-                    return json1.getString(TAG_MESSAGE);
-                }
-            }
-            catch (JSONException e) {
-                e.printStackTrace();
-            }
-
-            return null;
-
-        }
-
-        /**
-         * After completing background task Dismiss the progress dialog
-         **/
-        protected void onPostExecute(String posts) {
-            // dismiss the dialog once product deleted
-            pDialog.dismiss();
-            if (posts != null) {
-                JSONArray jsonarray02 = null;
-                try {
-                    jsonarray02 = new JSONArray(posts);
-                } catch (JSONException e) {
-                }
-                if (jsonarray02 != null) {
-                    try {
-                        Log.e("JSONing", jsonarray02.toString());
-                        JSONObject jsonobject = jsonarray02.getJSONObject(0);
-                        price = jsonobject.optString("price");
-                        stock = jsonobject.optString("quantity");
-                    } catch (JSONException e) {
-                        Log.e("JSON Error: ", e.toString());
-                        e.printStackTrace();
-                    }
-                    Log.e("Checking Stock  ", " == " + stock);
-                    if (!stock.isEmpty() || !stock.contentEquals("0")) {
-                        int pid = Integer.parseInt(productID);
-                        //addProduct(main, pid);
-                    }
-                    else {
-                        Toast.makeText(Products_list.this, "Product Out Of Stock", Toast.LENGTH_LONG).show();
-                        return;
-                    }
-                } else {
-                    Toast.makeText(Products_list.this, "Product Out Of Stock", Toast.LENGTH_LONG).show();
-                    return;
-                }
-            }
-
-
-        }
-
-    }
 
 
 }

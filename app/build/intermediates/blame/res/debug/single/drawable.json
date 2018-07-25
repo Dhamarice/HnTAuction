@@ -1,11 +1,643 @@
 [
     {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\categories.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\categories.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\furnitureauc.jpg",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\furnitureauc.jpg"
+    },
+    {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_launcher_round.png",
         "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\store.png",
         "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\store.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sheep.jpg",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\sheep.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\indicator_corner_bg.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\98155e4b465fc6b002d23a8eb19e1d4a87b14e79\\output\\res\\drawable\\indicator_corner_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\offwhite.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\offwhite.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\drawable\\notification_bg_low.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\c2acc74ea51f8fc2b07f7f899b57b00bb349f1f3\\output\\res\\drawable\\design_snackbar_background.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\drawable\\abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\background.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\background.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_tile_bg.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\drawable\\notification_tile_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\border.xml",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\border.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bronzealltypes.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\bronzealltypes.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\offline.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\offline.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\offline.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\offline.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\logo.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\furniture.jpg",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\furniture.jpg"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\drawable\\notification_bg_low.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cart02.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\cart02.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\reddot.jpg",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\reddot.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\home.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\home.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_pause_light.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\657c34b9e25c54eeeb4a1abebe1bff7f9363cc0a\\output\\res\\drawable\\mr_ic_pause_light.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sheep.jpg",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\sheep.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_empty_icon.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\11a2a04537914523bc181fc369aa5790d844f464\\output\\res\\drawable\\navigation_empty_icon.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_bottom_navigation_item_background.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\c2acc74ea51f8fc2b07f7f899b57b00bb349f1f3\\output\\res\\drawable\\design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\productbanner.jpg",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\productbanner.jpg"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\star.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\star.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\default_rounded_purple.xml",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\default_rounded_purple.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\generalgoods.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\generalgoods.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\splash.xml",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\splash.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mybids.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\mybids.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\store.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\store.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\search.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\search.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable\\common_google_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\11a2a04537914523bc181fc369aa5790d844f464\\output\\res\\drawable\\design_fab_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\platinumalltypes.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\platinumalltypes.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\history.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\history.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\searchselected.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\searchselected.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_play_dark.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\cb3406751825e6f5455612edb5233deafbcee39e\\output\\res\\drawable\\mr_ic_play_dark.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\fb.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\fb.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_connecting_mono_light.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\cb3406751825e6f5455612edb5233deafbcee39e\\output\\res\\drawable\\mr_ic_media_route_connecting_mono_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\drawable\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\txt_bckgrnd.xml",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\txt_bckgrnd.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\drawable\\abc_vector_test.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\side_nav_bar.xml",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\side_nav_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_stub.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\ic_stub.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\faq.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\faq.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\add_red.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\add_red.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cart.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\cart.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\yt.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\yt.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\silveralltypes.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\silveralltypes.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\wishlist.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\wishlist.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\default_round_dark.xml",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\default_round_dark.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_play_dark.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\657c34b9e25c54eeeb4a1abebe1bff7f9363cc0a\\output\\res\\drawable\\mr_ic_play_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_play_light.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\cb3406751825e6f5455612edb5233deafbcee39e\\output\\res\\drawable\\mr_ic_play_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tw.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\tw.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_bottom_navigation_item_background.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\11a2a04537914523bc181fc369aa5790d844f464\\output\\res\\drawable\\design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\onspecial.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\onspecial.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_play_light.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\657c34b9e25c54eeeb4a1abebe1bff7f9363cc0a\\output\\res\\drawable\\mr_ic_play_light.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_pause_dark.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\657c34b9e25c54eeeb4a1abebe1bff7f9363cc0a\\output\\res\\drawable\\mr_ic_pause_dark.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\drawable\\notification_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\drawable\\abc_vector_test.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\roundcorner.xml",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\roundcorner.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\generalgoods.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\generalgoods.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable\\common_plus_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_empty_icon.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\c2acc74ea51f8fc2b07f7f899b57b00bb349f1f3\\output\\res\\drawable\\navigation_empty_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\drawable\\abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\profileselected.jpg",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\profileselected.jpg"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\drawable\\abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\background_transparent.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f48e2608a0abd54a29b8fbcd4f55e1e48267a34d\\output\\res\\drawable\\background_transparent.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\paymentgateways.PNG",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\paymentgateways.PNG"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\locations.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\locations.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\categories.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\categories.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_connecting_mono_dark.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\657c34b9e25c54eeeb4a1abebe1bff7f9363cc0a\\output\\res\\drawable\\mr_ic_media_route_connecting_mono_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\onspecial.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\onspecial.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_connecting_mono_dark.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\cb3406751825e6f5455612edb5233deafbcee39e\\output\\res\\drawable\\mr_ic_media_route_connecting_mono_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\search1.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\search1.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\background_transparent.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\7294022df8109dda21260b8b2fac0d5385955bf5\\output\\res\\drawable\\background_transparent.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\about.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\about.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\searchselected.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\searchselected.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\drawable\\notification_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\drawable\\abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tw.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\tw.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\auction.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\auction.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_error.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\ic_error.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\profile.jpg",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\profile.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_connecting.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\437d325005a7af7529a7b3634f24c9cfe16585de\\output\\res\\drawable\\cast_ic_notification_connecting.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_search_white.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\ic_search_white.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_cast_light.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\cb3406751825e6f5455612edb5233deafbcee39e\\output\\res\\drawable\\mr_ic_cast_light.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\product.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\product.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\favv.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\favv.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_connecting_mono_light.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\657c34b9e25c54eeeb4a1abebe1bff7f9363cc0a\\output\\res\\drawable\\mr_ic_media_route_connecting_mono_light.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\platinumalltypes.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\platinumalltypes.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_shopping_cart_white.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\ic_shopping_cart_white.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\default_rounded.xml",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\default_rounded.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\in.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\in.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_cast_dark.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\657c34b9e25c54eeeb4a1abebe1bff7f9363cc0a\\output\\res\\drawable\\mr_ic_cast_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\drawable\\abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable\\common_google_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_stub.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\ic_stub.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\account.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\account.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_error.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\ic_error.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\livestock.jpg",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\livestock.jpg"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\border.xml",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\border.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_password_eye.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\c2acc74ea51f8fc2b07f7f899b57b00bb349f1f3\\output\\res\\drawable\\design_password_eye.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\drawable\\abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_launcher.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_icon_light.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable\\common_plus_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\roundcorner.xml",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\roundcorner.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\drawable\\abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_text_light.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable\\common_plus_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\telecash.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\telecash.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\c2acc74ea51f8fc2b07f7f899b57b00bb349f1f3\\output\\res\\drawable\\design_fab_background.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_settings_light.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\cb3406751825e6f5455612edb5233deafbcee39e\\output\\res\\drawable\\mr_ic_settings_light.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\reddot.jpg",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\reddot.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\telecash.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\telecash.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\refresh.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\refresh.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\calender.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\calender.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_pause_light.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\cb3406751825e6f5455612edb5233deafbcee39e\\output\\res\\drawable\\mr_ic_pause_light.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\default_rounded_orange.xml",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\default_rounded_orange.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_launcher_59.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\ic_launcher_59.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\star.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\star.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\contactus.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\contactus.png"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cart02selected.png",
@@ -20,12 +652,24 @@
         "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable\\common_plus_signin_btn_text_light.xml"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\indicator_corner_bg.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\98155e4b465fc6b002d23a8eb19e1d4a87b14e79\\output\\res\\drawable\\indicator_corner_bg.xml"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\default_rounded_purple.xml",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\default_rounded_purple.xml"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\offwhite.png",
-        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\offwhite.png"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\livestock.jpg",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\livestock.jpg"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_launcher_round.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\contact.png",
@@ -36,12 +680,16 @@
         "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\cb3406751825e6f5455612edb5233deafbcee39e\\output\\res\\drawable\\mr_ic_media_route_mono_dark.xml"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\background.png",
-        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\background.png"
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smallgoods.jpg",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\smallgoods.jpg"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_edit_text_material.xml"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\contact.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\contact.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\background_color_circle_selector.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f48e2608a0abd54a29b8fbcd4f55e1e48267a34d\\output\\res\\drawable\\background_color_circle_selector.xml"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
@@ -52,100 +700,124 @@
         "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\yt.png"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\virtual.png",
-        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\virtual.png"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\drawable\\abc_textfield_search_material.xml"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\border.xml",
-        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\border.xml"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\paynow.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\paynow.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\virtual.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\virtual.png"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\productbanner.jpg",
         "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\productbanner.jpg"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\offline.png",
-        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\offline.png"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_cast_light.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\657c34b9e25c54eeeb4a1abebe1bff7f9363cc0a\\output\\res\\drawable\\mr_ic_cast_light.xml"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo.png",
-        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\logo.png"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\drawable\\abc_btn_colored_material.xml"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\home.png",
-        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\home.png"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cart.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\cart.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\silveralltypes.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\silveralltypes.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_tile_bg.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\drawable\\notification_tile_bg.xml"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_shopping_cart_white.png",
         "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\ic_shopping_cart_white.png"
     },
     {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_launcher_59.png",
         "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\ic_launcher_59.png"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\default_rounded_purple.xml",
-        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\default_rounded_purple.xml"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\progress_animation.xml",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\progress_animation.xml"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable\\common_google_signin_btn_icon_light.xml"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable\\common_google_signin_btn_text_dark.xml"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\a61c9e2d7d85707856c7fdfb5974c0ac71141b61\\output\\res\\drawable\\design_fab_background.xml"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_mono_dark.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\657c34b9e25c54eeeb4a1abebe1bff7f9363cc0a\\output\\res\\drawable\\mr_ic_media_route_mono_dark.xml"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\furniture.jpg",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\furniture.jpg"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_ratingbar_full_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_btn_borderless_material.xml"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\category.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\category.png"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ecocash.png",
         "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\ecocash.png"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\searchselected.png",
-        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\searchselected.png"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_icon_light.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable\\common_plus_signin_btn_icon_light.xml"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_play_dark.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\cb3406751825e6f5455612edb5233deafbcee39e\\output\\res\\drawable\\mr_ic_play_dark.xml"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\gradient_background.xml",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\gradient_background.xml"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\fb.png",
-        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\fb.png"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\generators.jpg",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\generators.jpg"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_connecting_mono_light.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\cb3406751825e6f5455612edb5233deafbcee39e\\output\\res\\drawable\\mr_ic_media_route_connecting_mono_light.xml"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable\\common_plus_signin_btn_text_dark.xml"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_btn_colored_material.xml"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\upcoming.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\upcoming.png"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_stub.png",
-        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\ic_stub.png"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_icon_dark.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\drawable\\common_plus_signin_btn_icon_dark.xml"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\side_nav_bar.xml",
-        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\side_nav_bar.xml"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\drawable\\notification_icon_background.xml"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cart.png",
-        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\cart.png"
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bronzealltypes.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\bronzealltypes.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\drawable\\abc_ic_clear_material.xml"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\search.png",
@@ -156,84 +828,92 @@
         "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\cb3406751825e6f5455612edb5233deafbcee39e\\output\\res\\drawable\\mr_ic_pause_dark.xml"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_item_background_holo_light.xml"
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\drawable\\abc_ic_go_search_api_material.xml"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_play_light.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\cb3406751825e6f5455612edb5233deafbcee39e\\output\\res\\drawable\\mr_ic_play_light.xml"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\d1.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\d1.png"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tw.png",
-        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\tw.png"
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\refresh.jpg",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\refresh.jpg"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\roundcorner.xml",
-        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\roundcorner.xml"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ecocash.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\ecocash.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pastbids.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\pastbids.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\logo.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_password_eye.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\11a2a04537914523bc181fc369aa5790d844f464\\output\\res\\drawable\\design_password_eye.xml"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\splash.xml",
         "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\splash.xml"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\generalgoods.png",
-        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\generalgoods.png"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\wishlist.png",
         "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\wishlist.png"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_text_dark.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable\\common_plus_signin_btn_text_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
-    },
-    {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\category.png",
         "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\category.png"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\profileselected.jpg",
-        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\profileselected.jpg"
-    },
-    {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_cab_background_top_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\categories.png",
-        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\categories.png"
-    },
-    {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_connecting_mono_dark.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\cb3406751825e6f5455612edb5233deafbcee39e\\output\\res\\drawable\\mr_ic_media_route_connecting_mono_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\onspecial.png",
-        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\onspecial.png"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tnc.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\tnc.png"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark.xml",
         "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable\\common_google_signin_btn_text_dark.xml"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\generalgoodss.png",
-        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\generalgoodss.png"
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\drawable\\abc_ic_voice_search_api_material.xml"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_mono_light.xml",
         "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\cb3406751825e6f5455612edb5233deafbcee39e\\output\\res\\drawable\\mr_ic_media_route_mono_light.xml"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\search1.png",
-        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\search1.png"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_settings_dark.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\657c34b9e25c54eeeb4a1abebe1bff7f9363cc0a\\output\\res\\drawable\\mr_ic_settings_dark.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\side_nav_bar.xml",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\side_nav_bar.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\background_color_circle_selector.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\7294022df8109dda21260b8b2fac0d5385955bf5\\output\\res\\drawable\\background_color_circle_selector.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\in.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\in.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\generalgoodiss.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\generalgoodiss.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\search1.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\search1.png"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_search_white.png",
@@ -241,11 +921,39 @@
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\a61c9e2d7d85707856c7fdfb5974c0ac71141b61\\output\\res\\drawable\\design_snackbar_background.xml"
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\11a2a04537914523bc181fc369aa5790d844f464\\output\\res\\drawable\\design_snackbar_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\goldalltypes.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\goldalltypes.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\offwhite.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\offwhite.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\background.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\background.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\drawable\\abc_cab_background_top_material.xml"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_text_cursor_material.xml"
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_settings_light.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\657c34b9e25c54eeeb4a1abebe1bff7f9363cc0a\\output\\res\\drawable\\mr_ic_settings_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_icon_dark.xml",
@@ -257,23 +965,19 @@
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_tab_indicator_material.xml"
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\drawable\\abc_tab_indicator_material.xml"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\auction.png",
-        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\auction.png"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_launcher.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\drawable\\abc_ratingbar_material.xml"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_error.png",
-        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\ic_error.png"
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\paynow.png",
@@ -284,32 +988,28 @@
         "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\homeselected.png"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\profile.jpg",
-        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\profile.jpg"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\profileselected.jpg",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\profileselected.jpg"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\paymentgateways.PNG",
         "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\paymentgateways.PNG"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_connecting.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\437d325005a7af7529a7b3634f24c9cfe16585de\\output\\res\\drawable\\cast_ic_notification_connecting.xml"
-    },
-    {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_cast_light.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\cb3406751825e6f5455612edb5233deafbcee39e\\output\\res\\drawable\\mr_ic_cast_light.xml"
-    },
-    {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\txt_bckgrnd.xml",
         "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\txt_bckgrnd.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\fb.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\fb.png"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\progress_animation.xml",
         "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\progress_animation.xml"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\favv.png",
-        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\favv.png"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\myaccount.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\myaccount.png"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\account.png",
@@ -317,79 +1017,95 @@
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_switch_thumb_material.xml"
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\generators.jpg",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\generators.jpg"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_connecting.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\d4dbdf007dba0ea08067b0244334ad351eca904a\\output\\res\\drawable\\cast_ic_notification_connecting.xml"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\in.png",
-        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\in.png"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\vihicles.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\vihicles.png"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_btn_radio_material.xml"
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\drawable\\abc_btn_radio_material.xml"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_btn_check_material.xml"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_mono_light.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\657c34b9e25c54eeeb4a1abebe1bff7f9363cc0a\\output\\res\\drawable\\mr_ic_media_route_mono_light.xml"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_seekbar_track_material.xml"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\furnitureauc.jpg",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\furnitureauc.jpg"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_textfield_search_material.xml"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\drawable\\abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\drawable\\abc_ratingbar_material.xml"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cart02.png",
         "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\cart02.png"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cart02selected.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\cart02selected.png"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_empty.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\ic_empty.png"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\d1.png",
         "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\d1.png"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_launcher.png",
-        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\ic_launcher.png"
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_icon_light.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable\\common_plus_signin_btn_icon_light.xml"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\goldalltypes.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\goldalltypes.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\indicator_corner_bg.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\ddfc0f3319db692cdb2fae099c30b4b03fa38f90\\output\\res\\drawable\\indicator_corner_bg.xml"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\vihicles.png",
         "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\vihicles.png"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\faq.png",
-        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\faq.png"
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\add_red.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\add_red.png"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_light.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_dialog_material_background_light.xml"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\auction.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\auction.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\faq.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\faq.png"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_empty.png",
         "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\ic_empty.png"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_settings_light.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\cb3406751825e6f5455612edb5233deafbcee39e\\output\\res\\drawable\\mr_ic_settings_light.xml"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\virtual.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\virtual.png"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\categoryselected.png",
@@ -404,44 +1120,64 @@
         "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\product.png"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\telecash.png",
-        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\telecash.png"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\favv.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\favv.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smallgoods.jpg",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\smallgoods.jpg"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tnc.png",
         "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\tnc.png"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\drawable\\common_google_signin_btn_text_light.xml"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\homeselected.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\homeselected.png"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_addtocart.xml",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\btn_addtocart.xml"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_pause_light.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\cb3406751825e6f5455612edb5233deafbcee39e\\output\\res\\drawable\\mr_ic_pause_light.xml"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\watchlist.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\watchlist.png"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\drawable\\abc_dialog_material_background_dark.xml"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\home.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\home.png"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\star.png",
-        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\star.png"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\categoryselected.png",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\categoryselected.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\toast_background.xml",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\toast_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\generalgoodiss.png",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\generalgoodiss.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\profile.jpg",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\profile.jpg"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\toast_background.xml",
+        "source": "F:\\HnTAuction\\app\\src\\main\\res\\drawable\\toast_background.xml"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\about.png",
         "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\about.png"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\default_rounded.xml",
-        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\default_rounded.xml"
-    },
-    {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\history.png",
         "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\history.png"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\default_rounded.xml",
+        "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\src\\main\\res\\drawable\\default_rounded.xml"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_cast_dark.xml",

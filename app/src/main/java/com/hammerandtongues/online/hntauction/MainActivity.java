@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.view.View.OnClickListener;
 import android.database.Cursor;
 import android.database.DatabaseUtils;
 import android.graphics.Paint;
@@ -37,6 +38,13 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.DefaultRetryPolicy;
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.daimajia.slider.library.SliderLayout;
 import com.daimajia.slider.library.SliderTypes.BaseSliderView;
 import com.daimajia.slider.library.Tricks.ViewPagerEx;
@@ -45,13 +53,17 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.squareup.picasso.Picasso;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
-
+import java.util.HashMap;
+import java.util.Map;
 
 
 /**
@@ -70,17 +82,15 @@ public class MainActivity extends AppCompatActivity
     //public static final String Category = "idcateg";
     SharedPreferences sharedpreferences;
 
-    private SliderLayout mDemoSlider;
+    private static final String BIDS_URL = "http://devauction.hammerandtongues.com/webservice/highest_bids.php";
+
     private ProgressDialog pDialog ;
     private DatabaseHelper  dbHandler;
-    private ImageView btngrocer, btnauction, btnappliances, btnliquor, btnrealestate, btnhomegrown, btnbuilding;
-    private Button shopbystore,shopbycateg;
-    //private DatabaseHelper .GetCategories task;
-    private int cnt_cart, currcart ;
-    private TextView txtcartitems, end;
-    private Button signup, signin;
-    private String post_id, name, startdate, closedate, splitmonthinwords, ppost_id,discount,deposit, bid_date, cdatevalue, UserID, bid_amnt, pname, minimun_increament, end_date ;
-    private int cartid, limit, offset;
+    private Button refresh, prevauct;
+
+
+    private String post_id, name, startdate, closedate, splitmonthinwords, ppost_id,discount,deposit, bid_date, cdatevalue, UserID, bid_amnt, pname, minimun_increament, end_date, bid, pproduct_id, bid_fromserver , date_won;
+    private int cartid, limit, offset, server_bid, my_bid;
     private ImageView imgstore[] = new ImageView[150];
 
     Context context;
@@ -96,11 +106,12 @@ public class MainActivity extends AppCompatActivity
     int yearofcal = calendar.get(Calendar.YEAR);
     public String PName, monthinwords, dayinwords, dayofyeartext, dayofyearstored, timeofday, previoussec = "1";
     private  TextView noresult;
-    private LinearLayout noAuction;
-    private TextView txtDay, txtHour, txtMinute, txtSecond, txtmybid;
+    private LinearLayout noAuction, mybids;
+    private TextView txtDay, txtHour, txtMinute, txtSecond, txtnomybid;
     private TextView tvEventStart;
     private Handler handler;
     private Runnable runnable;
+    private int banner;
     int monthmatch = 0;
 
 
@@ -121,22 +132,23 @@ public class MainActivity extends AppCompatActivity
             //View view = getLayoutInflater().inflate(R.layout.activity_home, null);
             dbHandler = new DatabaseHelper(this);
 
-            loaduielements();
+        refresh = (Button) findViewById(R.id.butn_refresh);
+
+
+        prevauct = (Button) findViewById(R.id.btn_prevauc);
+
+
 
 
             sharedpreferences = this.getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
 
 
-            if (sharedpreferences.getString("CartID", "") != null && sharedpreferences.getString("CartID", "") != "") {
-                currcart = Integer.parseInt(sharedpreferences.getString("CartID", ""));
-            } else {
-                currcart = 0;
-            }
+
 
         UserID = sharedpreferences.getString("userid", "");
 
 
-            end = new TextView(this);
+
 
             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
             setSupportActionBar(toolbar);
@@ -162,16 +174,24 @@ public class MainActivity extends AppCompatActivity
 
             sharedpreferences = this.getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
 
+        txtnomybid = (TextView) findViewById(R.id.txtmybid);
+        mybids = (LinearLayout) findViewById(R.id.bidlist);
 
-            shopbystore = (Button) findViewById(R.id.btn_ShopByStore);
-            shopbystore.setOnClickListener(this);
 
-            shopbycateg = (Button) findViewById(R.id.btn_ShopByCateg);
-            shopbycateg.setOnClickListener(this);
+        loaduielements();
 
-        txtmybid = (TextView) findViewById(R.id.txtmybid);
+        if (sharedpreferences.getString("userid", "") != null && sharedpreferences.getString("userid", "") !="" && sharedpreferences.getString("userid", "") !="null" && !(sharedpreferences.getString("userid", "").contentEquals("null")) && !(sharedpreferences.getString("userid", "").contentEquals(""))){
 
-        getmybids();
+            getmybids();
+
+        }
+
+        else {
+            txtnomybid.setText("You are not logged in");
+
+        }
+
+
 
         //pDialog = new ProgressDialog(MainActivity.this);
             //dbHandler.setProgressBar(progress);
@@ -507,10 +527,10 @@ public class MainActivity extends AppCompatActivity
                         //tvEventStart.setText("The event started!");
                         //textViewGone();
 
-                        day.setText("AUCTION " );
-                        hour.setText("HAS");
-                        min.setText("  BEEN");
-                        sec.setText("  CLOSED!!!");
+                        day.setText("Auction " );
+                        hour.setText("closed");
+                        min.setText("  on  ");
+                        sec.setText(closedate);
 
                         //Log.e("countDownStart", "Closed!: " + closedate);
                     }
@@ -546,35 +566,33 @@ public class MainActivity extends AppCompatActivity
             if (cursor != null && cursor.moveToFirst()) {
 
                 Log.e("Cursor Full", cursor.getColumnCount() + " Columns");
-                Log.e("Auctions", "Values" + DatabaseUtils.dumpCursorToString(cursor));
+                Log.e("Locations", "Values" + DatabaseUtils.dumpCursorToString(cursor));
 
                 int cartitms[] = new int[cursor.getCount()];
 
                 for (int i = 0; i < cursor.getCount(); i++) {
 
 
+                    LinearLayout hzvw = new LinearLayout(this);
+                    LinearLayout.LayoutParams hzvwParams = new LinearLayout.LayoutParams(
+                            LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+
+                    hzvwParams.setMargins(10,10,10,10);
+
+
                     ImageView aucimage = new ImageView(this);
-                    TextView starttxt = new TextView(this);
                     TextView shopnametxt = new TextView(this);
-                    TextView txtminbid = new TextView(this);
+                    shopnametxt.setLayoutParams(hzvwParams);
+                    Button depozit = new Button(this);
+                    depozit.setLayoutParams(hzvwParams);
                     TextView txtdiscount = new TextView(this);
+                    txtdiscount.setLayoutParams(hzvwParams);
                     TextView txtdiposit = new TextView(this);
+                    txtdiposit.setLayoutParams(hzvwParams);
 
 
-                    TextView txtdays = new TextView(this);
-                    TextView txthours = new TextView(this);
-                    TextView txtmin = new TextView(this);
-                    TextView txtsec = new TextView(this);
-                    LinearLayout expires_in = new LinearLayout (this);
                     LinearLayout discdep = new LinearLayout (this);
                     discdep.setOrientation(LinearLayout.HORIZONTAL);
-
-                    expires_in.setOrientation(LinearLayout.HORIZONTAL);
-                    expires_in.setBackgroundColor(getResources().getColor(R.color.colorLightness));
-                    txtdays.setTextColor(getResources().getColor(R.color.colorPrimary));
-                    txthours.setTextColor(getResources().getColor(R.color.colorPrimary));
-                    txtmin.setTextColor(getResources().getColor(R.color.colorPrimary));
-                    txtsec.setTextColor(getResources().getColor(R.color.colorPrimary));
 
                     txtdiscount.setTextColor(getResources().getColor(R.color.colorPrimary));
                     txtdiposit.setTextColor(getResources().getColor(R.color.colorPrimary));
@@ -582,34 +600,21 @@ public class MainActivity extends AppCompatActivity
                     discdep.addView(txtdiposit);
                     discdep.addView(txtdiscount);
 
-                    expires_in.addView(txtdays);
-                    expires_in.addView(txthours);
-                    expires_in.addView(txtmin);
-                    expires_in.addView(txtsec);
-
-
-
-                    LinearLayout hzvw = new LinearLayout(this);
-                    LinearLayout.LayoutParams hzvwParams = new LinearLayout.LayoutParams(
-                            LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-
-                    hzvwParams.setMargins(12, 12, 12, 2);
-
                     hzvw.setOrientation(LinearLayout.VERTICAL);
                     hzvw.setBackgroundColor(getResources().getColor(R.color.colorLightness));
 
 
-                    name = cursor.getString(4);
+                    name = cursor.getString(3);
                     post_id = cursor.getString(1);
                     startdate = cursor.getString(9);
                     closedate = cursor.getString(8);
-                    minimun_increament = cursor.getString(4);
+                    minimun_increament = cursor.getString(5);
                     deposit = cursor.getString(6);
                     discount = cursor.getString(7);
                     end_date = cursor.getString(8);
 
 
-                    Log.e("DB Full", " Loading Views!");
+                    Log.e("DB Full", " Loading Views! " + name);
 
                     if ( deposit == null || deposit.contentEquals("")){
 
@@ -621,12 +626,68 @@ public class MainActivity extends AppCompatActivity
                         discount = "0";
                     }
 
+
+
+                    //Assigning banners
+
+                    if (name.contains("GENERAL")){
+
+
+                        banner = R.drawable.generalgoods;
+                    }
+
+
+                 else  if (name.contains("VEHICLE")){
+
+
+                        banner = R.drawable.vihicles;
+                    }
+
+
+                    else  if (name.contains("FURNITURE")){
+
+
+                        banner = R.drawable.furnitureauc;
+                    }
+
+                    else  if (name.contains("SMALL")){
+
+
+                        banner = R.drawable.smallgoods;
+                    }
+
+                    else  if (name.contains("GENERATOR")){
+
+
+                        banner = R.drawable.generators;
+                    }
+
+                    else  if (name.contains("LIVESTOCK")){
+
+
+                        banner = R.drawable.livestock;
+                    }
+
+                    else  if (name.contains("SHEEP")){
+
+
+                        banner = R.drawable.sheep;
+                    }
+
+
+                    else {
+
+
+                        banner = R.drawable.generalgoodiss;
+                    }
+
 //Splitting date formatts
 
 
                     String CurrentString = startdate;
                     String[] separated = CurrentString.split(" ");
                     String startdayserver = separated[0];
+                    String starttimeserver = separated[1];
 
 
                     String Unsplitdate = startdayserver;
@@ -634,6 +695,8 @@ public class MainActivity extends AppCompatActivity
                     String splityear = separateddate[0];
                     String splitmonth = separateddate[1];
                     String splitday = separateddate[2];
+
+
 
 
                     String CurrentEnddate = closedate;
@@ -655,11 +718,11 @@ public class MainActivity extends AppCompatActivity
                     String splitcloseminute = separatedtime[1];
                     String splitclosesecond = separatedtime[2];
 
+                    String sortclosetime = splitclosehour + ":" + splitcloseminute + ":" + splitclosesecond;
 
+                    String sortstartdate = startdayserver + "T" + starttimeserver;
 
-
-                    countDownStart(closedayserver, txtdays, txthours, txtmin, txtsec);
-
+                    String sortclosedate = closedayserver + "T" + sortclosetime;
 
                     if (splitmonth.contentEquals("01")) {
                         splitmonthinwords = "JANUARY";
@@ -688,107 +751,124 @@ public class MainActivity extends AppCompatActivity
                     }
 
 
-                    shopnametxt.setTypeface(null, Typeface.BOLD);
-                    shopnametxt.setPaintFlags(shopnametxt.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
-                    shopnametxt.setText(name.toString().toUpperCase());
-                    shopnametxt.setTextSize(20);
-                    shopnametxt.setTextColor(getResources().getColor(R.color.colorAmber));
-
-
-                    starttxt.setText("Started on:    " + splitday + "     " + splitmonthinwords + "     " + splityear);
-                    starttxt.setBackgroundColor(getResources().getColor(R.color.colorLightness));
-                    starttxt.setTextColor(getResources().getColor(R.color.colorPrimary));
-
-
-                    txtdiscount.setText("Discount: " + discount+ "%");
-                    txtdiposit.setText("Deposit: $" + deposit + "       ");
-
-
-                    // TextView end = new TextView(this);
-                    //end.setText(updateTimeOnEachSecond());
-                    //end.setPadding(10, 20,  20, 0);
-
-
                     try {
-                        imgstore[i] = aucimage;
+                        SimpleDateFormat dateFormat = new SimpleDateFormat(
+                                "yyyy-MM-dd'T'HH:mm:ss");
+                        // Please here set your event date//YYYY-MM-DD
+                        Date futureDate = dateFormat.parse(sortclosedate);
+                        Date StartfutureDate = dateFormat.parse(sortstartdate);
+                        Date currentDate = new Date();
+
+                        calendar.setTime(futureDate);
+                        calendar.setTime(StartfutureDate);
+                        Log.e("FUTURE DATE", "loaduielements: " + currentDate + " FutureDate: " + futureDate + "Raw end date " + sortclosedate);
+
+                        if (!(currentDate.after(futureDate))) {
 
 
 
-                        hzvw.addView(shopnametxt, hzvwParams);
-
-                        hzvw.addView(starttxt, hzvwParams);
-
-                        hzvw.addView(expires_in, hzvwParams);
-
-                        hzvw.addView(discdep, hzvwParams);
-
-                        hzvw.addView(imgstore[i], hzvwParams);
-
-                        //hzvw.addView(mylayout);
-                        mylayout.addView(hzvw, hzvwParams);
-                        //layout.addView(mylayout);
+                            shopnametxt.setTypeface(null, Typeface.BOLD);
+                            shopnametxt.setPaintFlags(shopnametxt.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
+                            shopnametxt.setText(name.toString().toUpperCase());
+                            shopnametxt.setTextSize(20);
+                            shopnametxt.setTextColor(getResources().getColor(R.color.colorAmber));
 
 
-                        //imageLoader.displayImage(imgurl, imgstore[i], options);
-                        Picasso.with(this).load(R.drawable.generalgoods)
-                                .placeholder(R.drawable.progress_animation)
-                                .error(R.drawable.ic_launcher_59)
-                                .into(imgstore[i]);
+                            txtdiscount.setText("Discount: " + discount + "%");
+                            txtdiposit.setText("Deposit: $" + deposit + "       ");
 
-                        //android.view.ViewGroup.LayoutParams layoutParams = imgstore[i].getLayoutParams();
-                        //layoutParams.width = ViewGroup.LayoutParams.MATCH_PARENT;
-                        //layoutParams.height = 305;
-                        //imgstore[i].setLayoutParams(layoutParams);
-                        //mylayout.setId(Integer.parseInt(post_id));
-
-                        sharedpreferences = this.getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+                            depozit.setText("Deposit");
+                            depozit.setBackgroundResource(R.drawable.default_rounded);
 
 
-                        hzvw.setId(Integer.parseInt(post_id));
 
-                        cdatevalue = txtdays.getText().toString();
+                            try {
+                                imgstore[i] = aucimage;
 
-                        hzvw.setOnClickListener(new View.OnClickListener() {
 
-                            @Override
-                            public void onClick(View view) {
+                                hzvw.addView(shopnametxt, hzvwParams);
 
-                                try {
-                                    SimpleDateFormat dateFormat = new SimpleDateFormat(
-                                            "yyyyy-MM-dd");
-                                    // Please here set your event date//YYYY-MM-DD
-                                    Date futureDate = dateFormat.parse(closedayserver);
-                                    Date currentDate = new Date();
 
-                                    if (currentDate.after(futureDate)){
 
-                                        Log.e("Close date","VALUE" + cdatevalue);
+                                //hzvw.addView(expires_in, hzvwParams);
 
-                                        Toast.makeText(context,"Sorry, This auction has been closed",Toast.LENGTH_LONG).show();
-                                    }
+                                hzvw.addView(discdep, hzvwParams);
 
-                                    else {
-                                        Log.e("Close date", "VALUE" + cdatevalue);
-                                        // do stuff
-                                        //String id1 = post_id;
-                                        String id1 = Integer.toString(view.getId());
-                                        SharedPreferences.Editor editor = sharedpreferences.edit();
-                                        editor.putString(Category, id1);
-                                        editor.commit();
-                                        Intent i = new Intent(MainActivity.this, Products_list.class);
+                                hzvw.addView(imgstore[i], hzvwParams);
 
-                                        startActivity(i);
-                                    }
+                                hzvw.addView(depozit, hzvwParams);
 
-                                }
-                                catch (Exception e) {
+                                //hzvw.addView(mylayout);
+                                mylayout.addView(hzvw);
 
-                                    Log.e("Date Error", e.toString());
-                                }
+                                //layout.addView(mylayout);
 
+
+                                //imageLoader.displayImage(imgurl, imgstore[i], options);
+                                Picasso.with(this).load(banner)
+                                        .placeholder(R.drawable.progress_animation)
+                                        .error(R.drawable.ic_launcher_59)
+                                        .into(imgstore[i]);
+
+
+                                sharedpreferences = this.getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+
+
+                                hzvw.setId(Integer.parseInt(post_id));
+
+
+
+                            } catch (Exception ex) {
+                                Log.e("Image Button Error", ex.toString());
                             }
 
-                        });
+
+                            hzvw.setOnClickListener(new View.OnClickListener() {
+
+                                @Override
+                                public void onClick(View view) {
+
+                                    try {
+                                        SimpleDateFormat dateFormat = new SimpleDateFormat(
+                                                "yyyyy-MM-dd");
+                                        // Please here set your event date//YYYY-MM-DD
+                                        Date futureDate = dateFormat.parse(closedayserver);
+                                        Date currentDate = new Date();
+
+
+
+
+                                        if (currentDate.after(futureDate)) {
+
+
+                                            Toast.makeText(context, "Sorry, This auction has been closed", Toast.LENGTH_LONG).show();
+                                        } else {
+
+                                            // do stuff
+                                            //String id1 = post_id;
+                                            String id1 = Integer.toString(view.getId());
+                                            SharedPreferences.Editor editor = sharedpreferences.edit();
+                                            editor.putString(Category, id1);
+                                            editor.putString("Type", "Auction");
+                                            editor.commit();
+                                            Intent i = new Intent(MainActivity.this, Products_list.class);
+
+                                            startActivity(i);
+                                        }
+
+                                    } catch (Exception e) {
+
+                                        Log.e("Date Error", e.toString());
+                                    }
+
+                                }
+
+                            });
+
+                        }
+
+
+
 
 
                     } catch (Exception ex) {
@@ -796,6 +876,21 @@ public class MainActivity extends AppCompatActivity
                     }
 
                     cursor.moveToNext();
+
+
+                }
+
+
+
+                if  (mylayout.getChildCount() == 0){
+
+                    Log.e("mylayout Null!", mylayout.getChildCount() + " mylayout Null!!~!!!");
+
+
+                    noresult.setText("We are working on out next auction, please come back to check later");
+                    noresult.setTypeface(null, Typeface.BOLD);
+                    noAuction.setVisibility(View.VISIBLE);
+
                 }
 
 
@@ -814,51 +909,43 @@ public class MainActivity extends AppCompatActivity
 
 
 
-            Log.e("DB Full",  " DataBase null!");
+
+            Log.e("DB Full",  " DataBase null!" + prevauct +" " + refresh);
             noresult.setText("We are working on out next auction, please come back to check later");
             Toast.makeText(this,"We are working on out next auction, please come back to check later",Toast.LENGTH_LONG).show();
             noAuction.setVisibility(View.VISIBLE);
+
+
+            refresh.setOnClickListener(new View.OnClickListener() {
+
+                @Override
+                public void onClick(View view) {
+
+                    Log.e("REFRESH BUTTON",  " ONclick!"  + refresh);
+                    Intent intent = new Intent(MainActivity.this, MainActivity.class);
+
+                    startActivity(intent);
+                }
+
+            });
+
+
+            prevauct.setOnClickListener(new View.OnClickListener() {
+
+                @Override
+                public void onClick(View view) {
+                    Log.e("PREVAUC BUTTON",  " ONclick!"  + refresh);
+                    Intent intent = new Intent(MainActivity.this, PastAuctions.class);
+
+                    startActivity(intent);
+
+                }
+            });
         }
 
     }
 
 
-
-
-
-    private boolean haveNetworkConnection( ) {
-        boolean haveConnectedWifi = false;
-        boolean haveConnectedMobile = false;
-
-        ConnectivityManager cm = (ConnectivityManager) this.getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo[] netInfo = cm.getAllNetworkInfo();
-        for (NetworkInfo ni : netInfo) {
-            if (ni.getTypeName().equalsIgnoreCase("WIFI"))
-                if (ni.isConnected())
-                    haveConnectedWifi = true;
-            if (ni.getTypeName().equalsIgnoreCase("MOBILE"))
-                if (ni.isConnected())
-                    haveConnectedMobile = true;
-        }
-        return haveConnectedWifi || haveConnectedMobile;
-    }
-
-    private boolean isNetworkAvailable() {
-        ConnectivityManager connectivityManager
-                = (ConnectivityManager) this. getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
-        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
-    }
-
-    private void loadImages(String url, ImageView imgvw) {
-
-
-        Picasso.with(this).load(url)
-                .placeholder(R.drawable.progress_animation)
-                .error(R.drawable.ic_error)
-                .into(imgvw);
-
-    }
 
 
     @Override
@@ -886,6 +973,12 @@ public class MainActivity extends AppCompatActivity
             return true;
         }
 
+        if (id == R.id.refresh) {
+            Intent intent = new Intent(MainActivity.this, MainActivity.class);
+            startActivity(intent);
+            return true;
+        }
+
         return super.onOptionsItemSelected(item);
     }
 
@@ -897,24 +990,97 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
+        SharedPreferences.Editor editor = sharedpreferences.edit();
+
         if (id == R.id.myaccount) {
             Intent intent = new Intent(MainActivity.this, Login.class);
             startActivity(intent);
-        } else if (id == R.id.cart) {
+        } else if (id == R.id.mybids) {
 
-        } else if (id == R.id.mytransactions) {
-            Intent intent = new Intent(MainActivity.this, TransactionHistory.class);
+
+
+
+            if (UserID != null && UserID != ""){
+
+                editor.putString("request", "My bids");
+                editor.apply();
+
+                Intent intent = new Intent(MainActivity.this, MyBids.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+            }
+
+            else{
+
+                Toast ToastMessage = Toast.makeText(MainActivity.this, "You are not logged in!", Toast.LENGTH_LONG);
+                View toastView = ToastMessage.getView();
+                toastView.setBackgroundResource(R.drawable.toast_background);
+                ToastMessage.show();
+            }
+
+
+        }else if (id == R.id.mypastbids) {
+
+            if (UserID != null && UserID != ""){
+
+                editor.putString("request", "Past bids");
+                editor.apply();
+
+                Intent intent = new Intent(MainActivity.this, MyBids.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+            }
+
+            else{
+
+                Toast ToastMessage = Toast.makeText(MainActivity.this, "You are not logged in!", Toast.LENGTH_LONG);
+                View toastView = ToastMessage.getView();
+                toastView.setBackgroundResource(R.drawable.toast_background);
+                ToastMessage.show();
+            }
+
+
+        }
+        else if (id == R.id.pastauctions) {
+
+            Intent intent = new Intent(MainActivity.this, PastAuctions.class);
             startActivity(intent);
         }
-        else if (id == R.id.myfavourites) {
+        else if (id == R.id.categories) {
+
+
+            Intent intent = new Intent(MainActivity.this, Categories.class);
+            startActivity(intent);
 
         }
-        else if (id == R.id.stores) {
 
-        } else if (id == R.id.category) {
 
-        } else if (id == R.id.search) {
-            Intent intent = new Intent(MainActivity.this, Search.class);
+        else if (id == R.id.locations) {
+
+
+            Intent intent = new Intent(MainActivity.this, Locations.class);
+            startActivity(intent);
+
+        }
+
+        else if (id == R.id.watchlist) {
+
+
+            Intent intent = new Intent(MainActivity.this, Watchlist.class);
+            startActivity(intent);
+
+        }
+
+        else if (id == R.id.upcomingauction) {
+
+            Intent intent = new Intent(MainActivity.this, UpcomingAuctions.class);
+            startActivity(intent);
+
+
+        } else if (id == R.id.upcomingauction) {
+
+        } else if (id == R.id.calender) {
+            Intent intent = new Intent(MainActivity.this, Calender.class);
             startActivity(intent);
 
         }  else if (id == R.id.about_us) {
@@ -1006,14 +1172,6 @@ public class MainActivity extends AppCompatActivity
     @Override
     public void onStop() {
         super.onStop();
-        //mDemoSlider.stopAutoCycle();
-        Picasso.with(this).cancelRequest(btnappliances);
-        Picasso.with(this).cancelRequest(btnauction);
-        Picasso.with(this).cancelRequest(btnbuilding);
-        Picasso.with(this).cancelRequest(btngrocer);
-        Picasso.with(this).cancelRequest(btnhomegrown);
-        Picasso.with(this).cancelRequest(btnliquor);
-        Picasso.with(this).cancelRequest(btnrealestate);
         if(tickReceiver!=null)
             unregisterReceiver(tickReceiver);
     }
@@ -1028,135 +1186,146 @@ public class MainActivity extends AppCompatActivity
     public void onClick(View v) {
         // TODO Auto-generated method stub
         String id1 =null;
-        SharedPreferences.Editor editor = null;
+        SharedPreferences.Editor editor = sharedpreferences.edit();
         Intent intent;
         System.gc();
         switch (v.getId()) {
+            case R.id.btn_home:
+                intent = new Intent(MainActivity.this, MainActivity.class);
 
-
-
-
-
-            case R.id.btn_ShopByStore:
-
-                //finish();
-                break;
-
-            case R.id.btn_ShopByCateg:
-
-                //finish();
-                break;
-/*
-            case R.id.btn_signup:
-                intent = new Intent(MainActivity.this, UserActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
                 //finish();
                 break;
-            case R.id.btn_signin:
-                intent = new Intent(MainActivity.this,  UserActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+
+            case R.id.btn_Categories:
+
+                intent = new Intent(MainActivity.this, Categories.class);
+
+                startActivity(intent);
+
+
+
+                //finish();
+                break;
+
+
+            case R.id.btn_Cart:
+                if (UserID != null && UserID != ""){
+
+                    editor = sharedpreferences.edit();
+
+                    editor.putString("request", "My bids");
+                    editor.apply();
+
+                   intent = new Intent(MainActivity.this, MyBids.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(intent);
+                }
+
+                else{
+
+                    Toast ToastMessage = Toast.makeText(MainActivity.this, "You are not logged in!", Toast.LENGTH_LONG);
+                    View toastView = ToastMessage.getView();
+                    toastView.setBackgroundResource(R.drawable.toast_background);
+                    ToastMessage.show();
+                }
+                break;
+
+            case R.id.btn_Profile:
+                intent = new Intent(MainActivity.this, Login.class);
+
+                startActivity(intent);
+                break;
+
+            case R.id.btn_Search01:
+                intent = new Intent(MainActivity.this, Search.class);
+
                 startActivity(intent);
                 //finish();
                 break;
-                */
+
             default:
-                Toast.makeText(this,v.toString() + "Clicked (Invalid Object Call", Toast.LENGTH_LONG).show();
+                //Toast.makeText(this,v.toString() + "Clicked (Invalid Object Call", Toast.LENGTH_LONG).show();
+
+                Toast ToastMessage = Toast.makeText(MainActivity.this,"Clicked (Invalid Object Call",Toast.LENGTH_LONG);
+                View toastView = ToastMessage.getView();
+                toastView.setBackgroundResource(R.drawable.toast_background);
+                ToastMessage.show();
+
+
                 break;
         }
+
+
+
     }
 
 
-    class GetConnectionStatus extends AsyncTask<String, Void, Boolean> {
 
-        private Context mContext;
+    private void get_bids(final String Pid){
+        com.android.volley.RequestQueue requestQueue= Volley.newRequestQueue(getBaseContext());
+        //pDialog.show();
+        StringRequest stringRequest=new StringRequest(Request.Method.POST, BIDS_URL, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String s) {
+                //pDialog.dismiss();
 
-        protected void onPreExecute() {
-            super.onPreExecute();
-            pDialog = new ProgressDialog(MainActivity.this);
-            pDialog.setMessage(" Please Wait...");
-            pDialog.setIndeterminate(false);
-            pDialog.setCancelable(true);
-            pDialog.show();
-
-
-        }
-
-        protected Boolean doInBackground(String... urls) {
-            // TODO: Connect
-
-            //pDialog.dismiss();
-            if (isNetworkAvailable() == true) {
+                Log.e("Success",""+s);
+                Log.e("Zitapass", "" + Pid);
 
 
                 try {
-                    HttpURLConnection urlc = (HttpURLConnection) (new URL("http://www.google.com").openConnection());
-                    urlc.setRequestProperty("User-Agent", "Test");
-                    urlc.setRequestProperty("Connection", "close");
-                    urlc.setConnectTimeout(1500);
-                    urlc.getConnectTimeout();
-                    urlc.connect();
+                    JSONObject jsonobject=new JSONObject(s);
+                    String message=jsonobject.getString("message");
+                    int success=jsonobject.getInt("success");
 
-                    return (urlc.getResponseCode() == 200);
+                    if(success==1){
 
-                } catch (IOException e) {
-                    Log.e("Network Check", "Error checking internet connection", e);
+                       String bid =jsonobject.getString("bid");
+                        String date_chosen =jsonobject.getString("date_chosen");
+
+                        dbHandler.update_bids( bid, date_chosen, Pid);
+
+
+
+
+                    }
+
+
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
                 }
-            } else {
-                Log.e("Network Check", "No network available!");
+
             }
-            return false;
-        }
-
-        protected void onPostExecute(Boolean result) {
-            pDialog.dismiss();
-            try {
-
-
-                if (result == true)
-
-                {
-
-                    Log.e("Result true", "The two not equal! " +dayofyeartext + " " + dayofyearstored);
-
-
-
-
-                    if (!dayofyeartext.contentEquals(dayofyearstored)) {
-
-
-                        Log.e("Conditon met", "The two not equal! " +dayofyeartext + " " + dayofyearstored);
-
-
-                        //pDialog.show();
-                        dbHandler = new DatabaseHelper (getBaseContext());
-
-
-                        dbHandler.clearAuctions();
-                        //dbHandler.fillcart();
-                        dbHandler.fill_auctions(getBaseContext());
-
-
-                        SharedPreferences.Editor editor = sharedpreferences.edit();
-                        editor.putString("storedday", dayofyeartext);
-                        editor.apply();
-
-                    } else {Log.e("Network Check", "The two are equal! " +dayofyeartext + " " + dayofyearstored);}}
-                else
-
-                {
-
-                    Toast.makeText(MainActivity.this , "Network is Currently Unavailable", Toast.LENGTH_LONG).show();
-                    pDialog.dismiss();
-                }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError volleyError) {
+                //pDialog.dismiss();
+                volleyError.printStackTrace();
+                Log.e("RUEERROR",""+volleyError);
+                Toast.makeText(getBaseContext(), "Please check your Intenet and try again!", Toast.LENGTH_LONG).show();
             }
-            catch (Exception ex) {
-//                Toast.makeText(getContext(), "Weak / No Network Connection", Toast.LENGTH_SHORT).show();
+        }){
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String,String> values=new HashMap();
+                values.put("productid",Pid);
+
+
+                return values;
             }
-        }
+
+
+        };
+
+        stringRequest.setRetryPolicy(new DefaultRetryPolicy(20 * 1000, 0,
+                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+        requestQueue.add(stringRequest);
+
+
+
     }
-
-
 
 
     public void getmybids() {
@@ -1169,51 +1338,95 @@ public class MainActivity extends AppCompatActivity
             Cursor cursor = dbHandler.getmybids(UserID);
             if (cursor != null && cursor.moveToFirst()) {
 
-                Log.e("Cursor Full", cursor.getColumnCount() + " Columns");
-                Log.e("Auctions", "Values" + DatabaseUtils.dumpCursorToString(cursor));
+                if (cursor.getString(0) != null) {
 
-                int cartitms[] = new int[cursor.getCount()];
+                    Log.e("Locations", "Values" + DatabaseUtils.dumpCursorToString(cursor));
 
-                for (int i = 0; i < cursor.getCount(); i++) {
+                    int cartitms[] = new int[cursor.getCount()];
 
-
-
+                    for (int i = 0; i < cursor.getCount(); i++) {
 
 
-                    LinearLayout hzvw = new LinearLayout(this);
-                    LinearLayout.LayoutParams hzvwParams = new LinearLayout.LayoutParams(
-                            LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+                        LinearLayout hzvw = new LinearLayout(this);
+                        LinearLayout.LayoutParams hzvwParams = new LinearLayout.LayoutParams(
+                                LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
 
-                    hzvwParams.setMargins(12, 12, 12, 2);
+                        hzvwParams.setMargins(0, 0, 0, 0);
 
-                    hzvw.setOrientation(LinearLayout.VERTICAL);
-                    hzvw.setBackgroundColor(getResources().getColor(R.color.colorLightness));
-
-
-                    pname = cursor.getString(8);
-                    ppost_id = cursor.getString(1);
-                    bid_date = cursor.getString(2);
-                    bid_amnt = cursor.getString(3);
+                        hzvw.setOrientation(LinearLayout.VERTICAL);
+                        hzvw.setBackgroundColor(getResources().getColor(R.color.colorLightness));
 
 
+                        pname = cursor.getString(9);
+                        ppost_id = cursor.getString(1);
+                        pproduct_id = cursor.getString(3);
+                        bid_date = cursor.getString(2);
+                        bid_amnt = cursor.getString(7);
+                        bid_fromserver = cursor.getString(8);
+                        date_won = cursor.getString(5);
 
-                    Log.e("DB Full", " Loading Views!");
 
-                    txtmybid.setTypeface(null, Typeface.BOLD);
-                    txtmybid.setText("Your bid for " + pname + " is curently the Highest!!!");
+                        Log.e("DB Full", " Loading Views!");
+
+                        get_bids(pproduct_id);
 
 
+                        if (bid_fromserver != null && bid_fromserver != "" && !bid_fromserver.contentEquals("null")) {
 
-                    cursor.moveToNext();
+                            server_bid = Integer.parseInt(bid_fromserver);
+                        } else {
+                            server_bid = 0;
+
+                            Log.e("SERVERBID", "amount: " + bid_fromserver + " for product: " + pname);
+
+                        }
+
+                        if (bid_amnt != null && bid_amnt != "") {
+                            my_bid = Integer.parseInt(bid_amnt);
+
+                        } else {
+
+                            my_bid = 0;
+
+                        }
+                        TextView txtmybid = new TextView(this);
+                        txtmybid.setTextColor(getResources().getColor(R.color.colorPrimaryDarkold));
+                        txtmybid.setTextSize(18);
+
+                        txtmybid.setTypeface(null, Typeface.BOLD);
+
+                        if (server_bid <= my_bid) {
+
+                            txtmybid.setText(pname + " bid is Winning!!!");
+                        } else {
+
+                            txtmybid.setText(pname + " bid is Loosing!!!");
+
+                        }
+
+                        if (date_won == null || date_won == "" || date_won.contentEquals("null") || date_won.contentEquals("0")) {
+
+                            mybids.addView(txtmybid);
+
+
+                        }
+
+
+                        cursor.moveToNext();
+                    }
+
+
+                    //noAuction.setVisibility(View.GONE);
                 }
+                else {
 
-
-
-                //noAuction.setVisibility(View.GONE);
+                    txtnomybid.setTypeface(null, Typeface.BOLD);
+                    txtnomybid.setText("You have not placed any bids!");
+                }
             }else {
 
-                txtmybid.setTypeface(null, Typeface.BOLD);
-                txtmybid.setText("You have not placed any bids!");
+                txtnomybid.setTypeface(null, Typeface.BOLD);
+                txtnomybid.setText("You have not placed any bids!");
             }
 
 
@@ -1221,8 +1434,8 @@ public class MainActivity extends AppCompatActivity
 
 
 
-            txtmybid.setTypeface(null, Typeface.BOLD);
-            txtmybid.setText("You have not placed any bids!");
+            txtnomybid.setTypeface(null, Typeface.BOLD);
+            txtnomybid.setText("You have not placed any bids!");
         }
 
     }

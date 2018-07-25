@@ -15,17 +15,29 @@
     <item android:title="Quick Links">
     <menu>
         <item
-            android:id="@+id/stores"
-            android:icon="@drawable/store"
+            android:id="@+id/categories"
+            android:icon="@drawable/categories"
+            android:title="Categories" />
+        <item
+            android:id="@+id/locations"
+            android:icon="@drawable/locations"
+            android:title="Locations" />
+        <item
+            android:id="@+id/upcomingauction"
+            android:icon="@drawable/upcoming"
             android:title="Upcoming Auctions" />
         <item
-            android:id="@+id/category"
-            android:icon="@drawable/category"
-            android:title="Past Auctions" />
+        android:id="@+id/pastauctions"
+        android:icon="@drawable/pastbids"
+        android:title="Past Auctions" />
+        <item
+        android:id="@+id/calender"
+        android:icon="@drawable/calender"
+        android:title="Calender" />
         <item
             android:id="@+id/search"
             android:icon="@drawable/search1"
-            android:title="Calender" />
+            android:title="Search" />
 
     </menu>
     </item>
@@ -34,20 +46,20 @@
         <menu>
             <item
                 android:id="@+id/myaccount"
-            android:icon="@drawable/account"
+            android:icon="@drawable/myaccount"
             android:title="Login" />
         <item
-            android:id="@+id/cart"
-            android:icon="@drawable/cart"
+            android:id="@+id/mybids"
+            android:icon="@drawable/mybids"
             android:title="My Bids" />
         <item
-            android:id="@+id/mytransactions"
-            android:icon="@drawable/history"
+            android:id="@+id/mypastbids"
+            android:icon="@drawable/pastbids"
             android:title="My Past Bids" />
 
             <item
-            android:id="@+id/myfavourites"
-            android:icon="@drawable/star"
+            android:id="@+id/watchlist"
+            android:icon="@drawable/watchlist"
             android:title="Watchlist" />
 </menu>
     </item>
@@ -61,7 +73,7 @@
                 android:title="About Us" />
             <item
                 android:id="@+id/contact_us"
-                android:icon="@drawable/contact"
+                android:icon="@drawable/contactus"
                 android:title="Contact Us" />
             <item
                 android:id="@+id/terms"

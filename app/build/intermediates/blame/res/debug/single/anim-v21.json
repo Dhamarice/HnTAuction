@@ -1,10 +1,18 @@
 [
     {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_out.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\c2acc74ea51f8fc2b07f7f899b57b00bb349f1f3\\output\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
+    },
+    {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_in.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\a61c9e2d7d85707856c7fdfb5974c0ac71141b61\\output\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\11a2a04537914523bc181fc369aa5790d844f464\\output\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_out.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\a61c9e2d7d85707856c7fdfb5974c0ac71141b61\\output\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\11a2a04537914523bc181fc369aa5790d844f464\\output\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_in.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\c2acc74ea51f8fc2b07f7f899b57b00bb349f1f3\\output\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
     }
 ]

@@ -4,6 +4,10 @@
         "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_menu_send.png"
     },
     {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\ic_menu_share.png",
+        "source": "F:\\HnTAuction\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_menu_share.png"
+    },
+    {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\ic_menu_manage.png",
         "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_menu_manage.png"
     },
@@ -20,7 +24,27 @@
         "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_menu_share.png"
     },
     {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\ic_menu_camera.png",
+        "source": "F:\\HnTAuction\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_menu_camera.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\ic_menu_slideshow.png",
+        "source": "F:\\HnTAuction\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_menu_slideshow.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\ic_menu_manage.png",
+        "source": "F:\\HnTAuction\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_menu_manage.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\ic_menu_send.png",
+        "source": "F:\\HnTAuction\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_menu_send.png"
+    },
+    {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\ic_menu_slideshow.png",
         "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_menu_slideshow.png"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\ic_menu_gallery.png",
+        "source": "F:\\HnTAuction\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_menu_gallery.png"
     }
 ]

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.hammerandtongues.online.hntonline"
+    package="com.hammerandtongues.online.hntauction"
     android:versionCode="11"
     android:versionName="1.10" >
 
@@ -12,16 +12,23 @@
     <!-- Include following permission if you want to cache images on SD card -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
 
     <permission
-        android:name="com.github.hathibelagal.pn.permission.C2D_MESSAGE"
+        android:name="com.github.hathibelagall.pn.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.github.hathibelagal.pn.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.github.hathibelagall.pn.permission.C2D_MESSAGE" />
 
     <!-- Optional permission for Analytics to run. -->
     <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Permissions required for GCM -->
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.hammerandtongues.online.hntauction.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.hammerandtongues.online.hntauction.permission.C2D_MESSAGE" />
 
     <uses-feature
         android:glEsVersion="0x00020000"
@@ -29,11 +36,9 @@
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
-    <permission
-        android:name="com.hammerandtongues.online.hntonline.permission.C2D_MESSAGE"
-        android:protectionLevel="signature" />
-
-    <uses-permission android:name="com.hammerandtongues.online.hntonline.permission.C2D_MESSAGE" />
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="25.3.1" />
 
     <application
         android:name="android.support.multidex.MultiDexApplication"
@@ -69,8 +74,7 @@
         <activity
             android:name="com.hammerandtongues.online.hntauction.Search"
             android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
             </intent-filter>
@@ -85,61 +89,53 @@
             android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
+                android:screenOrientation="portrait"
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name="com.hammerandtongues.online.hntauction.CategoriesActivity"
-            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name="com.hammerandtongues.online.hntauction.StoresFragment"
-            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name="com.hammerandtongues.online.hntauction.PromotionsFragment"
-            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity" />
-        <activity
-            android:name="com.hammerandtongues.online.hntauction.Single_Product"
-            android:parentActivityName="com.hammerandtongues.online.hntauction.Products_list" />
-        <activity
-            android:name="com.hammerandtongues.online.hntauction.Store"
-            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity" />
-        <activity
-            android:name="com.hammerandtongues.online.hntauction.Cart"
-            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity" />
-        <activity
-            android:name="com.hammerandtongues.online.hntauction.CheckOut_Activity"
-            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity" >
-        </activity>
-        <activity
             android:name="com.hammerandtongues.online.hntauction.UserActivity"
-            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity" />
+            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.hammerandtongues.online.hntauction.Products_list"
-            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity" />
+            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hammerandtongues.online.hntauction.Single_Product"
+            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.hammerandtongues.online.hntauction.TransactionHistory"
-            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity" />
+            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.hammerandtongues.online.hntauction.AboutUs"
-            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity" />
+            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.hammerandtongues.online.hntauction.Faqs"
-            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity" />
+            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.hammerandtongues.online.hntauction.ContactUs"
-            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity" />
+            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.hammerandtongues.online.hntauction.TermsAndConditions"
-            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity" />
+            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.hammerandtongues.online.hntauction.WebViewActivity"
-            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity" />
+            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity"
+            android:screenOrientation="portrait" />
         <!--
              ATTENTION: This was auto-generated to add Google Play services to your project for
              App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+             <receiver android:name=".NetworkStateChecker">
+        <intent-filter>
+            <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+        </intent-filter>
+    </receiver>
         -->
         <meta-data
             android:name="com.google.android.gms.version"
@@ -152,11 +148,6 @@
         <fragment android:name=".Register" />
         <fragment android:name=".Login" />
 
-        <receiver android:name="com.hammerandtongues.online.hntauction.NetworkStateChecker" >
-            <intent-filter>
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-            </intent-filter>
-        </receiver>
         <receiver android:name="com.hammerandtongues.online.hntauction.MyAppReciever" >
             <intent-filter>
                 <action android:name="android.Intent.ACTION_TIME_TICK" />
@@ -193,19 +184,72 @@
                      </intent-filter>
                  </service>
         -->
-        <activity
-            android:name="com.hammerandtongues.online.hntauction.Favourites"
-            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity" >
-        </activity>
+
         <activity
             android:name="com.hammerandtongues.online.hntauction.Register"
             android:label="@string/title_activity_register"
-            android:theme="@style/AppTheme.NoActionBar" >
-        </activity>
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.hammerandtongues.online.hntauction.Login"
             android:label="@string/title_activity_login"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:noHistory="true"
+            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hammerandtongues.online.hntauction.MyBids"
+            android:noHistory="true"
+            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hammerandtongues.online.hntauction.PastAuctions"
+            android:label="@string/title_activity_past_auctions"
+            android:noHistory="true"
+            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity" />
+        <activity
+            android:name="com.hammerandtongues.online.hntauction.UpcomingAuctions"
+            android:label="@string/title_activity_upcoming_auctions"
+            android:noHistory="true"
+            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity" />
+        <activity
+            android:name="com.hammerandtongues.online.hntauction.Calender"
+            android:label="@string/title_activity_calender"
+            android:noHistory="true"
+            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity" />
+        <activity
+            android:name="com.hammerandtongues.online.hntauction.Add_Note"
+            android:label="@string/title_activity_add__note"
+            android:noHistory="true"
+            android:parentActivityName="com.hammerandtongues.online.hntauction.Calender" />
+        <activity
+            android:name="com.hammerandtongues.online.hntauction.Note_Preview"
+            android:label="@string/title_activity_note__preview"
+            android:noHistory="true"
+            android:parentActivityName="com.hammerandtongues.online.hntauction.Calender" />
+        <activity
+            android:name="com.hammerandtongues.online.hntauction.Categories"
+            android:label="@string/title_activity_categories"
+            android:noHistory="true"
+            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity" />
+        <activity
+            android:name="com.hammerandtongues.online.hntauction.Locations"
+            android:label="@string/title_activity_locations"
+            android:noHistory="true"
+            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity" />
+        <activity
+            android:name="com.hammerandtongues.online.hntauction.MyFinances"
+            android:label="@string/title_activity_myfinances"
+            android:noHistory="true"
+            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity" />
+        <activity
+            android:name="com.hammerandtongues.online.hntauction.AllBids"
+            android:label="@string/title_activity_all_bids"
+            android:noHistory="true"
+            android:parentActivityName="com.hammerandtongues.online.hntauction.Single_Product" />
+        <activity
+            android:name="com.hammerandtongues.online.hntauction.Watchlist"
+            android:parentActivityName="com.hammerandtongues.online.hntauction.MainActivity" >
         </activity>
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
@@ -264,7 +308,7 @@ Service handling Google Sign-In user revocation. For apps that do not integrate 
             android:name="com.google.android.gms.tagmanager.TagManagerPreviewActivity"
             android:noHistory="true" > <!-- optional, removes the previewActivity from the activity stack. -->
             <intent-filter>
-                <data android:scheme="tagmanager.c.com.hammerandtongues.online.hntonline" />
+                <data android:scheme="tagmanager.c.com.hammerandtongues.online.hntauction" />
 
                 <action android:name="android.intent.action.VIEW" />
 
@@ -286,11 +330,6 @@ Service handling Google Sign-In user revocation. For apps that do not integrate 
             android:enabled="true"
             android:exported="false" />
 
-        <activity
-            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-            android:exported="false"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-
         <receiver
             android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
             android:exported="true"
@@ -299,7 +338,7 @@ Service handling Google Sign-In user revocation. For apps that do not integrate 
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
                 <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
 
-                <category android:name="com.hammerandtongues.online.hntonline" />
+                <category android:name="com.hammerandtongues.online.hntauction" />
             </intent-filter>
         </receiver>
         <!--
@@ -321,11 +360,22 @@ Service handling Google Sign-In user revocation. For apps that do not integrate 
             </intent-filter>
         </service>
 
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
         <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"
-            android:authorities="com.hammerandtongues.online.hntonline.firebaseinitprovider"
+            android:authorities="com.hammerandtongues.online.hntauction.firebaseinitprovider"
             android:exported="false"
             android:initOrder="100" />
+
+        <activity
+            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
+            android:exported="false"
+            android:label=""
+            android:theme="@style/EasyPermissions.Transparent" />
     </application>
 
 </manifest>

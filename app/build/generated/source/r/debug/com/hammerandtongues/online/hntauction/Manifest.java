@@ -9,6 +9,6 @@ package com.hammerandtongues.online.hntauction;
 
 public final class Manifest {
     public static final class permission {
-        public static final String C2D_MESSAGE="com.hammerandtongues.online.hntonline.permission.C2D_MESSAGE";
+        public static final String C2D_MESSAGE="com.hammerandtongues.online.hntauction.permission.C2D_MESSAGE";
     }
 }

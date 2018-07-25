@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.hammerandtongues.online.hntauction.Locations"
+        tools:showIn="@layout/activity_categories">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="8dp">
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categories"
+                android:layout_weight="1"
+                android:background="@color/colorDarkness"
+                android:textColor="@color/colorOrange"
+                android:id="@+id/btn_categs" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Locations"
+                android:layout_weight="1"
+                android:background="@color/colorDarkness"
+                android:textColor="@android:color/white"
+                android:id="@+id/btn_loctns" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upcoming"
+                android:layout_weight="1"
+                android:background="@color/colorDarkness"
+                android:textColor="@android:color/white"
+                android:id="@+id/btn_upcmng" />
+
+        </LinearLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="447dp"
+            android:orientation="vertical"
+            android:fillViewport="true"
+            android:id="@+id/scrollView"
+            tools:layout_editor_absoluteY="56dp"
+            tools:layout_editor_absoluteX="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="50dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:id="@+id/vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="200dp"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxLines="20"
+                    android:scrollbars="vertical"
+                    android:id="@+id/textViewJSON" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/storedesc"
+                    android:layout_gravity="center_vertical"/>
+            </RelativeLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:id="@+id/lnnoauction"
+        android:visibility="gone"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorOrange"
+            android:textSize="20dp"
+            android:id="@+id/txtmaininfo"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
+

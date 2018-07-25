@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hammerandtongues.online.hntauction.MyFinances">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fnimageView"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/withdraw_layout"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/defaultpadding20"
+                android:paddingRight="@dimen/defaultpadding20"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/fnimageView"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Request Withdrawal"
+                    android:textColor="@color/colorAmber"
+                    android:textSize="18dp"/>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wallet Balance"
+                    android:textColor="@color/colorAmber"
+                    android:id="@+id/mybalance"
+                    android:textSize="18dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Withdraw by bank"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:id="@+id/bankinfo"
+                    android:hint="Bank Details"
+                    android:padding="15dp"
+                    android:background="@drawable/roundcorner"
+                    android:layout_gravity="center_horizontal"/>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Withdraw by ecocash"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/econumber"
+                    android:hint="Ecocash Number"
+                    android:padding="15dp"
+                    android:background="@drawable/roundcorner"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter amount to withdraw"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/withamount"
+                    android:hint="amount"
+                    android:paddingTop="@dimen/defaultpadding20"
+                    android:padding="15dp"
+                    android:background="@drawable/roundcorner"
+                    android:layout_gravity="center_horizontal"/>
+
+
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="WITHDRAW"
+                    android:textColor="#ecf0f1"
+                    android:background="@drawable/default_rounded"
+                    android:padding="15dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/btnwithdraw"
+                    android:layout_weight="1"/>
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PENDING WITHDRAWALS"
+                    android:textColor="#ecf0f1"
+                    android:background="@drawable/default_rounded"
+                    android:padding="15dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/btnpendingwithdraw"
+                    android:layout_weight="1"/>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/deposit_layout"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/defaultpadding20"
+                android:paddingRight="@dimen/defaultpadding20"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/fnimageView"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DEPOSIT MONEY"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorDarkness"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="By Bank"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorAmber"
+                    android:textSize="18dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Bank Details:
+Name: Hammer and Tongues
+Bank: CBZ
+Branch: Selous Ave
+Acc#: 02122858190015"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16dp"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="2dp"
+                    android:background="@color/colorAmber"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="By Ecocash"
+
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorAmber"
+                        android:textSize="18dp"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/depamounteco"
+                        android:hint="amount"
+                        android:layout_marginTop="10dp"
+                        android:paddingTop="@dimen/defaultpadding20"
+                        android:padding="15dp"
+                        android:background="@drawable/roundcorner"
+                        android:layout_gravity="center_horizontal"/>
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/depnumeco"
+                        android:hint="mobile number without 0/+263"
+                        android:layout_marginTop="10dp"
+                        android:inputType="number"
+                        android:paddingTop="@dimen/defaultpadding20"
+                        android:padding="15dp"
+                        android:background="@drawable/roundcorner"
+                        android:layout_gravity="center_horizontal"/>
+
+
+
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+
+                        android:text="DEPOSIT"
+                        android:textColor="#ecf0f1"
+                        android:background="@drawable/default_rounded"
+                        android:padding="15dp"
+                        android:id="@+id/btndepeco"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="2dp"
+                    android:background="@color/colorAmber"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="By Telecash"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorAmber"
+                        android:textSize="18dp"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/depamounttele"
+                        android:hint="amount"
+                        android:paddingTop="@dimen/defaultpadding20"
+                        android:padding="15dp"
+                        android:layout_marginTop="10dp"
+                        android:inputType="number"
+                        android:background="@drawable/roundcorner"
+                        android:layout_gravity="center_horizontal"/>
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/depnumtele"
+                        android:hint="mobile number without 0/+263"
+                        android:paddingTop="@dimen/defaultpadding20"
+                        android:padding="15dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/roundcorner"
+                        android:layout_gravity="center_horizontal"/>
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/depotptele"
+                        android:hint="One Time Password"
+                        android:paddingTop="@dimen/defaultpadding20"
+                        android:padding="15dp"
+                        android:inputType="number"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/roundcorner"
+                        android:layout_gravity="center_horizontal"/>
+
+
+
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="DEPOSIT"
+                        android:textColor="#ecf0f1"
+                        android:background="@drawable/default_rounded"
+                        android:padding="15dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/btndeptele"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="2dp"
+                    android:background="@color/colorAmber"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="By Paynow"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorAmber"
+                        android:textSize="18dp"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/depamountpaynw"
+                        android:hint="amount"
+                        android:paddingTop="@dimen/defaultpadding20"
+                        android:padding="15dp"
+                        android:background="@drawable/roundcorner"
+                        android:layout_gravity="center_horizontal"/>
+
+
+
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="DEPOSIT"
+                        android:textColor="#ecf0f1"
+                        android:background="@drawable/default_rounded"
+                        android:padding="15dp"
+                        android:id="@+id/btndeppaynw"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/redeem_layout"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/defaultpadding20"
+                android:paddingRight="@dimen/defaultpadding20"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/fnimageView"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Redeem points"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorAmber"
+                    android:textSize="18dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="50 points = $1"
+                    android:textColor="@color/colorAmber"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18dp"/>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/colorAmber"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/mypoints"
+                    android:textSize="18dp"/>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/thepoints"
+                    android:hint="Points to redeem"
+                    android:inputType="number"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:background="@drawable/roundcorner"
+                    android:layout_gravity="center_horizontal"/>
+
+
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="REDEEM"
+                    android:textColor="#ecf0f1"
+                    android:background="@drawable/default_rounded"
+                    android:padding="15dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/btnredeem"
+                    android:layout_weight="1"/>
+
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/transfer_layout"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/defaultpadding20"
+                android:paddingRight="@dimen/defaultpadding20"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/fnimageView"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Transfer credits"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorAmber"
+                    android:textSize="18dp"/>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select the wallet from where you want to get credits"
+                    android:textColor="@color/colorAmber"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18dp"/>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Wallet:"
+                        android:textSize="17dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/colorPrimaryDark"/>
+
+                    <Spinner
+                        android:id="@+id/trans_site"
+                        android:layout_width="wrap_content"
+                        android:layout_height="41dp"
+                        android:dropDownWidth="200dp"
+                        android:entries="@array/site_arrays"/>
+                </LinearLayout>
+
+
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/trans_amount"
+                    android:hint="Amount"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:background="@drawable/roundcorner"
+                    android:layout_gravity="center_horizontal"/>
+
+
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TRANSFER"
+                    android:textColor="#ecf0f1"
+                    android:background="@drawable/default_rounded"
+                    android:padding="15dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/btntransfer"
+                    android:layout_weight="1"/>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/pending_layout"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/defaultpadding20"
+                android:paddingRight="@dimen/defaultpadding20"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/fnimageView"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone">
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BACK"
+                android:textColor="#ecf0f1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/default_rounded"
+                android:padding="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/financeback"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,62 +1,226 @@
 [
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_tint_password_toggle.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\11a2a04537914523bc181fc369aa5790d844f464\\output\\res\\color\\design_tint_password_toggle.xml"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_dark.xml",
         "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\color\\common_google_signin_btn_text_dark.xml"
     },
     {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_edittext.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\color\\abc_tint_edittext.xml"
+    },
+    {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\wallet_secondary_text_holo_dark.xml",
         "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\4563451a4806083578ea431f145b209b53701a8c\\output\\res\\color\\wallet_secondary_text_holo_dark.xml"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_plus_signin_btn_text_dark.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\color\\common_plus_signin_btn_text_dark.xml"
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_error.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\11a2a04537914523bc181fc369aa5790d844f464\\output\\res\\color\\design_error.xml"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\color\\switch_thumb_material_light.xml"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\color\\abc_primary_text_material_light.xml"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\color\\abc_primary_text_material_light.xml"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\color\\switch_thumb_material_light.xml"
     },
     {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\color\\abc_secondary_text_material_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\color\\abc_primary_text_material_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_light.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\color\\common_google_signin_btn_text_light.xml"
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\color\\common_google_signin_btn_text_dark.xml"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_plus_signin_btn_text_light.xml",
         "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\color\\common_plus_signin_btn_text_light.xml"
     },
     {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_seek_thumb.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\color\\abc_tint_seek_thumb.xml"
+    },
+    {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\color\\abc_search_url_text.xml"
-    },
-    {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\color\\abc_secondary_text_material_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\color\\switch_thumb_material_dark.xml"
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\color\\abc_search_url_text.xml"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
-        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\508c4f0dc0bbbccd611f07202f009ad7d1abc4a7\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\wallet_primary_text_holo_light.xml",
         "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\4563451a4806083578ea431f145b209b53701a8c\\output\\res\\color\\wallet_primary_text_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_spinner.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\color\\abc_tint_spinner.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\color\\abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_borderless_text_material.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\color\\abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_light.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\color\\abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\color\\abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_dark.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\color\\abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_seek_thumb.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\color\\abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\color\\abc_search_url_text.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_spinner.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\color\\abc_tint_spinner.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_tint_password_toggle.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\c2acc74ea51f8fc2b07f7f899b57b00bb349f1f3\\output\\res\\color\\design_tint_password_toggle.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\color\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\color\\abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\color\\abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\wallet_primary_text_holo_light.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\4c99404e20a99728b38c4256f34cb1c967c656ed\\output\\res\\color\\wallet_primary_text_holo_light.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_light.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\color\\abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_plus_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\f50517bbb6a0f5de0fdaa6462dc5ab1c86c7dc63\\output\\res\\color\\common_plus_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_plus_signin_btn_text_light.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\color\\common_plus_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\color\\switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_edittext.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\color\\abc_tint_edittext.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\color\\abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\color\\abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\color\\abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_text_material.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\color\\abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_btn_checkable.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\color\\abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_track.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\color\\abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\color\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_error.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\c2acc74ea51f8fc2b07f7f899b57b00bb349f1f3\\output\\res\\color\\design_error.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_text_material.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\color\\abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_dark.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\color\\abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_track.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\color\\abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_default.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\color\\abc_tint_default.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\color\\switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_thumb.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\color\\abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_plus_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\899f140fb81f026be4be96cd7f006271eb2d60ad\\output\\res\\color\\common_plus_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_default.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\f2e68e231281f7fe752ab11f2eb678eb839823e4\\output\\res\\color\\abc_tint_default.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_btn_checkable.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\color\\abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\color\\switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_borderless_text_material.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\color\\abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_thumb.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\3f05fda972485b8db5e92adae761ff7bbe811eb3\\output\\res\\color\\abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\color\\wallet_secondary_text_holo_dark.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\4c99404e20a99728b38c4256f34cb1c967c656ed\\output\\res\\color\\wallet_secondary_text_holo_dark.xml"
     }
 ]

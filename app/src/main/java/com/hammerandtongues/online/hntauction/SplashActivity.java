@@ -63,6 +63,7 @@ public class SplashActivity extends AppCompatActivity {
                     dbHandler.fill_auctions(this);
                     dbHandler.fill_categories(this);
                     dbHandler.fill_locations(this);
+                    dbHandler.fill_bids(this);
 
 
 
@@ -79,6 +80,8 @@ public class SplashActivity extends AppCompatActivity {
                     startActivity(intent);
 
                 } else {
+
+                    /*
                     // other time your app loads
 
                     broadcastReceiver = new BroadcastReceiver() {
@@ -93,9 +96,11 @@ public class SplashActivity extends AppCompatActivity {
 
                         }
                     };
+*/
 
                     dayofyeartext = String.valueOf(Calendar.getInstance().get(Calendar.DAY_OF_YEAR));
                     dayofyearstored = (sharedpreferences.getString("storedday", ""));
+                    //dayofyearstored = "51";
 
                     Log.e("My App day  ", "Previously stored day from splash screen was" + dayofyearstored);
 
@@ -112,45 +117,6 @@ public class SplashActivity extends AppCompatActivity {
 
 
 
-/*
-                        tickReceiver=new BroadcastReceiver(){
-                            @Override
-                            public void onReceive(Context context, Intent intent) {
-                                if(intent.getAction().compareTo(Intent.ACTION_TIME_TICK)==0)
-
-                                {
-
-
-                                    hourText = String.valueOf(Calendar.getInstance().get(Calendar.HOUR_OF_DAY));
-                                    minuteText = String.valueOf(Calendar.getInstance().get(Calendar.MINUTE));
-
-
-
-
-                                    timeofday = hourText + ":" + minuteText;
-
-                                    Log.e("My App Receiver  ", "Time has changed my dear!" + timeofday );
-
-                                    if (timeofday.contentEquals("13:25")) {
-
-                                        Log.e("My App Receiver  ", "Time has changed has reached wanted my dear!" );
-
-                                        new GetConnectionStatus().execute();
-
-                                    }
-
-
-
-                                }
-
-                            }
-                        };
-
-*/
-                    //Register the broadcast receiver to receive TIME_TICK
-                    //registerReceiver(tickReceiver, new IntentFilter(Intent.ACTION_TIME_TICK));
-
-
                 }
 
 
@@ -158,7 +124,7 @@ public class SplashActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
 
-            //}
+
 
 
 
@@ -244,11 +210,13 @@ public class SplashActivity extends AppCompatActivity {
                         dbHandler.clearAuctions();
                         dbHandler.clearCategories();
                         dbHandler.clearLocation();
+                        dbHandler.clearBids();
 
                         dbHandler.fill_auctions(getBaseContext());
                         dbHandler.fill_categories(getBaseContext());
                         dbHandler.fill_locations(getBaseContext());
                         dbHandler.fill_auctionscontent(getBaseContext());
+                        dbHandler.fill_bids(getBaseContext());
 
                         SharedPreferences.Editor editor = sharedpreferences.edit();
                         editor.putString("storedday", dayofyeartext);

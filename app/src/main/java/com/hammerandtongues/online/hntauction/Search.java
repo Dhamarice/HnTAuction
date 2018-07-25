@@ -2,21 +2,29 @@ package com.hammerandtongues.online.hntauction;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.database.Cursor;
+import android.database.DatabaseUtils;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.support.design.widget.Snackbar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Html;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -46,7 +54,9 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.text.NumberFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
@@ -68,25 +78,18 @@ public class Search extends AppCompatActivity {
     JSONParser jsonParser = new JSONParser();
 
     private static final String GETSEARCH_PRODUCTS_URL = "https://devshop.hammerandtongues.com/webservice/getsearchproducts.php";
+    private static final String BIDS_URL = "http://devauction.hammerandtongues.com/webservice/highest_bids.php";
 
-    //JSON element ids from repsonse of php script:
-    private static final String TAG_SUCCESS = "success";
-    private static final String TAG_MESSAGE = "message";
-    private static final String TAG_PRODUCTDETAILS = "posts";
-    String storeID;
-    String PName,PPrice, post_id="";
+    String PName,PPrice;
+    String productID, name, won, post_id, closedate,  imgurl = "";
     String SearchTerm = "";
-    String imgurl = "";
-    String Search, Query;
-    String type = "Product";
-    String productID;
+    String lastid, type = "Product";
+    DatabaseHelper dbHandler;
     Boolean GetProducts = Boolean.FALSE;
     ImageView imgstore[] = new ImageView[200];
     private EditText txt_query;
     LinearLayout layout;
     TextView noresult;
-    private TextView txtcartitems;
-    private int cnt_cart,  flag=0;
     int cartid, currcart, limit, offset;
     SharedPreferences shared;
 
@@ -105,6 +108,7 @@ public class Search extends AppCompatActivity {
                pDialog.setCancelable(true);
                System.gc();
                final SharedPreferences shared = getSharedPreferences(MyPREFERENCES, MODE_PRIVATE);
+               dbHandler = new DatabaseHelper(this);
                if (shared.getString("CartID", "") != null && shared.getString("CartID", "") != "") {
                    currcart = Integer.parseInt(shared.getString("CartID", ""));
                } else {
@@ -128,7 +132,8 @@ public class Search extends AppCompatActivity {
                        layout.removeAllViews();
                    //    new GetConnectionStatus().execute();
 
-                       getsearch(SearchTerm);
+                       //getsearch(SearchTerm);
+                       getSearchResults(SearchTerm);
 
                    }
                });
@@ -230,208 +235,414 @@ public  void getSearchResults(String Result)
 
 
     DisplayMetrics metrics = getResources().getDisplayMetrics();
-    int densityDpi = (int)(metrics.density * 160f);
+    int densityDpi = (int) (metrics.density * 160f);
 
 
     final SharedPreferences shared = getSharedPreferences(MyPREFERENCES, MODE_PRIVATE);
 
-    JSONArray jsonarray02 = null;
-    try {
+    DatabaseHelper dbHandler = new DatabaseHelper(this);
 
-      JSONObject object=new JSONObject(Result);
+    if (dbHandler.searchProduct(SearchTerm) != null) {
 
-        jsonarray02=object.getJSONArray("posts");
-    }
-    catch (JSONException e) {Log.e("JSON Error: ", e.toString());
-        Log.e("Detail of Error",Result);
-        e.printStackTrace();
+        layout.removeAllViews();
 
-        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        Cursor cursor01 = dbHandler.searchProduct(SearchTerm);
 
-        LinearLayout itmcontr = new LinearLayout(this);
-        itmcontr.setOrientation(LinearLayout.HORIZONTAL);
-        itmcontr.setBackgroundColor(Color.WHITE);
+        if (cursor01 != null && cursor01.moveToFirst()) {
 
-        TextView resultno = new TextView(this);
-        resultno.setText("No result could match your search!");
-        resultno.setTextColor(getResources().getColor(R.color.colorAmber));
-        resultno.setTypeface(null, Typeface.BOLD);
-        resultno.setTextSize(20);
-
-        itmcontr.addView(resultno);
-        layout.addView(itmcontr, layoutParams);
+            Log.e("Product_list", "Values" + DatabaseUtils.dumpCursorToString(cursor01));
 
 
-    }
+            int i2 = cursor01.getCount();
+            for (int i = 0; i < i2; i++) {
+                LinearLayout itmcontr = new LinearLayout(this);
 
-    Log.e("Get Product Flag", GetProducts.toString());
-    if (jsonarray02 != null) {
-        int i2 = jsonarray02.length();
-        //iterate through products in JSON string and
-        for (int i = 0; i < i2; i++) {
-            LinearLayout itmcontr = new LinearLayout(this);
 
-            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
-                    LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+                LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
+                        LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
 
-            layoutParams.setMargins(10, 10, 10, 10);
+                layoutParams.setMargins(10, 10, 10, 10);
 
-            itmcontr.setOrientation(LinearLayout.HORIZONTAL);
-            itmcontr.setBackgroundColor(Color.WHITE);
+                itmcontr.setOrientation(LinearLayout.HORIZONTAL);
+                itmcontr.setBackgroundColor(Color.WHITE);
 
-            imgstore[i]  = new ImageView(this);
-            itmcontr.addView(imgstore[i]);
+                imgstore[i] = new ImageView(this);
+                itmcontr.addView(imgstore[i]);
 
-            try {
-                JSONObject jsonobject = jsonarray02.getJSONObject(i);
-                PName = jsonobject.getString("name");
-                post_id = jsonobject.getString("post_id");
-                imgurl = jsonobject.getString("imgurl");
-                PPrice = jsonobject.getString("price");
-            } catch (JSONException e) {
-                Log.e("JSON Error: ", e.toString());
-                e.printStackTrace();
+                PName = cursor01.getString(7);
+                lastid = cursor01.getString(0);
+                post_id = cursor01.getString(1);
+                imgurl = cursor01.getString(9);
+                PPrice = cursor01.getString(4);
+                won = cursor01.getString(24);
+                closedate = cursor01.getString(25);
+
+
+                SharedPreferences.Editor editor = shared.edit();
+                editor.putString("lastid", lastid);
+                editor.commit();
+                editor.apply();
+
+                get_bids(post_id);
+
+
+                //Splitting date formatts
+
+                String CurrentEnddate = closedate;
+                String[] separatedate = CurrentEnddate.split(" ");
+                final String closedayserver = separatedate[0];
+                String closetimeserver = separatedate[1];
+
+
+                String Unsplitday = closedayserver;
+                String[] separatedday = Unsplitday.split("-");
+                String splitcloseyear = separatedday[0];
+                String splitclosemonth = separatedday[1];
+                String splitcloseday = separatedday[2];
+
+
+                String Unsplittime = closetimeserver;
+                String[] separatedtime = Unsplittime.split("-");
+                String splitclosehour = separatedtime[0];
+                String splitcloseminute = separatedtime[1];
+                String splitclosesecond = separatedtime[2];
+
+
+                try {
+                    SimpleDateFormat dateFormat = new SimpleDateFormat(
+                            "yyyyy-MM-dd");
+                    // Please here set your event date//YYYY-MM-DD
+                    Date futureDate = dateFormat.parse(closedayserver);
+                    Date currentDate = new Date();
+
+
+                    //imageLoader.displayImage(imgurl, imgstore[i], options);
+                    Picasso.with(this).load(imgurl)
+                            .placeholder(R.drawable.progress_animation)
+                            .error(R.drawable.offline)
+                            .into(imgstore[i]);
+                    ViewGroup.LayoutParams imglayoutParams = imgstore[i].getLayoutParams();
+
+                    int imglength = (int) (metrics.density * 80);
+                    int imgwidth = (int) (metrics.density * 80);
+
+
+                    imglayoutParams.width = imglength;
+                    imglayoutParams.height = imgwidth;
+
+                    imgstore[i].setLayoutParams(imglayoutParams);
+
+                    Log.e("Setting Banner", imgurl);
+                    LinearLayout.LayoutParams lparams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+
+                    LinearLayout prdctinfo = new LinearLayout(this);
+                    prdctinfo.setOrientation(LinearLayout.VERTICAL);
+
+
+                    TextView ProductName = new TextView(this);
+                    TextView Price = new TextView(this);
+                    ProductName.setText(PName);
+                    Price.setText("Starting Price: $" + PPrice);
+                    Price.setTextColor(getResources().getColor(R.color.colorAmber));
+                    Price.setTypeface(null, Typeface.BOLD);
+                    Price.setTextSize(13);
+
+                    LinearLayout.LayoutParams btnsize = new LinearLayout.LayoutParams(200, 60);
+                    btnsize.setMargins(20, 0, 20, 0);
+                    btnsize.gravity = Gravity.RIGHT;
+
+                    prdctinfo.addView(ProductName);
+                    prdctinfo.addView(Price);
+
+                    LinearLayout theBut = new LinearLayout(this);
+                    theBut.setOrientation(LinearLayout.HORIZONTAL);
+
+
+                    if (currentDate.after(futureDate)) {
+
+
+                        Button Place_Bid = new Button(this);
+                        Place_Bid.setText("Closed!");
+                        Place_Bid.setTextColor(Color.WHITE);
+                        Place_Bid.setTextSize(12);
+                        Place_Bid.setId(Integer.parseInt(post_id));
+                        Place_Bid.setOnClickListener(new View.OnClickListener() {
+
+                            @Override
+                            public void onClick(View view) {
+
+                                new AlertDialog.Builder(Search.this)
+                                        .setTitle("Info")
+                                        .setPositiveButton("Ok", null)
+
+                                        .setNegativeButton("", null)
+                                        .setMessage(Html.fromHtml("This auction has been closed!"))
+                                        .show();
+
+
+                            }
+
+                        });
+
+                        int length = (int) (metrics.density * 100);
+                        int width = (int) (metrics.density * 35);
+
+                        LinearLayout.LayoutParams btnsize2 = new LinearLayout.LayoutParams(length, width, 1);
+                        btnsize2.setMargins(15, 0, 15, 0);
+
+                        Place_Bid.setLayoutParams(btnsize2);
+                        Place_Bid.setBackgroundColor(getResources().getColor(R.color.colorOrange));
+
+                        theBut.addView(Place_Bid);
+                        prdctinfo.addView(theBut);
+
+
+                    } else if (won != null && won != "" && won != "0" && !won.contentEquals("0")) {
+
+
+                        Button Place_Bid = new Button(this);
+                        Place_Bid.setText("WON!");
+                        Place_Bid.setTextColor(Color.WHITE);
+                        Place_Bid.setTextSize(12);
+                        Place_Bid.setId(Integer.parseInt(post_id));
+                        Place_Bid.setOnClickListener(new View.OnClickListener() {
+
+                            @Override
+                            public void onClick(View view) {
+
+                                new AlertDialog.Builder(Search.this)
+                                        .setTitle("Info")
+                                        .setPositiveButton("Ok", null)
+
+                                        .setNegativeButton("", null)
+                                        .setMessage(Html.fromHtml("Product has already been won!"))
+                                        .show();
+
+
+                            }
+
+                        });
+
+                        int length = (int) (metrics.density * 100);
+                        int width = (int) (metrics.density * 35);
+
+                        LinearLayout.LayoutParams btnsize2 = new LinearLayout.LayoutParams(length, width, 1);
+                        btnsize2.setMargins(15, 0, 15, 0);
+
+                        Place_Bid.setLayoutParams(btnsize2);
+                        Place_Bid.setBackgroundColor(getResources().getColor(R.color.colorOrange));
+
+                        theBut.addView(Place_Bid);
+                        prdctinfo.addView(theBut);
+
+                    } else {
+
+
+                        Button Place_Bid = new Button(this);
+                        Place_Bid.setText("View");
+                        Place_Bid.setTextColor(Color.WHITE);
+                        Place_Bid.setTextSize(12);
+                        Place_Bid.setId(Integer.parseInt(post_id));
+                        Place_Bid.setOnClickListener(new View.OnClickListener() {
+
+                            @Override
+                            public void onClick(View view) {
+                                // do stuff
+
+                                if (won != null && won != "" && won != "0" && !won.contentEquals("0")) {
+
+                                    new AlertDialog.Builder(Search.this)
+                                            .setTitle("Info")
+                                            .setPositiveButton("Ok", null)
+
+                                            .setNegativeButton("", null)
+                                            .setMessage(Html.fromHtml("Product has already been won!"))
+                                            .show();
+
+                                } else {
+
+
+                                    String id1 = Integer.toString(view.getId());
+                                    SharedPreferences.Editor editor = shared.edit();
+                                    editor.putString(Product, id1);
+                                    editor.commit();
+                                    Intent i = new Intent(Search.this, Single_Product.class);
+                                    startActivity(i);
+
+
+                                }
+
+
+                            }
+
+                        });
+
+
+                        Button AddToFav = new Button(this);
+                        AddToFav.setText("Watch List");
+                        AddToFav.setTextColor(Color.WHITE);
+                        AddToFav.setTextSize(12);
+                        AddToFav.setId(Integer.parseInt(post_id));
+                        AddToFav.setOnClickListener(new View.OnClickListener() {
+
+                            @Override
+                            public void onClick(View arg0) {
+                                // do stuff
+
+                                if (won != null && won != "" && won != "0" && !won.contentEquals("0")) {
+
+
+                                    new AlertDialog.Builder(Search.this)
+                                            .setTitle("Info")
+                                            .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                                                @Override
+                                                public void onClick(DialogInterface dialog, int which) {
+
+
+                                                    Intent intent = new Intent(Search.this, Products_list.class);
+                                                    startActivity(intent);
+                                                }
+                                            })
+
+                                            .setNegativeButton("", null)
+                                            .setMessage(Html.fromHtml("Product has already been won!"))
+                                            .show();
+
+                                } else {
+
+                                    String id1 = Integer.toString(arg0.getId());
+                                    SharedPreferences.Editor editor = shared.edit();
+                                    editor.putString(Product, id1);
+                                    editor.commit();
+                                    productID = (shared.getString(Product, ""));
+                                    addtoFav(id1);
+
+                                    final SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+                                    boolean agreed = sharedPreferences.getBoolean("agreedauction", false);
+                                    if (!agreed) {
+
+                                        Intent i = new Intent(Search.this, MainActivity.class);
+                                        startActivity(i);
+
+                                    }
+
+                                }
+
+                            }
+
+
+                        });
+
+
+                        int length = (int) (metrics.density * 100);
+                        int width = (int) (metrics.density * 35);
+                        //}// else {
+                        // AddToCart.setText("Auction Only");
+                        // AddToCart.setOnClickListener(new View.OnClickListener() {
+
+                        //  @Override
+                        // public void onClick(View view) {
+                        // do stuff
+                        //  Toast.makeText( Products_List.this, "Auction Only", Toast.LENGTH_SHORT).show();
+                        //}
+
+                        //});
+                        // }
+
+                        // int length = (int)(metrics.density *100);
+                        //int width = (int)(metrics.density * 35);
+
+
+                        LinearLayout.LayoutParams btnsize2 = new LinearLayout.LayoutParams(length, width, 1);
+                        btnsize2.setMargins(15, 0, 15, 0);
+
+                        Place_Bid.setLayoutParams(btnsize2);
+                        Place_Bid.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+
+                        AddToFav.setLayoutParams(btnsize2);
+                        AddToFav.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+
+                        //prdctinfo.setOrientation(LinearLayout.HORIZONTAL);
+                        theBut.addView(Place_Bid);
+
+                        theBut.addView(AddToFav);
+                        prdctinfo.addView(theBut);
+
+
+                    }
+
+
+                    prdctinfo.setLayoutParams(lparams);
+                    itmcontr.addView(prdctinfo);
+                    itmcontr.setId(Integer.parseInt(post_id));
+                    /*
+                    itmcontr.setOnClickListener(new View.OnClickListener() {
+
+                        @Override
+                        public void onClick(View view) {
+                            // do stuff
+                            String id1 = Integer.toString(view.getId());
+                            SharedPreferences.Editor editor = shared.edit();
+                            editor.putString(Product, id1);
+                            editor.commit();
+                            Intent i = new Intent(Products_list.this, Single_Product.class);
+                            startActivity(i);
+                        }
+
+                    });
+                    */
+                    layout.addView(itmcontr, layoutParams);
+
+
+
+                    noresult.setVisibility(View.GONE);
+
+
+                } catch (Exception ex) {
+                    Log.e("Image Button Error", ex.toString());
+                }
             }
-
-            //imageLoader.displayImage(imgurl, imgstore[i], options);
-            Picasso.with(this).load(imgurl)
-                    .placeholder(R.drawable.progress_animation)
-                    .error(R.drawable.ic_error)
-                    .into(imgstore[i]);
-
-            android.view.ViewGroup.LayoutParams imglayoutParams = imgstore[i].getLayoutParams();
-
-            int imglength = (int)(metrics.density *80);
-            int imgwidth = (int)(metrics.density * 80);
-            imglayoutParams.width = imglength;
-            imglayoutParams.height = imgwidth;
-
-            imgstore[i].setLayoutParams(imglayoutParams);
-
-            Log.e("Setting Banner", imgurl);
-            LinearLayout prdctinfo = new LinearLayout(this);
-            prdctinfo.setOrientation(LinearLayout.VERTICAL);
-            TextView ProductName = new TextView(this);
-            TextView Price = new TextView(this);
-            ProductName.setText(PName);
-            Price.setText("US $"+PPrice);
-            Price.setTextColor(getResources().getColor(R.color.colorAmber));
-            Price.setTypeface(null, Typeface.BOLD);
-            Price.setTextSize(13);
-
-            LinearLayout.LayoutParams btnsize = new LinearLayout.LayoutParams(200, 60);
-            btnsize.setMargins(20, 0, 20, 0);
-            btnsize.gravity= Gravity.RIGHT;
-
-            LinearLayout theBut = new LinearLayout(this);
-            theBut.setOrientation(LinearLayout.HORIZONTAL);
-
-            Button AddToCart = new Button(this);
-            AddToCart.setText("View Product");
-            AddToCart.setTextColor(getResources().getColor(R.color.colorAmber));
-            AddToCart.setTypeface(null, Typeface.BOLD);
-            AddToCart.setTextSize(13);
-            AddToCart.setTextColor(Color.WHITE);
-            AddToCart.setTextSize(12);
-            //btnPopular.setPadding(15, 0, 15, 5);
-            AddToCart.setLayoutParams(btnsize);
-            AddToCart.setId(Integer.parseInt(post_id));
-            //AddToCart.setGravity(View.FOCUS_RIGHT);
-            AddToCart.setOnClickListener(new View.OnClickListener() {
-
-                @Override
-                public void onClick(View view) {
-                    // do stuff
-                    //addProduct(view, view.getId());
-
-                    String id1 = Integer.toString(view.getId());
-                    SharedPreferences.Editor editor = shared.edit();
-                    editor.putString(Product, id1);
-                    editor.commit();
-
-                }
-
-            });
-
-            Button AddToFav = new Button(this);
-            AddToFav.setText("Favourite");
-            AddToFav.setTextColor(Color.WHITE);
-            AddToFav.setTextSize(12);
-            AddToFav.setId(Integer.parseInt(post_id));
-            AddToFav.setOnClickListener(new View.OnClickListener() {
-
-                @Override
-                public void onClick(View arg0) {
-                    // do stuff
-                    String id1 = Integer.toString(arg0.getId());
-                    SharedPreferences.Editor editor = shared.edit();
-                    editor.putString(Product, id1);
-                    editor.commit();
-                    productID = (shared.getString(Product, ""));
-                    addtoFav(id1);
+            cursor01.moveToNext();
 
 
-                }
-
-            });
-
-            int length = (int)(metrics.density *100);
-            int width = (int)(metrics.density * 35);
-
-
-            LinearLayout.LayoutParams btnsize2 = new LinearLayout.LayoutParams(length,width,1);
-            btnsize2.setMargins(15, 0, 15, 0);
-
-            AddToCart.setLayoutParams(btnsize2);
-            AddToCart.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
-
-            AddToFav.setLayoutParams(btnsize2);
-            AddToFav.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
-
-            //prdctinfo.setOrientation(LinearLayout.HORIZONTAL);
-            theBut.addView(AddToCart);
-
-            theBut.addView(AddToFav);
-            prdctinfo.addView(theBut);
-
-
-            prdctinfo.addView(ProductName);
-            prdctinfo.addView(Price);
-            //prdctinfo.addView(AddToCart);
-            itmcontr.addView(prdctinfo);
-            itmcontr.setId(Integer.parseInt(post_id));
-            itmcontr.setOnClickListener(new View.OnClickListener() {
-
-                @Override
-                public void onClick(View view) {
-                    // do stuff
-                    String id1 = Integer.toString(view.getId());
-                    SharedPreferences.Editor editor = shared.edit();
-                    editor.putString(Product, id1);
-                    editor.commit();
-
-                }
-
-            });
-            layout.addView(itmcontr, layoutParams);
+        } else {
+            String msg = "";
+            if (offset == 0) {
+                msg = "Your search could not match any products!";
+            } else {
+                msg = "No Additional Products to Display";
+            }
+            noresult.setText(msg);
+            noresult.setTextColor(getResources().getColor(R.color.colorAmber));
+            noresult.setTypeface(null, Typeface.BOLD);
+            noresult.setTextSize(16);
+            layout.addView(noresult);
+            Toast.makeText(this, msg, Toast.LENGTH_LONG).show();
+            noresult.setVisibility(View.VISIBLE);
         }
+        noresult.setVisibility(View.GONE);
+
     }
 
     else {
-
-        LinearLayout itmcontr = new LinearLayout(this);
-        itmcontr.setOrientation(LinearLayout.HORIZONTAL);
-        itmcontr.setBackgroundColor(Color.WHITE);
-
-        TextView resultno = new TextView(this);
-        resultno.setText("No result could match your search!");
-
-        itmcontr.addView(resultno);
-
+        String msg = "";
+        if (offset == 0) {
+            msg = "Your search could not match any products!";
+        } else {
+            msg = "No Additional Products to Display";
+        }
+        noresult.setText(msg);
+        noresult.setTextColor(getResources().getColor(R.color.colorAmber));
+        noresult.setTypeface(null, Typeface.BOLD);
+        noresult.setTextSize(16);
+        layout.addView(noresult);
+        Toast.makeText(this, msg, Toast.LENGTH_LONG).show();
+        noresult.setVisibility(View.VISIBLE);
     }
 
 }
+
+
 
 
     public void addtoFav(String id1) {
@@ -444,6 +655,8 @@ public  void getSearchResults(String Result)
         int id = Integer.parseInt(id1.toString());
         //int catId = Integer.parseInt(categoryID);
 
+        db.fillfav(id);
+
         Log.d("Notifications", "Picking up variables for saving" + String.valueOf((qty)) + " <= Quantity; " + String.valueOf(cartid) + "<=This is the current cart ID");
 
         Log.e("Notifications", "Finished saving an item" + id );
@@ -452,15 +665,6 @@ public  void getSearchResults(String Result)
         Locale locale = new Locale("en", "US");
         NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance(locale);
 
-        // CartManagement crtItms = db.getCartItemsCount(cartid);
-        // if (crtItms != null) {
-        //    Intent i = new Intent(Products_List.this, Products_List.class);
-        //   startActivity(i);
-        //   Toast.makeText(Products_List.this , "Network is Currently Unavailable", Toast.LENGTH_LONG).show();
-        //idCartItems.setText("Items in cart: " + String.valueOf((crtItms.get_Cart_Items_Count())));
-        //} else {
-        //idCartItems.setText("Items in cart: 0");
-        // }
 
 
     }
@@ -501,40 +705,38 @@ public  void getSearchResults(String Result)
 
 
 
-
-
-
-
-
-
-
-
-    private void getsearch(final String search){
-        com.android.volley.RequestQueue requestQueue= Volley.newRequestQueue(getApplicationContext());
-
-
-
-        pDialog.show();
-
-        StringRequest stringRequest=new StringRequest(Request.Method.POST, GETSEARCH_PRODUCTS_URL, new Response.Listener<String>() {
+    //Inquire product status from server
+    private void get_bids(final String Pid){
+        com.android.volley.RequestQueue requestQueue= Volley.newRequestQueue(getBaseContext());
+        //pDialog.show();
+        StringRequest stringRequest=new StringRequest(Request.Method.POST, BIDS_URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String s) {
-                pDialog.dismiss();
+                //pDialog.dismiss();
 
                 Log.e("Success",""+s);
-                //{"success":1,"message":"Username Successfully Added!"}
+                Log.e("Zitapass", "" + Pid);
+
 
                 try {
-                    JSONObject jsonObject=new JSONObject(s);
-                    int success=jsonObject.getInt("success");
-                    getSearchResults(s);
+                    JSONObject jsonobject=new JSONObject(s);
+                    String message=jsonobject.getString("message");
+                    int success=jsonobject.getInt("success");
+
+                    if(success==1){
+
+                        String won =jsonobject.getString("date_chosen");
+
+                        dbHandler.update_won_prdct( won, Pid);
+
+
+
+
+                    }
 
 
 
                 } catch (JSONException e) {
-
-                    Toast.makeText(getApplicationContext(), "An error accoured, please try again ", Toast.LENGTH_SHORT).show();
-
                     e.printStackTrace();
                 }
 
@@ -542,212 +744,32 @@ public  void getSearchResults(String Result)
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError volleyError) {
-
-                Toast.makeText(getApplicationContext(), "No internet connection! ", Toast.LENGTH_SHORT).show();
                 pDialog.dismiss();
-
-                LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
-                        LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-
-                LinearLayout itmcontr = new LinearLayout(getBaseContext());
-                itmcontr.setOrientation(LinearLayout.HORIZONTAL);
-                itmcontr.setBackgroundColor(Color.WHITE);
-
-                TextView resultno = new TextView(getBaseContext());
-                resultno.setText("No result could match your search!");
-                resultno.setTextColor(getResources().getColor(R.color.colorAmber));
-                resultno.setTypeface(null, Typeface.BOLD);
-                resultno.setTextSize(20);
-
+                volleyError.printStackTrace();
                 Log.e("RUEERROR",""+volleyError);
+                Toast.makeText(getBaseContext(), "Please check your Intenet and try again!", Toast.LENGTH_LONG).show();
             }
         }){
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String,String> values=new HashMap();
-                values.put("search", search);
+                values.put("productid",Pid);
+
 
                 return values;
             }
+
+
         };
-        stringRequest.setRetryPolicy(new DefaultRetryPolicy(60000,0,DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+
+        stringRequest.setRetryPolicy(new DefaultRetryPolicy(20 * 1000, 0,
+                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
         requestQueue.add(stringRequest);
 
 
 
-
     }
 
-
-
-
-
-
-
-    class GetProductDetails extends AsyncTask<String, String, String> {
-
-        /**
-         * Before starting background thread Show Progress Dialog
-         */
-        boolean failure = false;
-
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-            pDialog = new ProgressDialog(Search.this);
-            pDialog.setMessage("Searching, Please Wait...");
-            pDialog.setIndeterminate(false);
-            pDialog.setCancelable(true);
-            pDialog.show();
-
-
-        }
-
-        @Override
-        protected String doInBackground(String... args) {
-            // TODO Auto-generated method stub
-            // Check for success tag
-            int success;
-            String pid = storeID;
-
-            try {
-                // Building Parameters
-                JSONObject json1 =new JSONObject();
-                List<NameValuePair> params = new ArrayList<NameValuePair>();
-
-                    params.add(new BasicNameValuePair("search", SearchTerm));
-                    Log.d("request!", "starting");
-                    // getting product details by making HTTP request
-                    json1 = jsonParser.makeHttpRequest(
-                            GETSEARCH_PRODUCTS_URL, "POST", params);
-                    Log.e("PID + URL", storeID + GETSEARCH_PRODUCTS_URL);
-                    // check your log for json response
-                    Log.d("Set Banner001", json1.toString());
-                // json success tag
-                success = json1.getInt(TAG_SUCCESS);
-                if (success == 1) {
-                    return json1.getString(TAG_PRODUCTDETAILS);
-                } else {
-                    return json1.getString(TAG_MESSAGE);
-                }
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
-
-            return null;
-
-        }
-
-        /**
-         * After completing background task Dismiss the progress dialog
-         **/
-        protected void onPostExecute(String posts) {
-            // dismiss the dialog once product deleted
-            pDialog.dismiss();
-            if (posts != null && GetProducts==Boolean.FALSE) {
-                    //Toast.makeText(Search.this, posts, Toast.LENGTH_LONG).show();
-                getSearchResults(posts);
-                }
-
-            }
-
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     class GetConnectionStatus extends AsyncTask<String, Void, Boolean> {
-
-        protected void onPreExecute() {
-            super.onPreExecute();
-            pDialog = new ProgressDialog(Search.this);
-            pDialog.setMessage("Searching, Please Wait...");
-            pDialog.setIndeterminate(false);
-            pDialog.setCancelable(true);
-            pDialog.show();
-
-        }
-
-        protected Boolean doInBackground(String... urls) {
-            // TODO: Connect
-            if  (isNetworkAvailable() ==true) {
-                try {
-                    HttpURLConnection urlc = (HttpURLConnection) (new URL("http://www.google.com").openConnection());
-                    urlc.setRequestProperty("User-Agent", "Test");
-                    urlc.setRequestProperty("Connection", "close");
-                    urlc.setConnectTimeout(1500);
-                    urlc.connect();
-                    return (urlc.getResponseCode() == 200);
-                } catch (IOException e) {
-                    Log.e("Network Check", "Error checking internet connection", e);
-                }
-            } else {
-                Log.d("Network Check", "No network available!");
-            }
-            return false;
-        }
-
-        protected void onPostExecute(Boolean result) {
-            // TODO: Check this.exception
-            // TODO: Do something with the feed
-            pDialog.dismiss();
-
-            if (result==true)
-            {
-               // new GetProductDetails().execute();
-            }
-                else{
-
-                    noresult.setText("Network is Currently Unavailable");
-                    layout.addView(noresult);
-
-                    Toast.makeText( Search.this ,"Network is Currently Unavailable",Toast.LENGTH_LONG).show();
-                }
-            }
-        }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-        for (int i = 0; i<imgstore.length; i++ ) {
-            Picasso.with(this).cancelRequest(imgstore[i]);
-        }
-    }
-
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
-        for (int i = 0; i<imgstore.length; i++ ) {
-            Picasso.with(this).cancelRequest(imgstore[i]);
-        }
-    }
-
-    @Override
-    public void onPause() {
-        super.onPause();
-        for (int i = 0; i<imgstore.length; i++ ) {
-            Picasso.with(this).cancelRequest(imgstore[i]);
-        }
-
-
-
-        }
     }
 
 

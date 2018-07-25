@@ -41,10 +41,10 @@ public class Register extends AppCompatActivity {
     //testing on Emulator:
     //  private static final String LOGIN_URL = "https://hammerandtongues.com/webservice/register.php";
 
-    private static final String LOGIN_URL = "http://10.0.2.2:8012/auctionwebservice/register.php";
-    private static final String CODE_URL = "http://10.0.2.2:8012/auctionwebservice/sms_api.php";
-    private static final String VERIFY_URL = "http://10.0.2.2:8012/auctionwebservice/verify.php";
-    private static final String EDIT_URL = "http://10.0.2.2:8012/auctionwebservice/DeleteNum.php";
+    private static final String LOGIN_URL = "http://devauction.hammerandtongues.com/webservice/register.php";
+    private static final String CODE_URL = "http://devauction.hammerandtongues.com/webservice/sms_api.php";
+    private static final String VERIFY_URL = "http://devauction.hammerandtongues.com/webservice/verify.php";
+    private static final String EDIT_URL = "http://devauction.hammerandtongues.com/webservice/DeleteNum.php";
     //ids
     private static final String TAG_SUCCESS = "success";
     private static final String TAG_MESSAGE = "message";
@@ -318,7 +318,8 @@ public class Register extends AppCompatActivity {
             SharedPreferences sharedpreferences = this.getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
             Log.e("RUEERROR",""+(sharedpreferences.getString("user_id", "")));
 
-            stringRequest.setRetryPolicy(new DefaultRetryPolicy(DefaultRetryPolicy.DEFAULT_TIMEOUT_MS,0,DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+            stringRequest.setRetryPolicy(new DefaultRetryPolicy(20 * 1000, 0,
+                    DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
 
             requestQueue.add(stringRequest);
 
@@ -406,6 +407,9 @@ public class Register extends AppCompatActivity {
                     return values;
                 }
             };
+
+            stringRequest.setRetryPolicy(new DefaultRetryPolicy(20 * 1000, 0,
+                    DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
             requestQueue.add(stringRequest);
 
 
@@ -491,6 +495,9 @@ public class Register extends AppCompatActivity {
                     return values;
                 }
             };
+
+            stringRequest.setRetryPolicy(new DefaultRetryPolicy(20 * 1000, 0,
+                    DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
             requestQueue.add(stringRequest);
 
 
@@ -556,7 +563,8 @@ public class Register extends AppCompatActivity {
                 }
             };
 
-            stringRequest.setRetryPolicy(new DefaultRetryPolicy(DefaultRetryPolicy.DEFAULT_TIMEOUT_MS,0,DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+            stringRequest.setRetryPolicy(new DefaultRetryPolicy(20 * 1000, 0,
+                    DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
 
             requestQueue.add(stringRequest);
 

@@ -9,4 +9,11 @@
         app:showAsAction="always"
         android:icon="@drawable/ic_search_white" />
 
+    <item
+        android:id="@+id/refresh"
+        android:orderInCategory="200"
+        android:title="refresh"
+        app:showAsAction="always"
+        android:icon="@drawable/refresh" />
+
 </menu>

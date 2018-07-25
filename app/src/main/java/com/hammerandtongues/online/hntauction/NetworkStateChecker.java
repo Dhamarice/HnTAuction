@@ -39,30 +39,15 @@ public class NetworkStateChecker extends BroadcastReceiver {
             if (activeNetwork.getType() == ConnectivityManager.TYPE_WIFI || activeNetwork.getType() == ConnectivityManager.TYPE_MOBILE) {
 
 
-
-                db.clearAuctionscontent();
-                db.clearAuctions();
-                db.clearCategories();
-                db.clearLocation();
-
                 db.fill_auctions(context);
                 db.fill_categories(context);
                 db.fill_locations(context);
                 db.fill_auctionscontent(context);
+                db.fill_bids(context);
 
 
 
 
-                //Cursor cursor = db.getUnsyncedNames();
-               // if (cursor.moveToFirst()) {
-                   // do {
-                        //calling the method to save the unsynced name to MySQL
-                       // saveName(
-                        //        cursor.getInt(cursor.getColumnIndex(DatabaseHelper .COLUMN_ID)),
-                         //       cursor.getString(cursor.getColumnIndex(DatabaseHelper .COLUMN_NAME))
-                      //  );
-                    //} while (cursor.moveToNext());
-                //}
             }
         }
 

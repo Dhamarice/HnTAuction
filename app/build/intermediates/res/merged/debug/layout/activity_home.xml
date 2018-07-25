@@ -26,50 +26,13 @@
             />
 
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="7dp"
-            android:layout_marginRight="7dp"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="?attr/actionBarSize"
-            >
 
 
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="My Bids"
-                android:background="@color/colorOrange"
-                android:textColor="@android:color/white"
-                android:layout_weight="1"
-                android:layout_marginRight="1dp"
-                android:padding="15dp"
-                android:id="@+id/btn_ShopByStore"
-                android:layout_gravity="center_horizontal"
-                android:gravity="center_horizontal"/>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="All Bids"
-                android:background="@color/colorOrange"
-                android:textColor="@android:color/white"
-                android:layout_marginLeft="1dp"
-                android:padding="15dp"
-                android:layout_weight="1"
-                android:id="@+id/btn_ShopByCateg"
-                android:layout_gravity="center_horizontal"
-                android:gravity="center_horizontal"/>
-
-        </LinearLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:layout_marginTop="105dp">
+            android:layout_marginTop="55dp">
 
             <ImageView
                 android:id="@+id/myImageView"
@@ -80,19 +43,37 @@
                 android:paddingRight="7dp"/>
 
 
-            <TextView
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignLeft="@id/myImageView"
                 android:layout_alignTop="@id/myImageView"
                 android:layout_alignRight="@id/myImageView"
                 android:layout_alignBottom="@id/myImageView"
-                android:background="#7ad7d7d7"
-                android:id="@+id/txtmybid"
-                android:gravity="center"
-                android:text="You have not placed any bids at the moment"
-                android:textColor="@color/colorPrimaryDarkold"
-                android:textSize="22dp"/>
+                android:id="@+id/bidlist"
+                android:orientation="vertical"
+                android:background="#7ad7d7d7">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/myImageView"
+                    android:layout_alignTop="@id/myImageView"
+                    android:layout_alignRight="@id/myImageView"
+                    android:layout_alignBottom="@id/myImageView"
+                    android:layout_marginTop="45dp"
+                    android:background="#7ad7d7d7"
+                    android:id="@+id/txtmybid"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/colorPrimaryDarkold"
+                    android:textSize="18dp"/>
+
+
+
+            </LinearLayout>
+
+
 
 
             <TextView
@@ -112,47 +93,6 @@
 
 
         </RelativeLayout>
-
-        <android.support.v4.widget.NestedScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:fillViewport="true"
-            android:id="@+id/scrollViewhome"
-            android:layout_marginTop="250dp"
-            android:layout_marginBottom="55dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/scrollViewchild">
-
-
-                <LinearLayout
-                    android:id="@+id/verticalhome"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="200dp">
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:maxLines="20"
-                    android:scrollbars="vertical"
-                    android:id="@+id/textViewJSON" />
-
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="200dp"
-                    android:id="@+id/storedesc"
-                    android:layout_gravity="center_vertical"/>
-            </RelativeLayout>
-        </android.support.v4.widget.NestedScrollView>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -175,14 +115,28 @@
                 android:textSize="20dp"
                 android:id="@+id/txtmaininfo"/>
 
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Refresh"
+                android:background="@drawable/default_rounded_orange"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="10dp"
+                android:padding="15dp"
+                android:clickable="true"
+                android:id="@+id/butn_refresh"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"/>
+
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="View Previous Auctions"
-                android:background="@color/colorOrange"
+                android:background="@drawable/default_rounded_orange"
                 android:textColor="@android:color/white"
                 android:layout_marginLeft="1dp"
+                android:clickable="true"
                 android:padding="15dp"
                 android:id="@+id/btn_prevauc"
                 android:layout_gravity="center_horizontal"
@@ -201,176 +155,23 @@
             android:fillViewport="true"
             android:id="@+id/auctscrollView"
             app:layout_behavior="@string/appbar_scrolling_view_behavior"
-            android:layout_marginTop="260dp"
+            android:layout_marginTop="210dp"
+            android:layout_marginBottom="40dp"
             >
 
 
                 <LinearLayout
                     android:id="@+id/auctsv"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="100dp"
                     android:orientation="vertical" >
 
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="7dp"
-                        android:id="@+id/shopname"/>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:id ="@+id/startedon"
-                        android:textSize="15dp"/>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_centerHorizontal="true"
-                        android:orientation="horizontal"
-                        android:id="@+id/relativeLayout">
-
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:id ="@+id/aucendon"
-                            android:textSize="15sp"
-                            android:background="@color/colorPrimary"
-                            android:text="Expires in:"
-                            android:visibility="gone"/>
-
-
-                            <LinearLayout
-                                android:id="@+id/LinearLayout1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:background="@drawable/default_rounded"
-                                android:orientation="vertical"
-                                android:visibility="gone">
-
-                                <TextView
-                                    android:id="@+id/txtDay"
-                                    android:layout_width="fill_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="3"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="#4a0000"
-                                    android:textSize="15dp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:id="@+id/txt_Day"
-                                    android:layout_width="fill_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:text="Days"
-                                    android:textAppearance="?android:attr/textAppearanceSmall"
-                                    android:textColor="#fff"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:id="@+id/LinearLayout2"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:background="@drawable/default_rounded"
-                                android:orientation="vertical"
-                                android:visibility="gone">
-
-                                <TextView
-                                    android:id="@+id/txtHour"
-                                    android:layout_width="fill_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="3"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="#4a0000"
-                                    android:textSize="15dp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:id="@+id/txt_Hour"
-                                    android:layout_width="fill_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:text="Hours"
-                                    android:textAppearance="?android:attr/textAppearanceSmall"
-                                    android:textColor="#fff"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:id="@+id/LinearLayout3"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:background="@drawable/default_rounded"
-                                android:orientation="vertical"
-                                android:visibility="gone">
-
-                                <TextView
-                                    android:id="@+id/txtMinute"
-                                    android:layout_width="fill_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="3"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="#4a0000"
-                                    android:textSize="15dp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:id="@+id/txt_Minute"
-                                    android:layout_width="fill_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:text="Minutes"
-                                    android:textAppearance="?android:attr/textAppearanceSmall"
-                                    android:textColor="#fff"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:id="@+id/LinearLayout4"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:background="@drawable/default_rounded"
-                                android:orientation="vertical"
-                                android:visibility="gone">
-
-                                <TextView
-                                    android:id="@+id/txtSecond"
-                                    android:layout_width="fill_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="3"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="#4a0000"
-                                    android:textSize="15dp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:id="@+id/txt_Second"
-                                    android:layout_width="fill_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:text="Seconds"
-                                    android:textAppearance="?android:attr/textAppearanceSmall"
-                                    android:textColor="#fff"
-                                    android:textStyle="bold" />
-                        </LinearLayout>
                     </LinearLayout>
 
-<ImageView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/aucimge"/>
-
-                </LinearLayout>
 
 
         </android.support.v4.widget.NestedScrollView >
@@ -393,5 +194,3 @@
 
 
 </android.support.v4.widget.DrawerLayout>
-
-

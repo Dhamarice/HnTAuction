@@ -3,48 +3,804 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\libs\picasso-2.5.2.jar"
-        jumboMode="false"
+        jar="C:\Users\dhama\.android\build-cache\eefd20f8a43ae0682ad282086c3a7306264cb486\output\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
-        revision="25.0.0"
-        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
-        <dex dex="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\2\picasso-2.5.2_ef495b9a9531e8230d5aec6df63b260a49bf49a6\classes.dex" />
+        revision="25.0.2"
+        sha1="184428c29b2a4b220cd44284d515db5d8cb5fc76">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cb9b30cc0bf5b2df8e6d50d62f019ddbba817986\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Ruvimbo\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
-        jumboMode="false"
+        jar="C:\Users\dhama\.android\build-cache\ddfc0f3319db692cdb2fae099c30b4b03fa38f90\output\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
-        revision="25.0.0"
+        revision="25.0.2"
+        sha1="08962e03b6a954c65d4944e092879b7f5ee1208d">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_304efb9f3ecce853aeeadd447db582a98934a641\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\657c34b9e25c54eeeb4a1abebe1bff7f9363cc0a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d358b3dd49a7c67844622dcbc9cf4339e13952ce">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c6881a8bfa36c25489d5a377e92844f71f25f8a8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\3772e12c74f69322c65130466986f32cf23d8c5c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7e467a973b749c6390a5991c9a8edbde96fc10c9">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_aa370da6cfcd90346c4bd1b9b0614274320cf3aa\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\0d297471eb9d009788ada39e4986316a141d19c2\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5f0f6913a208a126269aaa68004ed0329a832c5b">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e69187cb0cfc62d544215e06645882ef4014850d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\c348ae6541fb6b4c3b1279d362725faec2cce4ed\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7b108bbf201ffe02860a816c809e9f3c2c964ff6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\d181124afdd8f110317c7ace431501e5d9cab0bd\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ea4b54dcbfe5ac05efb0a314105f07258118d3a7">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_16020a58b7fb2a6bfe41023c03c641dcd02f0b97\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\182a15b5c9b176389f906096c62a26d438656f51\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7e4a47fa5c9b200f12657e822482d987f58d3553\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\f2e68e231281f7fe752ab11f2eb678eb839823e4\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_87b02e3fd3354d5b6709ccab4188faeaad977b4e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.1.3\f6c3aed1cdfa21b5c1737c915186ea93a95a58bd\jackson-core-2.1.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f6c3aed1cdfa21b5c1737c915186ea93a95a58bd">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\jackson-core-2.1.3_5594f2b05e78c14350d8dbfbdab54263a04e086b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-tasks-1.4.0_c7028640e8ebe2e1ea35de7f9af59a3eff338562\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\c2acc74ea51f8fc2b07f7f899b57b00bb349f1f3\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="30103d98fa5ed824b54af839c85e2111f9bde8ec">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_55d949dc44d2ed02d27dce99be4398192edb1ba3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.3.1_48419c997f374af1d3945bd9a042ffc791bfbde7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\d46f4a2574affd47f6f3b47630b3d201451f1d5c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="70ddab48594608953b20164b82f1f890a9a8174a">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2130bb09f490d6c88ae747729e285d74c0dc3fc7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\f16c8237513ed693d5ef1d1319a2caf30a75ac7a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2cb29455028e92e024bbad0d41c6ec772f2433d1">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9e4524879a36f4b62f4b2a4fccfb8f2fa293195c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.gradle\caches\modules-2\files-2.1\com.google.http-client\google-http-client\1.23.0\8e86c84ff3c98eca6423e97780325b299133d858\google-http-client-1.23.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8e86c84ff3c98eca6423e97780325b299133d858">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\google-http-client-1.23.0_0d301643ae5718269a2240b755da7815462ae6ba\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\6b1b6d8af0a5631b6df15b4dc87088c5efa6950f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b97404352c3fe2957bd5b6058c1e2081091b13ff\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\4983506f795f3b40c63d71471909cce0aea6118a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2c5bc0ebbe69c9fab587c2216b36ec44ab8f0704">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5b0e234f83291e8625722ba16283963ef9a4e2c2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\515afedce16450ef92efec719be98733bb20ccf9\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3b8a1048a1127beb355a77d65dcc446bfa3ca93d">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ac90a4ddb81bcae0bea10c80b3ccc49264ed621c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\f405c89c1d6b03e98739f1ae6baed51c4bd34c7c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c5a73275caada9d2b5b6a18fce3acdce5d0b8a15\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
         sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
-        <dex dex="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.2_a90c0ab66e0efad6f5f59e60c003c3d1ec8e6e5d\classes.dex" />
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.2_a84afcb25544a34fb863ed86ab4ac16be8992ff4\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Ruvimbo\.android\build-cache\02c1c24dfb2754ecb4140265c4a300507e003674\output\jars\classes.jar"
-        jumboMode="false"
+        jar="C:\Users\dhama\.android\build-cache\2915431885002a49d992e2de0b7c9bccfa58f88b\output\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
-        revision="25.0.0"
-        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
-        <dex dex="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5554f77bdded2b7101595222ea374898698c7670\classes.dex" />
+        revision="25.0.2"
+        sha1="69472e334350cafbf442776da05c9a04955252fb">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7bb63082a6a2e954a33653b418b3de2a8fecbd74\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\libs\volley.jar"
-        jumboMode="false"
+        jar="C:\Users\dhama\.android\build-cache\900819ff1537b3d8cc817b6e0c7ee7f372b7c6bb\output\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
-        revision="25.0.0"
+        revision="25.0.2"
+        sha1="c11cf7a7a6e5adf8fa564303a11dbc351fc11b7c">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_86d4a945f42cc208a116c93c53d79395f556a3b8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\df55a1fdcb5392756925e44df53bf828736b9b6e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4ef8ab5fee042023018249474bc93bd4b2b9c17e">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_fa07a2ae688eb4664d2fff16670d34b0e7fa7092\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\3da48be27da549b8518103460ca23dded76e8cbe\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="733964f04c339e425439545b1d172c23b53f8c13">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9b07e89c56b9c5a76fbd6fc27f86870c48c86676\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\30be198f14e8e015cd9581cc1acc28f90e7ba9ec\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="59cca9b91688dc2467754d36793b3d23bebd21a9">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_bc5851e2509afe5434c597737dd63a177ef98e85\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\1786d1c196ca48a60ba1d9d3d6250c6faf4d3c03\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_992957de9ce62b40e83e701e8d608b9d169285db\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.gradle\caches\modules-2\files-2.1\com.google.api-client\google-api-client-android\1.23.0\b95521559faf49989ff036a5b15fd16476bdc955\google-api-client-android-1.23.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b95521559faf49989ff036a5b15fd16476bdc955">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\google-api-client-android-1.23.0_45b915c97812de33fe1bd1e372fd8225d9d40aeb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\HnTAuction\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a684f71614b42d00d6608ab67998c044d6c2c79b">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_c0702ed3674d8daeefd3539304ac9573913d6fc2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\beabdfe7e8547b2dc063fb815a2d0faf0c5acb49\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e3e9a4522721dc7cca598eadb6b973c3307abaa5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\d4dbdf007dba0ea08067b0244334ad351eca904a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e595f98f8c525201dccd119f43ad1ddacd4c48d6">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_08ad93dbf726e9f91a92aebc038b13e79d61e4a6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\030fc3a13cd947c861ca0eaca390b7e7f244ceb9\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0dc8ab07eeceda5e99b305c8069765056b6e5c9d">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_228411c532247d4fe284ca4ea441b949eabcdcaf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.gradle\caches\modules-2\files-2.1\com.google.oauth-client\google-oauth-client\1.23.0\e57ea1e2220bda5a2bd24ff17860212861f3c5cf\google-oauth-client-1.23.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e57ea1e2220bda5a2bd24ff17860212861f3c5cf">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\google-oauth-client-1.23.0_dc6d39b47737f184fcf2ab9d55709cab051f4ae9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\5fd4ac6f68c2053fd7b58545ad1968bbf2d31dab\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="379d1834afa3c08f43be23a23b103053537b65b5">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_75f0a902168bcbcb6f45dbbbde357b450cd54671\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\167754b04127630807ae4ac34c0baa9af31c9be9\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d38084015027549951cbaea5d5f6fb795cc81151">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_55d26e34eb0feb220be8ab978efb4752c7d7bb26\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\library-2.4.0_46d55c3671a572d0b5706ed5ecda0ddcbce6793a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\198f50bc2a8e2ebd6f5a1e87f80021081bbca1e7\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4caf75b2cfb7ec6e80a57d0ee64fc102ad3578b8">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3cb4ef76e1201457e7219c36ea34a9366cc8e4af\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.gradle\caches\modules-2\files-2.1\com.google.guava\guava-jdk5\17.0\463f8378feba44df7ba7cd9272d01837dad62b36\guava-jdk5-17.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="463f8378feba44df7ba7cd9272d01837dad62b36">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\guava-jdk5-17.0_4286066e4384d34f1ce7b09d70cdadf382c4c8d8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\cc18e1ecf5842b6708dfcd6726c4c6b29f3e2029\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4431efe5d0f67fab36a698dde725946b33a6bf4a">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_aa023d8270e983c3a50b256b018b9bb04cb26cdd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\7294022df8109dda21260b8b2fac0d5385955bf5\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f8c31c31e7c0243e557110d168dee88dda3c6c94">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4abd0c5832bfb7f1cd54ddfd309b93b2e956b99d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\2479a73464f92c6fe371194e0f76e095b3625e85\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8126914f5bc372a33e27ea90f02412c32468ce8a">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4ee29f8ff4d297028dcd691c45145f350d5e47a4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\4c99404e20a99728b38c4256f34cb1c967c656ed\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7002ed92a3c46c6a89a786877ecf7978a4f0459">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_515c906b21d63586980a4073e4e989ac1f1500eb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\bb8d4060cee3d8416828ba246298a1ae4dd32164\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="817b9101192f2fd6dc0fd8cd522d8f4a1a75fcdc">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_72a10512f71a6cfe31d9774b5fb61fdc365db4ee\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\109f41556bb79746b984081276df88c4c4a56511\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d96f9f3ef66494d1231304cafd28c962dda80dea">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b8d2e5857b06ff9ea9a2a096e67b03836f44d552\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\87bfaa728c857531a2b4e1a3f42f885e181140a3\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f4e85eafa876cd7d7641244867dac3f88d71e866">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_496c1031d07ee74c84f6fd2125fa0d0fc41d6d93\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\b9e8d5e82fde5aa0799a64985f6ac1b42731f2e6\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b8bedab61b3b5238cd9a07d3b04449d7fecdbc3b">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_dd556428f0d3de3fc8679dd0d5feae000e87a602\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.gradle\caches\modules-2\files-2.1\com.google.api-client\google-api-client\1.23.0\522ea860eb48dee71dfe2c61a1fd09663539f556\google-api-client-1.23.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="522ea860eb48dee71dfe2c61a1fd09663539f556">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\google-api-client-1.23.0_3614ea50949af955fd1bcde6c9e07ed2f172c037\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\e0258eca45024d479faaf3b79a191f518c9f3f2f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7da84426d876216ed4cdddd85e739be5ecabdd04">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9298ca47a057d15e6808f9b66f1ba52139f5cac0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\4da5bfac9527ad172ad2157b7b5ab94a50e4e624\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ef5c5c2afbd174d55cf1cfcac7d0346cbc4c1322">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ca81ca37bef85d1370b17f539c75a27faa1da1ce\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\6428434429641be730cd9bb3533b1c4f317b975b\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_44fdae30ea4be7c23019131ccfc21d07b1eccab5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\02db462449f0e1e9fcf5e9a6b16e126bf7abbf66\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ca4cf15079f42b39e1394c6772d9d6d736bd0634\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\f65cf07ba309c390c56dadd30774fd3aa5258624\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5289e799a43a64c4137d109bf992e10a2f952aa3">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_19e9336cea2eacbdd87c0b25838ce2a0afc86e99\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\899f140fb81f026be4be96cd7f006271eb2d60ad\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6f65c144283b31b4b9a70e6e7aa4c4a1c897d4b8">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_52e291a96a9db3a243ab7f6afa58ae9b23d6883d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\b95747bc1ff11879e80c9c636d51dd120457e439\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ed16ff19f0a9515604a0f08104ca0317b82e29e3">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_11cfa3f18d2be36bd30eb4688f0875250b84041c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\51750225f38dbaafdf28f4c5577dcd4a013c3fdd\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="32a5a566ae197603d0bed3e6d1d275f6a771564e">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e4e0dc76f58ef26e9a337884178cd0dea2eda6ad\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.gradle\caches\modules-2\files-2.1\com.annimon\stream\1.1.6\b708c54d13f0e223803f0d04410cd2684031bb79\stream-1.1.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b708c54d13f0e223803f0d04410cd2684031bb79">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\stream-1.1.6_28d36cf4f189847ef375b89ac8ea7c0307f8c158\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\92fa50ab6286fe20180f7ce2dc927655919dc50d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2f7bd8cc7519d5231aa8d2ae8e905d3f602bd491">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ec128788504903da7344761d1853afd9f9fa1928\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\34f5b142067c5f86c6dd89b72938522a8bfdcb2a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="93b7d6ba3bb340e935bf7a36408eb3455264b759">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_638eb48291f72dc8b60ee6daf7ef433a640962e8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\92c8e737bcd81daed345c39ca22e4e41b5850007\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="79e4b41db41d4dbbf364c7bd6aaeee5b876c9d8b">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5f523078c92714f592e51b5fc987071f79d6caba\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\8dace8450648cf0c945d3510cf90d2bb79318841\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ebfde1a055aea400df77584a68aa60609f618bed">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_75fbefd49c1dc739c60feb29f8dc60068554296a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\a0926ce71043a57466da1416dd10ae7d21525241\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="005786793d72c6deacbbbfd38177ed58e1aa6653">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1c1a3963dad2d6763be9432df06d22da812ed2b6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\HnTAuction\app\libs\volley.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
         sha1="fe4b50d0b8af44fce7a238fe146c7a3957074aa5">
-        <dex dex="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\2\volley_d650f7b19abeb87300be0edb396955987d3146ac\classes.dex" />
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\2\volley_cac38374eb03c59316c493ed7bc936a369e2fcef\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\libs\universal-image-loader-1.9.5.jar"
-        jumboMode="false"
+        jar="C:\Users\dhama\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\1.3.9\40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf\jsr305-1.3.9.jar"
+        jumboMode="true"
         optimize="true"
-        revision="25.0.0"
+        revision="25.0.2"
+        sha1="40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\jsr305-1.3.9_052b8c0552db062131ede39dcbb357149619ac77\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\3cc63a4345508bfc84877c3fffcc7cbf7b17c9d3\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1941832901fc4e7a93300b53762e9f65d7650b99">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_beda9599cdfbbb4e4614970865877dedc953b0ff\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\d50f86c35e3541bbcf480c8e41493e453f175a0c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fcca411028f175f034d209ca24a694c46a88eb03">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_57aa2dcaf204f2c9eae4f668ade0a0663167e763\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\657c34b9e25c54eeeb4a1abebe1bff7f9363cc0a\output\jars\libs\internal_impl-23.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="03d38bb042efe3e5ce27ba66b729a9523c36d8fe">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.0.0_8c530f1e88d2fed11978b7a6b7a892760ed52bed\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\13ecf82ea8070c69f09fa4a210b02c9f1e8a75f3\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cc178928721f3222b3b06bdfbd9497378ccb9792">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e508d07b56309cdee661de117bcc79e7b45da256\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\9c1af6ee98fa6fad9a90e85456dec5e41f4d4c98\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8a974663ead8de977318f7a0951c53bab1cfa4f1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\487b3574cbc366ce6b7635b88bf56f11a0f97dbc\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="294d49a66cc1238d9f7fd352136a45622fa98c0f">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1c5f6757f4cf1e289228bf5a072ca8bb3f279f91\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\a15423cfbe34216a744d13fed14cedd54ae97eec\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="373cd65725af2781d100ddc193c7d3f14464a774">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f2de5649b95586a5ea057be7b5e800a1531ddc02\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\HnTAuction\app\libs\universal-image-loader-1.9.5.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
         sha1="442dbfb517b9ab5cb5c6da7ebf8cc28ec5bd0375">
-        <dex dex="C:\Users\Ruvimbo\Documents\HammerandTongues\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\2\universal-image-loader-1.9.5_e94bf0af782a9d4f9a16f60916ab95aaf48a36a5\classes.dex" />
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\2\universal-image-loader-1.9.5_198b95e63bbba99de84c1182e5fa14cd5584b449\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\b448f1325ef3f38c2963aa770852126aedd7960a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_bdda9818d319a52213f36c87dc26c04bf3622b3e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\921cfc1bec0c66530d8d242e93ee5c1910454cde\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="42df48c7305b08b14fa0e84561091b0c24d70d26">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d2d55802c74fc0a468c611e447c2847255f142e3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.gradle\caches\modules-2\files-2.1\com.google.apis\google-api-services-calendar\v3-rev328-1.23.0\4b998a174caaaddb7fe8f3738729f953d57ea8f7\google-api-services-calendar-v3-rev328-1.23.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b998a174caaaddb7fe8f3738729f953d57ea8f7">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\google-api-services-calendar-v3-rev328-1.23.0_a12a2d5a771f6d08806479efc826a6b79445ee13\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\4da15ecf366b01737b721865d525be40042d7701\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="67a7d712de3e7d025f4efdcec1da183f764bdbab">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_641178ff9e05ff4823b2a58b9f6c9adf46bb243c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.gradle\caches\modules-2\files-2.1\com.google.http-client\google-http-client-android\1.23.0\1bbe77a8594d7892571266392b8a7dd0a5980664\google-http-client-android-1.23.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1bbe77a8594d7892571266392b8a7dd0a5980664">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\google-http-client-android-1.23.0_74e666221781bd817cb01a2d229fe90cacf5fa1f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\HnTAuction\app\libs\picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\2\picasso-2.5.2_964063317436f61b1be86f59c34aab6b8145c673\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\6dada912fc1b60d6daf0d8a468c728fe9f8c192c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a819aae4f0c711e50b4fd633922a3c1a176cb51e">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7faaa95144092229a69c283ebedc2257351db743\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\glide-3.7.0_16a4388454c63fc6f272a0d0e50937a1a42fff57\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\df73900e4f297a3eb85df45363168b6c6689f8e6\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="24536a7b97926a9c155c88425da6875adeb11b51">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_46e716917254ef7ac82ecb50ad51aff8269da0f3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\ebe87c3c317609e3b16988f5df037762b06e1bb8\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="536f64f93222b3d004c884c73ddd8e416108da11">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b3c2767a6c622f74a3d2a4b3185bdfc090ebb9a6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\fe395131159e850448bc7cd63ec67cadc69d8be5\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_018cd0cab9c82f64f64b7a4442447f6f071ac898\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\6ce77dc316cbd1a046eb6414260b9fcd10a9a526\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7a23185c9b1c100e7d1a32275017e4712e31c796">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a8d23c09390ae75ad67c0c2e62fb40accc3e390d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\HnTAuction\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_72db63988a0a2e86b6027d9066fb4b222206d540\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.gradle\caches\modules-2\files-2.1\com.google.http-client\google-http-client-jackson2\1.23.0\fd6761f4046a8cb0455e6fa5f58e12b061e9826e\google-http-client-jackson2-1.23.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fd6761f4046a8cb0455e6fa5f58e12b061e9826e">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\google-http-client-jackson2-1.23.0_26d0a35369efbb0919036617a1bc25713582fec5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\381a923948d22bd1272881eee394fe7eaeed424b\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f7a9468c473a9a6f046eb735abe06a08d8edac5f">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4f468748c3e5d7c9355801328f2199287b5e3ea8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\c0e85db33f2b4f4a9a87106843aab5c7805e6ec1\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="03881e5c9573abec8007769ffb348356233854c7">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_73f119004996d5f554469e50b8b338e7fc13db75\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\2daff2553b424814442ca7dab045494775695e85\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9c1cfb3e946d5e253fe2d6e9641a3b2cef2d1556\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dhama\.android\build-cache\8b4302378f9455d4d3b5b5b0be53c88d4fc6c22d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0facc6fc326f2406f4bb9b02f442994c5ce6a403">
+        <dex dex="F:\HnTAuction\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6d55ffd838833cdf269822ca055a9743e8c20591\classes.dex" />
     </item>
 
 </items>

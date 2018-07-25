@@ -1,11 +1,39 @@
 [
     {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_menu_manage.xml",
+        "source": "F:\\HnTAuction\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_menu_manage.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_menu_slideshow.xml",
+        "source": "F:\\HnTAuction\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_menu_slideshow.xml"
+    },
+    {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_menu_slideshow.xml",
         "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_menu_slideshow.xml"
     },
     {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_menu_camera.xml",
+        "source": "F:\\HnTAuction\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_menu_camera.xml"
+    },
+    {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_menu_share.xml",
         "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_menu_share.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_menu_gallery.xml",
+        "source": "F:\\HnTAuction\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_menu_gallery.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_menu_send.xml",
+        "source": "F:\\HnTAuction\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_menu_send.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\design_ic_visibility_off.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\11a2a04537914523bc181fc369aa5790d844f464\\output\\res\\drawable-anydpi-v21\\design_ic_visibility_off.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\design_ic_visibility.xml",
+        "source": "C:\\Users\\Ruvimbo\\.android\\build-cache\\11a2a04537914523bc181fc369aa5790d844f464\\output\\res\\drawable-anydpi-v21\\design_ic_visibility.xml"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_menu_gallery.xml",
@@ -16,11 +44,23 @@
         "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_menu_manage.xml"
     },
     {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\design_ic_visibility_off.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\c2acc74ea51f8fc2b07f7f899b57b00bb349f1f3\\output\\res\\drawable-anydpi-v21\\design_ic_visibility_off.xml"
+    },
+    {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_menu_camera.xml",
         "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_menu_camera.xml"
     },
     {
         "merged": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_menu_send.xml",
         "source": "C:\\Users\\Ruvimbo\\Documents\\HammerandTongues\\HnTAuction\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_menu_send.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\design_ic_visibility.xml",
+        "source": "C:\\Users\\dhama\\.android\\build-cache\\c2acc74ea51f8fc2b07f7f899b57b00bb349f1f3\\output\\res\\drawable-anydpi-v21\\design_ic_visibility.xml"
+    },
+    {
+        "merged": "F:\\HnTAuction\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_menu_share.xml",
+        "source": "F:\\HnTAuction\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_menu_share.xml"
     }
 ]
